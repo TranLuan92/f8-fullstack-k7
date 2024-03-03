@@ -18,3 +18,4 @@
         -> ...
 
 3.  Chuyen code nhanh moi ve nhanh cu
+    -> git checkout
