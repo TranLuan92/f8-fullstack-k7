@@ -1,0 +1,48 @@
+.container {
+  border-radius: 10px;
+  width: 1000px;
+  height: auto;
+  background: #334455;
+  padding: 20px 50px;
+  margin: auto;
+  color: aliceblue;
+}
+body:hover input::placeholder {
+  color: #f8db35;
+  background: #ddd;
+}
+body:hover input {
+  background: #ddd;
+}
+body :hover button {
+  color: white;
+  background: #f8db35;
+}
+.wrapper {
+  width: 60%;
+  height: auto;
+}
+h2 span{
+  color: #f8db35;
+}
+/* form_input */
+.form_input {
+  display: flex;
+  width: 100px;
+  height: auto;
+}
+.email_input {
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 30px;
+}
+/* button */
+button {
+  min-width: 170px;
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}

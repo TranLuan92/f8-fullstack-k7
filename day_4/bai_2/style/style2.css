@@ -1,0 +1,81 @@
+/* font-family: "Alfa Slab One", serif; */
+/* font-family: "Bebas Neue", sans-serif; */
+
+section {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+}
+form {
+  width: 100%;
+  height: auto;
+}
+/* title_product */
+h1,
+h2 {
+  color: #392516;
+}
+h1 {
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h2 {
+  font-size: 70px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+}
+.title_product {
+  line-height: 30px;
+  width: 100%;
+  height: auto;
+}
+/* info_date */
+/* input {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+} */
+input::placeholder {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  color: black;
+}
+.info_date {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.info-left,
+.info-right,
+.btn {
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.form_input {
+  padding: 5px;
+  outline: none;
+  margin-top: 20px;
+  height: 30px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  text-align: center;
+  background: #b0322a;
+  font-family: "Alfa Slab One", serif;
+  color: aliceblue;
+  font-size: 16px;
+}

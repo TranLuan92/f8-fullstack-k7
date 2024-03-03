@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style3.css">
+    <title>bai-3</title>
+</head>
+<body>
+   <div class="container">
+        <form  action="" class="form_info">
+            <!-- form_info start -->
+                <div class="list_form">
+                    <label class="label_form" for="user_name">User name </label>
+                    <input class="form_input" type="text" id="user_name" name="user_name" placeholder="Nhập tên người dùng" >
+                </div >
+                <div  class="list_form">
+                    <label  class="label_form" for="password">Password </label>
+                    <input class="form_input" type="password" id="password" name="password" >
+                
+                </div>
+                <div  class="list_form">
+                    <label  class="label_form" for="name_city">City of Employment </label>
+                    <input class="form_input" type="text" id="name_city" name="name_city" >
+                
+                </div>
+                <div  class="list_form">
+                    <label  class="label_form" for="Web_server">Web server</label>
+                    <select name="Web_server" id="Web_server"> 
+                        <option value="0">_Choose a server_</option>
+                        <option value="Server 1">Server 1</option>
+                        <option value="Server 1">Server 1</option>
+                    </select>
+                </div>
+            <!-- form_info and -->
+            <!-- Check_list_radio start -->
+                <div class="check_list">
+                    <div class="list_title">
+                        <span>Please specify your role</span> 
+                    </div>
+                    <div class="list_select">
+                        <label for="">
+                            <input type="radio" name="your" value="Admin">Admin
+                        </label>
+                        <label for="">
+                            <input type="radio" name="your" value="Engineer">Engineer
+                        </label>
+                        <label for="">
+                            <input type="radio" name="your" value="Manager">Manager
+                        </label>
+                        <label for="">
+                            <input type="radio" name="your" value=Guest">Guest
+                        </label>
+                    </div>
+                </div>
+            <!-- Check_list_radio and -->
+            <!-- Checkbox_list start-->
+                <div class="check_list">
+                    <div class="list_title">
+                        <span>Single Sign-on</span>
+                    </div>
+                    <div class="list_select">
+                        <label for="">
+                            <input type="checkbox" name="Single" value="Email">Email
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="Single" value="payroll">payroll
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="Single" value="self-service">Self-service
+                        </label>
+                        <!-- button -->
+                        <div class="button_click">
+                            <button>Login</button>
+                            <button>Reset</button>
+                        </div>
+                         <!-- button and -->
+                    </div>
+                </div>
+             <!-- Checkbox_list and -->
+             
+        </form>
+        
+   </div>
+</body>
+</html>

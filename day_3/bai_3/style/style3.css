@@ -1,0 +1,41 @@
+.container {
+  padding: 20px;
+  max-width: 500px;
+  height: auto;
+  background: grey;
+  margin: auto;
+}
+/* form_info start */
+.form_info {
+  margin-left: 20px;
+  width: auto;
+  height: auto;
+}
+.list_form {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.label_form {
+  padding: 5px;
+  width: 30%;
+}
+.form_input {
+  width: 40%;
+  padding: 5px;
+}
+/* form_info and */
+.check_list {
+  padding: 10px;
+  display: flex;
+}
+.list_title {
+  width: 140px;
+}
+.list_select {
+  display: flex;
+  flex-direction: column;
+}
+.button_click {
+  margin-top: 20px;
+}
