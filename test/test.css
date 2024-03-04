@@ -1,0 +1,14 @@
+.best_seller{
+    width: 1000px;
+    height: auto;
+}
+.nav_menu {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    background: gray;
+  }
+.nav_menu label{
+  
+}

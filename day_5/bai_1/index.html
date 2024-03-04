@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>bai1</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- word_title start -->
+      <div class="word_title">
+        <h1>Hey There</h1>
+        <p>
+          <span>We'd like to hear form you.</span> Send us your message or jus
+          say hy with our contact form or directly via phone, we love to chat.
+        </p>
+      </div>
+      <!-- word title and -->
+      <!-- form_contact_info -->
+      <form action="" method="get" class="form_action">
+        <!-- -----yourname----- -->
+        <div class="contact_info">
+          <div class="icon-left">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input_info">
+            <input
+              type="text"
+              name="yourname"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="icon-right">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <!-- -----email------- -->
+        <div class="contact_info">
+          <div class="icon-left">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input_info">
+            <input
+              type="email"
+              name="email"
+              placeholder="your@domain.com"
+              required
+            />
+          </div>
+          <div class="icon-right">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <!-- ----number------ -->
+        <div class="contact_info">
+          <div class="icon-left">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
+          <div class="input_info">
+            <input type="number" name="phonenumber" placeholder="+84 00 11" />
+          </div>
+          <div class="icon-right"></div>
+        </div>
+        <!-- ------------- -->
+        <div class="contact_info">
+          <div class="icon-left">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <div class="input_info">
+            <select name="setting" id="setting">
+              <option name="setting" value="Subject">Subject</option>
+            </select>
+          </div>
+          <div class="icon-right"></div>
+        </div>
+        <!-- -------------- -->
+        <div class="contact_info">
+          <div class="font_icon">
+            <i class="fa-solid fa-message"></i>
+          </div>
+          <textarea name="message" id="message"> </textarea>
+          <div class="icon-right"><i class="fa-solid fa-star"></i></div>
+        </div>
+        <!-- form_contact_info and -->
+        <!-- label checkbox end button start -->
+        <div class="btuton_checkbox">
+          <div class="checkbox">
+            <label for="click">
+              <input type="checkbox" name="click" id="click" />
+              Sen me a copy or this message.
+            </label>
+          </div>
+          <div class="btn">
+            <button>SEN</button>
+          </div>
+        </div>
+        <!-- label checkbox end button and -->
+      </form>
+    </div>
+  </body>
+</html>

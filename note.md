@@ -18,3 +18,5 @@
 
 3.  Chuyen code nhanh moi ve nhanh cu
     -> git checkout
+    <!-- tu khoa tim kiem -->
+    creating and deleting braches within on repossitory :

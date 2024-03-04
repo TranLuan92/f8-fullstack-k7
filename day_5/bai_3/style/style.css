@@ -1,0 +1,77 @@
+html{
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 1000px;
+    height: auto;
+    background: aliceblue;
+    margin: auto;
+}
+.title{
+    line-height: 0.5;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.title p{
+    font-size: 1.8rem;
+}
+.main{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.job{
+    padding: 20px;
+    box-shadow: 0px 0px 20px 1px #AAA;
+    margin-top: 5rem;
+    text-align: center;
+    max-width: 20%;
+    height: auto;
+}
+.img-describle,
+.img-describle-lonly{
+    margin: auto;
+    position: relative;
+    border: 2px solid #f2a83b;
+    border-radius: 15rem;
+    color: #f2a83b;
+    font-size: 7rem;
+    width: 15rem;
+    height: 15rem;
+}
+.img-describle i{
+    left: 27%;
+    position: absolute;
+    top: 25%;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+
+.job_title p{
+    font-size: 1.5rem;
+}
+button{
+    color: white;
+    border: none;
+    outline: none;
+    background:  #f2a83b ;
+    width: 15rem;
+    height: 4rem;
+}
+
+.img-describle-lonly i{
+    left: 22%;
+    position: absolute;
+    top: 25%;
+}
