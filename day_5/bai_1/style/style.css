@@ -130,5 +130,21 @@ button{
     align-items: flex-end;
     height: 4rem;
     width: auto;
+    position: relative;
 
 }
+/* .click input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: o;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  } */

@@ -1,119 +1,166 @@
-.container {
-  position: relative;
+html{
+  font-size: 62.5;
+}
+.container{
   width: 1000px;
   height: auto;
   margin: auto;
 }
-h2{
-  font-size: 40px;
-}
-.nav_menu {
-  margin: auto;
+h1{
+  font-size: 2rem;
   text-align: center;
-  line-height: 40px;
 }
-label { 
-  cursor: pointer;
-  background: #ddd;
-  height: 40px;
-  padding: 15px 30px;
-  color: rgb(12, 12, 12);
-}
-
-.nav_menu label:hover{
-  background: blueviolet;
-}
-.nav_menu label:checked input [for="menu1 "] {
-  background: blue;
-}
-/* product_info */
-.wrapper_product{
-  display: flex;
+.nav_menu{
+  text-align: center;
   width: 100%;
   height: auto;
+  margin: auto;
 }
-.product_container{
-  margin: 30px;
-  width: 200px;
+label{
+  background: aliceblue;
+  padding: 15px 30px;
+  height: 30px;
+  border: 2px solid rgb(115, 2, 25);
+  cursor: pointer;
+}
+input ~ .nav_menu label:hover  {
+  background: blue;
+  color:aliceblue;
+}
+.wrapper_1,.wrapper_2,.wrapper_3,.wrapper_4,.wrapper_5{
+  display: none;
+  width: 100%;
+  height: auto;
+  /* background: aliceblue; */
+  margin-top: 70px;
+}
+/* ---------------------------------- */
+
+.best_seller #menu_1:checked ~ .nav_menu label:nth-child(1){
+ background: blue;
+ color: white;
+}
+.best_seller #menu_2:checked ~ .nav_menu label:nth-child(2){
+ background: blue;
+ color: white;
+}
+.best_seller #menu_3:checked ~ .nav_menu label:nth-child(3){
+ background: blue;
+ color: white;
+}
+.best_seller #menu_4:checked ~ .nav_menu label:nth-child(4){
+ background: blue;
+ color: white;
+}
+.best_seller #menu_5:checked ~ .nav_menu label:nth-child(5){
+ background: blue;
+ color: white;
+}
+
+.best_seller #menu_1:checked ~ .wrapper_1{
+display: flex;
+justify-content: space-between;
+
+}
+.best_seller #menu_3:checked ~ .wrapper_3{
+display: flex;
+justify-content: space-between;
+
+}
+.best_seller #menu_5:checked ~ .wrapper_5{
+display: flex;
+justify-content: space-between;
+
+}
+
+/* --------------product/info---------------- */
+.product_info{
+  box-shadow: 3px 3px 7px 3px  #e0e1e0;
+  width: calc(100%/4 - 50px);
   height: auto;
 }
-.product_info {
+.product_items_1{
+  width: 100%;
   position: relative;
-  width: 200px;
   height: auto;
-}
-.product_info .star i {
-  color: gray;
-}
-.wrapper_product .star i.yellow {
-  color: rgb(202, 86, 9);
-}
-.product_info .image {
-  height: 300px;
   overflow: hidden;
 }
-.product_info .image img + img {
+.product_image{
+  width: 100%;
+  height: 300px;
+}
+.product_image img + img{
   display: none;
 }
-
-.product_info:hover .image img {
+.product_image:hover img  {
   display: none;
 }
-
-.product_info:hover .image img + img {
+.product_image:hover img + img{
   display: block;
 }
 
+/* ------------images/button--------------------------- */
 
-.button_action{
+.font_icon{
+  display: none;
   position: absolute;
-  bottom: 10%;
+  width: 100%;
+  height : auto;
+  bottom: 0;
+}
+.img_icon {
+ width: 100%;
+ height: auto;
+ display: flex;
+ justify-content: space-between;
+}
+.img_icon i{
+  border-radius: 3px;
+  line-height: 3rem;
+  color: white;
+  background-color: blue;
+  text-align: center ;
+  height: 3rem;
+  width: 3rem;
+}
+/* --------------button------------------------- */
+button{
+  border: none;
+  outline: none;
+  background: blue;
+  color: white;
+  margin-top: 3px;
   width: 100%;
   height: auto;
-  display: none;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  padding: 15px 0px;
 }
-
-.product_info:hover .button_action {
-  display: flex;
-}
-
-.button_action button , .btn button{
-  /* display: none; */
-  cursor: pointer;
-  background: blue;
-  color: #ddd;
-  border-radius: 3px;
-  border:none;
-}
-.button_action button {
-  min-width: 50px;
-  min-height: 50px;
-}
-
-.btn button{
-background: blue;
-margin-top: 3 px;
-width: 100%;
-height: 40px;
-font-weight: bold;
-}
-
-/* .product_info:hover button{
+.product_items_1:hover .font_icon{
   display: block;
-} */
-
-.name_product {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  line-height: 5px;
 }
-/* star - sao */
-.star{
-  width: 70%;
+/* -------------rating----------------- */
+.title_product{
+  width: 100%;
+  height: auto;
+  padding: 5px 0px;
+  margin-top: 5px;
+}
+.rating{
   display: flex;
   justify-content: space-around;
-  margin: 5px auto;
+  width:50%;
+  height: auto;
+  margin:  auto;
+}
+.rating i{
+  font-size: 0.7rem;
+}
+.star{
+  color: rgba(226, 156, 4, 0.973);
+}
+.describle{
+  line-height: 1.2;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  text-align: center;
 }
