@@ -1,0 +1,231 @@
+html{
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    padding: 1rem;
+    margin: auto;
+    width: 100rem;
+    min-height: 100rem;
+    background: aliceblue;
+}
+.name{ 
+    width: 100%;
+    line-height: 0.7;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(248, 89, 4);
+}
+.name h2{
+   color: black;
+}
+/* ------------------------- */
+
+.nav_menu{
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+}
+.nav_menu label{
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 1rem 2.5rem;
+    background: aliceblue;
+    border: 2px rgb(114, 3, 3) solid;
+}
+
+.nav_menu label:hover{
+    background: rgb(114, 3, 3);
+    color: white;
+}
+
+/* ------------Action---------------- */
+
+/* --------------images_title----------------- */
+.content{
+    display: none;
+    width: 100%;
+    height : auto;
+    padding: 5px;
+    margin: 5rem;
+}
+.homework{
+    font-size: 2rem;
+    width: calc(100%/3 - 30px);
+}
+.list_homework{
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 25px;
+    width: 100%;
+    color: aliceblue;
+    position: relative;
+    padding: 5px;
+    background:rgb(248, 89, 4);
+}
+
+.list_homework i + i{
+    display: none;
+    position: absolute;
+    top : 0;
+    left: 20px;
+}
+.list_homework i{
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+.list_title_1,
+.list_title_2,
+.list_title_3,
+.list_title_4,
+.list_title_5,
+.list_title_6,
+.list_title_7
+{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+/* ------------------------------ */
+
+#menu_1:checked ~ .content{
+    display: block;
+
+}
+
+
+
+/* ------------------------------- */
+
+#homework_1:checked ~ .list_homework i{
+    display: none;
+}
+#homework_2:checked ~ .list_homework i{
+    display: none;
+}
+#homework_3:checked ~ .list_homework i{
+    display: none;
+}
+#homework_4:checked ~ .list_homework i{
+    display: none;
+}
+#homework_5:checked ~ .list_homework i{
+    display: none;
+}
+#homework_6:checked ~ .list_homework i{
+    display: none;
+}
+#homework_7:checked ~ .list_homework i{
+    display: none;
+}
+#homework_8:checked ~ .list_homework i{
+    display: none;
+}
+#homework_9:checked ~ .list_homework i{
+    display: none;
+}
+#homework_10:checked ~ .list_homework i{
+    display: none;
+}
+#homework_11:checked ~ .list_homework i{
+    display: none;
+}
+/* -------------------------- */
+#homework_1:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_2:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_3:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_4:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_5:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_6:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_7:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_8:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_9:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_10:checked ~ .list_homework i + i{
+    display: block;
+}
+#homework_11:checked ~ .list_homework i + i{
+    display: block;
+}
+/* -------------------------------- */
+#homework_1:checked ~ .list_title_1 {
+    display: block;
+}
+#homework_2:checked ~ .list_title_2 {
+    display: block;
+}
+#homework_3:checked ~ .list_title_3 {
+    display: block;
+}
+#homework_4:checked ~ .list_title_4 {
+    display: block;
+}
+#homework_5:checked ~ .list_title_5 {
+    display: block;
+}
+#homework_6:checked ~ .list_title_6 {
+    display: block;
+}
+#homework_7:checked ~ .list_title_7 {
+    display: block;
+}
+#homework_8:checked ~ .list_title_8 {
+    display: block;
+}
+#homework_9:checked ~ .list_title_9 {
+    display: block;
+}
+#homework_10:checked ~ .list_title_10 {
+    display: block;
+}
+
+
+
+
+
+
+/* ------------------------------- */
+.list_homework label{
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+}
+.list_items i{
+    left: 10px;
+    font-size: 1.5rem;
+    color: rgb(114, 3, 3);
+}
+.list_items{
+    line-height: 1.5;
+    list-style: none;
+}
+
+.list_items a{
+    color: rgb(114, 3, 3);
+    margin-left: 1rem;
+    text-decoration: none;
+}
