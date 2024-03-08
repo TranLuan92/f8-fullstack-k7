@@ -7,7 +7,7 @@ html{
 
 }
 body{
-    background: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+    background: url(../style/login-bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
