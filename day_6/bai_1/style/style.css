@@ -1,0 +1,65 @@
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin:auto;
+}
+.nav_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_list{
+    width: 50%;
+    height: auto;
+}
+.list_product{ 
+    height: 45px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+} 
+.nav_list .list_product li:first-child{
+    min-width: 2rem;
+}
+.nav_list .list_product li:nth-child(5){
+    min-width: 80px;
+}
+.list_product li, .contacts li{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    margin-left: 3px;
+    list-style:none;
+    min-width: 100px;
+    padding: 15px;
+    background: #ddd;
+}
+.hover_menu{
+    min-width: 100%;
+    padding: 0px;
+    position: absolute;
+    top:46px;
+    left: -3.5px;
+    display: none;
+    position: absolute;
+}
+ li, a{
+    font-size: 1.5rem;
+    color: rgb(24, 24, 24);
+    font-weight: 300;
+    text-decoration: none;
+}
+.list_product li:hover ,.contacts li:hover{
+    color:white;
+    background: rgb(0, 119, 255);
+}
+.list_product li:hover .hover_menu{
+    display: block;
+}
+
+.list_product li:hover > a,.contacts li:hover > a{
+    color: white;
+}

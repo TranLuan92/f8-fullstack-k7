@@ -1,0 +1,160 @@
+
+html{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    background-color: #b9dbfa;
+    width: 100vw;
+    height: 100vh;
+
+}
+.container{
+
+    height:auto;
+    width: 1200px;
+    max-width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 100%;
+    height: auto;
+    
+   
+}
+.describle_info{
+    line-height: 1.5;
+    background: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(100%/3 - 20px);
+    box-shadow: 5px -5px 5px 0px #626060 ;
+    
+}
+.title_articles{
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: auto;
+}
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5,
+.icon-6
+{
+    border-radius: 55%;
+    height: 5rem;
+    width: 5rem;
+    top: 8px;
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.icon-1{
+    background: rgb(252, 66, 137);
+    box-shadow: 0px 0px 15px 0px rgb(252, 66, 137) ;
+}
+.icon-2{
+    background: rgb(66, 252, 233);
+    box-shadow: 0px 0px 15px 0px rgb(66, 252, 233);
+}
+.icon-3{
+    background: rgb(252, 205, 66);
+    box-shadow: 0px 0px 15px 0px rgb(252, 205, 66);
+}
+.icon-4{
+    background: rgb(66, 178, 252);
+    box-shadow: 0px 0px 15px 0px rgb(66, 178, 252);
+}
+.icon-5{
+    background: rgb(131, 58, 250);
+    box-shadow: 0px 0px 15px 0px rgb(131, 58, 250);
+}
+.icon-6{
+    background: rgb(135, 244, 57);
+    box-shadow: 0px 0px 15px 0px rgb(135, 244, 57);
+}
+.icon-1 i{
+    position: absolute;
+    top: 18px;
+    left: 19px;;
+}
+.describle_info:hover {
+    /* border: 2px solid indianred; */
+    box-shadow: 0px 0px 5px 3px indianred;
+}
+
+.icon-6 i{
+    position: absolute;
+    top: 16px;
+    left: 15px;;
+}
+.icon-2 i{
+    position: absolute;
+    top: 15px;
+    left: 17px;;
+}
+.icon-3 i {
+    position: absolute;
+    top: 14px;
+    left: 17px;;
+}
+.icon-4 i{
+    position: absolute;
+    top: 16px;
+    left: 15px;;
+}
+.icon-5 i{
+    position: absolute;
+    top: 16px;
+    left: 14px;;
+}
+.title{
+    /* position: absolute; */
+    font-size: 1.2rem;
+    line-height: 0.5;
+    margin-left: 60px;
+    /* left: 70px; */
+}
+p{
+    /* margin-top: 5px; */
+    font-size: 1.5rem;
+}
+li{
+    padding-bottom: 10px;
+    position: relative;
+    list-style: none;
+}
+a{
+    position: absolute;
+    left: -40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-style: bold;
+    color: rgb(73, 73, 249);
+}
+/* ----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
