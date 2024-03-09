@@ -12,8 +12,7 @@ body{
 
 }
 .container{
-
-    height:auto;
+    /* height:auto; */
     width: 1200px;
     max-width: 70%;
     position: absolute;
@@ -25,11 +24,12 @@ body{
     display: flex;
     /* justify-content: space-around; */
     width: 100%;
-    height: auto;
+    height: 250px;;
     
    
 }
 .describle_info{
+    box-sizing: border-box;
     line-height: 1.5;
     background: aliceblue;
     border-radius: 10px;
@@ -92,8 +92,8 @@ body{
     left: 19px;;
 }
 .describle_info:hover {
-    /* border: 2px solid indianred; */
-    box-shadow: 0px 0px 5px 3px indianred;
+    border: 2px solid indianred;
+    /* box-shadow: 0px 0px 5px 3px indianred; */
 }
 
 .icon-6 i{
