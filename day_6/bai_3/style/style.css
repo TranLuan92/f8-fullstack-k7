@@ -188,8 +188,9 @@ body{
     font-size: 2.5rem;
 }
 
-.login_account span{
-    color: red;
+.login_account h2::after{
+    content: "your account";
+    color: #eb6254;
 }
 
 .form input{

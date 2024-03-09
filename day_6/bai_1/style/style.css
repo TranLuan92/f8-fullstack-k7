@@ -21,11 +21,21 @@ html{
     display: flex;
     justify-content: space-between;
 } 
+/* .items_info{
+    display: flex;
+    justify-content: space-around;
+} */
 .nav_list .list_product li:first-child{
     min-width: 2rem;
 }
+.nav_list .list_product li:nth-child(2){
+    min-width: 12rem;
+}
+.nav_list .list_product li:nth-child(4){
+    min-width: 12rem;
+}
 .nav_list .list_product li:nth-child(5){
-    min-width: 80px;
+    min-width: 7rem;
 }
 .list_product li, .contacts li{
     position: relative;
@@ -47,8 +57,9 @@ html{
     position: absolute;
 }
  li, a{
+    display: block;
     font-size: 1.5rem;
-    color: rgb(24, 24, 24);
+    color: rgb(56, 55, 55);
     font-weight: 300;
     text-decoration: none;
 }
