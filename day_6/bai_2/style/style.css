@@ -28,6 +28,7 @@ body{
 }
 
 .describle_info{
+    border: 2px solid aliceblue;
     box-sizing: border-box;
     line-height: 1.5;
     background: aliceblue;
