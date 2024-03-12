@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 62.5%;
+}
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    font-family: 
+}
+.real_estate{
+    margin: auto;
+    width: 1200px;
+    height: auto;
+    padding: 20px;
+}
+.real_estate > p{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.list-real-estate{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.list-real-estate > li{
+    width: auto;
+    height: auto;
+    background: #ddd;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 1.2rem;
+    word-spacing: 0.2rem;
+    color:black;
+    font-style: italic;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 50px;
+    
+
+}
+/* #ae7b37 */
+.list-real-estate li:hover,
+.list-real-estate li:hover a
+{
+    cursor: pointer;
+    background: #ae7b37 ;
+    color: white;
+}
+.list-real-estate li a{
+    display: block;
+    font-style: normal;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.real_eatate_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.list_real_estate_city{
+    cursor: pointer;
+    position: relative;
+    width: calc(100%/3 - 15px);
+    height: auto;
+    box-shadow: 2px -2px 10px 5px #bcbaba;
+    border-radius: 10px ;
+    overflow: hidden;
+}
+.real-estate_city img{
+    width: 100%;
+    background: white ;
+    max-height: 200px;
+}
+.title{
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 30px ;
+}
+.title p{
+    display: block;
+    text-transform: capitalize;
+}
+.title p + p{
+    word-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

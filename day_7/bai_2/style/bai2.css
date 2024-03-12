@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: "Asap", sans-serif; 
+}
+
+.group{
+    position: relative;
+    width: 1200px  ;
+    height: 250px;
+    margin: auto;
+    background: url(./vinhomes-1.jpg) 50% 55% / cover;
+}
+
+.group-logo{
+    position: absolute;
+    /* border: 1px red solid; */
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.logo{
+    bottom: 0;
+    max-width: 20%;
+    height: auto;
+    margin-left: 5%;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.title{
+    /* border: 1px red solid; */
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+    line-height: 2;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+
+}
+.title h1{
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.founded_year p::after{ 
+    content: "1993";
+    font-size: 1.5rem;
+}
+.investment_project p::after{
+    font-size: 1.5rem;
+    content: "35";
+}
+.nav_menu{
+    position: absolute;
+    top: 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.project_info {
+    width: 35%;
+    height:auto;
+    display: flex;
+    list-style: none;
+   
+}
+.project_info li a {
+    font-weight: 500;
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0px 5px 0px;
+    margin: 0px 20px;
+
+}
+.project_info a:hover{
+    color:rgb(247, 77, 5);
+    border-bottom: 3px solid rgb(247, 77, 5);
+}
