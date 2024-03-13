@@ -55,6 +55,7 @@ html{
     margin: 5rem;
 }
 .homework{
+    height: auto;
     font-size: 2rem;
     width: calc(100%/3 - 30px);
 }

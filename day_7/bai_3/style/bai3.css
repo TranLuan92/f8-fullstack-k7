@@ -80,16 +80,17 @@ body{
     cursor: pointer;
     position: relative;
     width: calc(100%/3 - 15px);
-    height: auto;
+    height: 250px;
     box-shadow: 2px -2px 10px 5px #bcbaba;
     border-radius: 10px ;
     overflow: hidden;
 }
-.real-estate_city img{
-    width: 100%;
-    background: white ;
-    max-height: 200px;
-}
+.image_1{background: url(../style/hanoi.jpg)0 0 / cover;}
+.image_2{background: url(../style/2.jpg) 0 0 / cover;}
+.image_3{background: url(../style/3.jpg) 0 0 / cover;}
+.image_4{background: url(../style/4.jpg) 0 0 / cover;}
+.image_5{background: url(../style/5.jpg) 0 0 / cover;}
+.image_6{background: url(../style/6.jpg) 0 0 / cover;}
 .title{
     display: flex ;
     flex-direction: column;
