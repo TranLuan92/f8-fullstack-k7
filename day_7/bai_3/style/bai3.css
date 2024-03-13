@@ -19,7 +19,7 @@ body{
     height: auto;
     padding: 20px;
 }
-.real_estate > p{
+.real_estate > h1{
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 500;
@@ -99,10 +99,12 @@ body{
 .image_5{background: url(../style/5.jpg) 0 0 / cover;}
 .image_6{background: url(../style/6.jpg) 0 0 / cover;}
 
-.list_real_estate_city p{
+.list_real_estate_city h2{
+    font-size: 2.5rem;
     text-transform: capitalize;
 }
- .list_real_estate_city p + p{
+ .list_real_estate_city p{
+    text-transform: capitalize;
     word-spacing: 0.2rem;
     font-size: 1.5rem;
 }
