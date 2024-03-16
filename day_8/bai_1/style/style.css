@@ -53,7 +53,7 @@ i {
   font-weight: 700;
   text-transform: capitalize;
   padding: 5px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .nav_list > li:hover > a,
 .nav_list > li:hover i {
@@ -67,20 +67,23 @@ i {
 /* -----------list_sanbox---------------- */
 
 .list_sandbox {
-  line-height: 2.2;
-  background: rgb(196, 239, 248, 0.7);
+  line-height: 2;
+  background: rgb(196, 239, 248, 0.8);
   display: none;
   padding: 15px;
   color: rgb(85, 85, 85);
   font-weight: 700;
   position: absolute;
   top: 54px;
-  left: 170px;
+  left: 200px;
   font-size: 1.2rem;
   width: 1200px;
   height: auto;
 }
 .list_sandbox_left {
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
   padding-right: 50px;
   width: calc(100% / 3 - 50px);
   height: auto;
@@ -110,7 +113,7 @@ i {
   height: auto;
 }
 .sandbox h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 .list_sandbox a {
@@ -128,6 +131,7 @@ i {
 .sandbox_link ul {
   width: calc(100% / 3);
   height: auto;
+  display: inline-block;
 }
 a:hover {
   color: #aaa8a8;
