@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Slab", serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  background: #fefefe;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+}
+
+.title_articles {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  line-height: 1.5;
+}
+.title_articles h2 {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+}
+.title_articles p {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.frame_quantity_of_products {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------service_layout start */
+.wrapper_products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.service_layout {
+  width: calc(100% / 3 - 50px);
+  height: auto;
+  text-align: center;
+  /* border: 1px solid red; */
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+.wrap_img {
+  width: 100%;
+  height: 200px;
+  /* display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden; */
+}
+.wrap_img p {
+  color: #c2bdb7;
+  font-size: 1.2rem;
+}
+.images_products {
+  width: 100%;
+  height: auto;
+}
+.service_layout h3 {
+  margin: 10px 0px;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.images_products img {
+  width: 30%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+.btn {
+  cursor: pointer;
+  width: 50%;
+  height: auto;
+  padding: 10px 0px;
+  background: #29388e;
+  align-self: center;
+  margin-top: 20px;
+  /* border-radius: 3px; */
+}
+
+/* ---------service_layout end */

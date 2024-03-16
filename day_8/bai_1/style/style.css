@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 61.5%;
+}
+body {
+  background: url(./pexels-pixabay-33545.jpg) 0 0 / cover;
+}
+.nav_sandbox {
+  margin: 0px auto;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_sandbox > h2 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 4rem;
+}
+.caps_look {
+  text-transform: capitalize;
+}
+span {
+  font-size: 3rem;
+  font-style: bold;
+}
+.nav_list {
+  width: auto;
+  height: auto;
+  display: flex;
+}
+.nav_list > li {
+  /* position: relative; */
+  margin: 0px 10px;
+  padding: 15px 5px;
+  display: flex;
+  align-items: center;
+}
+a,
+i {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+.nav_list > li > a {
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 5px;
+  font-size: 1.7rem;
+}
+.nav_list > li:hover > a,
+.nav_list > li:hover i {
+  color: #a4a2a2;
+}
+.nav_list li:hover .list_sandbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -----------list_sanbox---------------- */
+
+.list_sandbox {
+  line-height: 2;
+  background: rgb(196, 239, 248, 0.5);
+  display: none;
+  padding: 10px;
+  color: rgb(85, 85, 85);
+  font-weight: 700;
+  position: absolute;
+  top: 54px;
+  left: 170px;
+  font-size: 1.5rem;
+  width: 1200px;
+  height: auto;
+  box-sizing: border-box;
+}
+.list_sandbox_left {
+  padding-right: 50px;
+  width: calc(100% / 3 - 50px);
+  height: auto;
+}
+.list_sandbox_left::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 50%;
+  left: 29.5%;
+  background: #d5d2d2;
+  transform: translateY(-50%);
+}
+
+.list_sandbox_right {
+  width: calc(100% - (100% / 3 - 50px));
+  height: auto;
+}
+.wrap_sandbox_left {
+  width: 100%;
+  height: auto;
+}
+.sandbox {
+  margin: 20px 30px;
+  width: 100%;
+  height: auto;
+}
+.sandbox h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.list_sandbox a {
+  font-weight: 700;
+  color: rgb(85, 85, 85);
+  padding: 0px;
+}
+
+.sandbox_link {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap;
+  -webkit-line-clamp: 10; */
+}
+.sandbox_link ul {
+  width: calc(100% / 3);
+}
+a:hover {
+  color: #aaa8a8;
+}
+
+.nav_list li:nth-child(8) {
+  padding: 0px;
+  margin: 0px;
+}

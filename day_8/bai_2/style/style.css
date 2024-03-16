@@ -1,0 +1,259 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  /* background: url(./NLE4SQ.jpg) 0 0 / cover; */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.container_shopping_cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f4f4f4;
+}
+.images_product {
+  background: url(./iphone.avif) 0 0 / 100% 100%;
+  width: calc(100% / 3 * 2);
+  height: auto;
+}
+.frame_shopping_cart {
+  width: calc(100% - (100% / 3 * 2));
+  height: auto;
+}
+/* ------header-start -----------*/
+.header {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  position: relative;
+}
+.header h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #3c3432;
+}
+
+.header h2::after {
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+  content: "4";
+  padding: 3px;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: blue;
+  border-radius: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 6px;
+  left: 125px;
+  cursor: pointer;
+}
+
+.icon-close {
+  color: red;
+  font-size: 1.5rem;
+}
+.icon-close:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* ----------header-end------------ */
+
+/* ----------frame-images-product star--- */
+
+.frame_purchased_products {
+  /* background: #748081; */
+  width: 100%;
+  height: auto;
+}
+.price_and_quantity_products {
+  width: 100%;
+  height: 250px;
+  overflow: auto;
+}
+.price_and_quantity_products::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px;
+  background-color: #f4f4f4;
+}
+.price_and_quantity_products::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #c4c3c3;
+  -webkit-box-shadow: 0 0 2px 0px rgb(219, 218, 218);
+}
+.images_quantity_price {
+  border-bottom: 1px solid #d4d4d4;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.frame_images_products {
+  width: calc(100% / 5);
+  padding: 5px;
+  margin-left: 10px;
+  /* border: 1px solid red; */
+}
+.frame_images_products img {
+  width: 50px;
+  height: 50px;
+}
+.frame_price_of_products {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #3c3432;
+  width: calc(100% - (100% / 5));
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #3c3432;
+}
+.quantity_and_price {
+  position: relative;
+  margin-top: 10px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.quantity {
+  color: #b5b3b3;
+  position: relative;
+  padding: 0px 30px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px #d4d4d4 solid;
+  display: flex;
+  justify-content: center;
+}
+.quantity::before {
+  content: "-";
+  position: absolute;
+  left: 0px;
+}
+.quantity::after {
+  position: absolute;
+  content: "+";
+  right: 0px;
+}
+.quantity::before,
+.quantity::after {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.frame_images_products,
+.frame_price_of_products {
+  padding: 15px 0px;
+}
+.close {
+  color: #d4d4d4;
+  padding-top: 5px;
+  width: 10%;
+}
+.close:hover i {
+  cursor: pointer;
+}
+/* ----------frame-images-product end--- */
+/* -----------billing information----start------------ */
+.billing_infomation {
+  background: #f4f4f4;
+  line-height: 2;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.billing_infomation p {
+  font-size: 1.2rem;
+}
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.subtotal h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.subtotal span {
+  color: #ef8565;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+button {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  color: #afafaf;
+  font-size: 1.5rem;
+  background: #ffffff;
+  border: none;
+  outline: 1px #afafaf solid;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+button:hover {
+  background: #4060f3;
+  color: #fff;
+  outline: none;
+}
+.truck_shipping {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.truck {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: #4060f3;
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #4060f3;
+}
+.truck i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.truck_shipping span {
+  font-weight: 700;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+a:hover {
+  color: blue;
+}
+.quantity:hover :nth-child(1):before {
+  color: red;
+}
+/* -----------billing information----end------------ */

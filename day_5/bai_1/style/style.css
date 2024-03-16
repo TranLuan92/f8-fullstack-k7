@@ -12,16 +12,16 @@ html{
     margin: auto;
 }
 /* <!-- word_title start --> */
-h1{
+ p{
     font-family: "Lobster Two", sans-serif;
     font-weight: 400;
-    font-size: 7rem;
+    font-size: 5rem;
     font-style: italic;
 }
 p>span{
     color: red;
 }
-.word_title p {
+.word_title p + p {
     font-size: 2rem;
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -54,6 +54,7 @@ p>span{
     width: 100%;
     height: auto;
     display: flex;
+    
 
 }
 .icon-left, .icon-right, input, select{
