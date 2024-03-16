@@ -70,7 +70,7 @@ i {
   line-height: 2;
   background: rgb(196, 239, 248, 0.7);
   display: none;
-  padding: 10px;
+  padding: 15px;
   color: rgb(85, 85, 85);
   font-weight: 700;
   position: absolute;
@@ -79,7 +79,6 @@ i {
   font-size: 1.5rem;
   width: 1200px;
   height: auto;
-  box-sizing: border-box;
 }
 .list_sandbox_left {
   padding-right: 50px;
@@ -128,6 +127,7 @@ i {
 }
 .sandbox_link ul {
   width: calc(100% / 3);
+  height: auto;
 }
 a:hover {
   color: #aaa8a8;
