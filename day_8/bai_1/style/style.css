@@ -67,7 +67,7 @@ i {
 /* -----------list_sanbox---------------- */
 
 .list_sandbox {
-  line-height: 2;
+  line-height: 2.2;
   background: rgb(196, 239, 248, 0.7);
   display: none;
   padding: 15px;
@@ -76,7 +76,7 @@ i {
   position: absolute;
   top: 54px;
   left: 170px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 1200px;
   height: auto;
 }
