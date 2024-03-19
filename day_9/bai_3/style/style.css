@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* label {
+  width: 100%;
+  height: 40px;
+
+} */
+.container {
+  width: 800px;
+  height: auto;
+  padding: 20px;
+  margin: auto;
+}
+.article_title {
+  text-transform: capitalize;
+  text-align: center;
+}
+.article_title h2 {
+  font-size: 3rem;
+  line-height: 2;
+}
+.info_contact {
+  width: 100%;
+  height: auto;
+}
+
+.processing_user_data,
+.override {
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  position: relative;
+  width: 350px;
+  height: 40px;
+  cursor: p;
+}
+select {
+  text-transform: capitalize;
+  width: 350px;
+  height: 40px;
+  padding-left: 15px;
+  cursor: text;
+}
+/* option {
+  text-transform: capitalize;
+} */
+input::placeholder {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-style: bold;
+  top: 25%;
+  left: 5%;
+
+  position: absolute;
+  transition: transform 1s ease;
+}
+textarea::placeholder {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-style: bold;
+  top: 10%;
+  left: 2%;
+
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.processing_user_data textarea:focus::placeholder,
+.processing_user_data input:focus::placeholder {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translate(0px, 0px);
+}
+.btn {
+  width: 100%;
+  text-align: center;
+}
+.btn a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.5rem;
+  background-color: rgb(99, 99, 251);
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  border-radius: 20px;
+}

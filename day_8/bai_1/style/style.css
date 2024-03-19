@@ -76,14 +76,14 @@ i {
   position: absolute;
   top: 54px;
   left: 200px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 1200px;
   height: auto;
 }
 .list_sandbox_left {
   display: flex;
   flex-direction: column;
-  /* align-content: space-between; */
+  justify-content: space-between;
   padding-right: 50px;
   width: calc(100% / 3 - 50px);
   height: auto;
@@ -108,12 +108,12 @@ i {
   height: auto;
 }
 .sandbox {
-  margin: 20px 30px;
+  margin: 0px 30px;
   width: 100%;
   height: auto;
 }
 .sandbox h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .list_sandbox a {
