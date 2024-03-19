@@ -36,6 +36,7 @@ body {
   height: auto;
   padding-bottom: 40px;
 }
+
 .working_information {
   text-align: right;
   width: calc(100% / 5 * 3);
@@ -43,35 +44,59 @@ body {
   line-height: 1.8;
   padding: 0px 30px;
   position: relative;
+  transition: transform 1s linear;
 }
-.working_information::before {
+.info_project:hover .working_information {
+  transform: translateX(100%);
+  text-align: left;
+}
+.frontier-circle {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.frontier-circle::before {
   content: "";
   width: 1rem;
   height: 1rem;
   background: green;
   border-radius: 55%;
   position: absolute;
-  right: 0px;
+  right: 40%;
   top: 14px;
   transform: translate(50%, 0);
   box-shadow: 0 0 0px 3px #e1dfdf;
+  /* transition: transform 1s linear; */
 }
-.working_information::after {
+
+.frontier-circle::after {
   content: "";
   width: 1.5px;
-  height: 100%;
+  height: 80%;
   background: rgb(184, 185, 186);
   position: absolute;
-  right: 0px;
+  right: 40%;
   top: 35px;
   transform: translate(50%, 0);
 }
-.sidebar_left .info_project:nth-child(4) .working_information::after {
+
+.sidebar_left .frontier-circle:nth-child(4)::after {
   visibility: hidden;
 }
 .year {
+  position: relative;
   width: calc(100% - (100% / 5 * 3));
   height: auto;
+  transform: transform 1s linear;
+  text-align: center;
+  /* padding: 8px 0px; */
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #a1a1a4;
+  transition-delay: 0.5s;
+}
+.info_project:hover .year {
+  transform: translateX(-100%);
 }
 .working_information h2 {
   font-family: "Space Grotesk", sans-serif;
@@ -87,13 +112,6 @@ body {
 .year {
   justify-content: center;
   font-family: "Inter", sans-serif;
-}
-.year {
-  text-align: center;
-  /* padding: 8px 0px; */
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #a1a1a4;
 }
 
 .btn_click_me {
@@ -129,7 +147,7 @@ body {
 .main_photo {
   position: absolute;
   top: 0;
-  left: 40%;
+  left: 50%;
   width: 45%;
   height: 350px;
   background: url(./process-img.webp) no-repeat;
@@ -138,7 +156,7 @@ body {
   position: absolute;
   width: 40%;
   height: 400px;
-  left: 10%;
+  left: 20%;
   top: 15%;
   background: url(./process-img.webp) no-repeat;
 }
