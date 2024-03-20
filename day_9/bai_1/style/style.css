@@ -88,8 +88,7 @@ body {
   width: calc(100% - (100% / 5 * 3));
   height: auto;
   transform: transform 1s linear;
-  text-align: center;
-  /* padding: 8px 0px; */
+  padding: 8px 30px;
   font-size: 1.5rem;
   font-weight: 500;
   color: #a1a1a4;
@@ -97,6 +96,7 @@ body {
 }
 .info_project:hover .year {
   transform: translateX(-100%);
+  text-align: right;
 }
 .working_information h2 {
   font-family: "Space Grotesk", sans-serif;
@@ -108,8 +108,7 @@ body {
   color: #a1a1a4;
 }
 .working_information p,
-.btn_click_me,
-.year {
+.btn_click_me {
   justify-content: center;
   font-family: "Inter", sans-serif;
 }
@@ -130,7 +129,8 @@ body {
 
   transition: background-color 0.3 ease-in-out;
 }
-.btn_click_me:hover a {
+.working_information:hover .btn_click_me a,
+.year:hover ~ .working_information .btn_click_me a {
   background-color: #a26f5a;
   color: #fff;
 }
