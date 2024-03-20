@@ -44,7 +44,7 @@ body {
   line-height: 1.8;
   padding: 0px 30px;
   position: relative;
-  transition: transform 1s linear;
+  transition: transform 0.5s linear;
 }
 .info_project:hover .working_information {
   transform: translateX(100%);
@@ -87,12 +87,12 @@ body {
   position: relative;
   width: calc(100% - (100% / 5 * 3));
   height: auto;
-  transform: transform 1s linear;
+  transition: transform 0.5s linear;
   padding: 8px 30px;
   font-size: 1.5rem;
   font-weight: 500;
   color: #a1a1a4;
-  transition-delay: 0.5s;
+  /* transition-delay: 0.5s; */
 }
 .info_project:hover .year {
   transform: translateX(-100%);

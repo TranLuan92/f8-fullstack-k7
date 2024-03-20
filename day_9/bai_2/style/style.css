@@ -20,7 +20,7 @@ html {
 }
 .wrap_item {
   width: calc(100% / 3 - 30px);
-  /* border: 2px solid #ececee; */
+  border: 2px solid #ececee;
   padding: 20px 30px;
   position: relative;
   margin-top: 40px;
@@ -29,8 +29,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(../../bai_1/style/process-img.webp);
-
+  background: url(../../bai_1/style/process-img.webp);
   transition: background-image 0.5s linear;
 }
 /* .wrap_item:hover {
@@ -56,7 +55,7 @@ p {
 }
 .wrap_item > i {
   z-index: 1;
-  font-size: 8rem;
+  font-size: 5rem;
   color: rgba(162, 112, 90);
   transition: transform 0.5 linear;
 }
