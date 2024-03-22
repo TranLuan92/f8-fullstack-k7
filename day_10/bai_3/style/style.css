@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.geometry__container {
+  width: 500px;
+  height: 250px;
+  margin: 0px auto;
+  position: relative;
+  top: 50%;
+  left: 25%;
+  transform: translate(-75%, 0);
+}
+.geometry__container::before {
+  content: "";
+  z-index: -1;
+  inset: 0;
+  position: absolute;
+  background-color: aqua;
+}
+.geometry__triangle__cover {
+  transform-origin: left top;
+  position: absolute;
+  z-index: 1;
+  border-top: 125px solid #c15049;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 125px solid transparent;
+  transition: transform, z-index, 0.5s linear;
+  transition-delay: 1s;
+}
+.geometry__container:hover .geometry__triangle__cover {
+  transition-delay: 0s;
+  transform: rotateX(180deg);
+  z-index: -2;
+}
+.geometry__triangle__right {
+  position: absolute;
+  z-index: 0;
+  width: 0px;
+  height: 0px;
+  top: 0px;
+  left: 0px;
+  border-top: 0px solid transparent;
+  border-left: 500px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 250px solid #e85f57;
+}
+.geometry__triangle__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 0;
+  content: "";
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 500px solid transparent;
+  border-bottom: 250px solid #e2514b;
+}
+
+/* ==================letter============================ */
+.letter {
+  padding: 40px;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  background: rgb(189, 252, 252);
+  transition: transform 1s linear;
+  transition-delay: 0s;
+  position: absolute;
+  z-index: -1;
+
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.letter::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 440px;
+  position: absolute;
+  border-top: 20px dashed #c15049;
+  z-index: -1;
+  transform: skew(30deg);
+}
+.geometry__container:hover .letter {
+  transition-delay: 0.5s;
+  transform: translate(0, -50%);
+}
+/* ====================== */
