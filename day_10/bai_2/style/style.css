@@ -53,11 +53,10 @@ body {
   height: auto;
   width: 100%;
 }
-.describe_list_menu {
+.describe_move_menu {
   position: absolute;
   top: 0px;
   left: 0px;
-  display: block;
   visibility: hidden;
   background-color: #fff;
   padding: 10px 30px;
@@ -70,10 +69,10 @@ body {
   transition-delay: 0.5s;
 }
 
-#list_menu_one:checked ~ .move_animation .describe_list_menu:nth-child(1),
-#list_menu_two:checked ~ .move_animation .describe_list_menu:nth-child(2),
-#list_menu_three:checked ~ .move_animation .describe_list_menu:nth-child(3),
-#list_menu_four:checked ~ .move_animation .describe_list_menu:nth-child(4) {
+#list_menu_one:checked ~ .move_animation .describe_move_menu:nth-child(1),
+#list_menu_two:checked ~ .move_animation .describe_move_menu:nth-child(2),
+#list_menu_three:checked ~ .move_animation .describe_move_menu:nth-child(3),
+#list_menu_four:checked ~ .move_animation .describe_move_menu:nth-child(4) {
   animation: move_animation 1s linear both;
   transform: rotateX(0);
 }
@@ -90,19 +89,19 @@ body {
     visibility: visible;
   }
   100% {
-    transform: perspective(500px) rotateX(0);
+    transform: perspective(500) rotateX(0);
     opacity: 1;
     visibility: visible;
   }
 }
 
-.describe_list_menu h2 {
+.describe_move_menu h2 {
   padding: 20px 0px;
   font-size: 3rem;
   font-weight: 500;
   text-transform: capitalize;
 }
-.describe_list_menu .letter p {
+.describe_move_menu .letter p {
   font-size: 1.5rem;
   font-weight: 500;
 }
