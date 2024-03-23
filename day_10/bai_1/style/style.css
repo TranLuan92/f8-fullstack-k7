@@ -58,9 +58,8 @@ body {
   transition: transform 0.5s linear;
 }
 #list_menu_one:active ~ .describe_list_menu {
-  transform: rotate3d(-1, 0, 0, 60deg);
   transition-delay: 0;
-  /* transform: skewX(10deg); */
+  transform: matrix3d(1, 0, 0, 0, 1, 1, 0, 0.0025, 0, 1, 1, 0, 0, 0, 0, 1);
 }
 
 .describe_list_menu h2 {
