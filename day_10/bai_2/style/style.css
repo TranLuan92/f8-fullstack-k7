@@ -17,6 +17,8 @@ body {
   margin: 30px auto;
 }
 .nav_list_menu {
+  border: 2px solid aliceblue;
+  padding: 5px;
   background-color: #fff;
   margin-top: 20px;
   height: auto;
@@ -46,21 +48,58 @@ body {
   color: #fff;
   cursor: pointer;
 }
-
+.move_animation {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
 .describe_list_menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  visibility: hidden;
   background-color: #fff;
   padding: 10px 30px;
   line-height: 1.2;
   width: 100%;
   height: auto;
   overflow: auto;
-  transform-origin: left top;
+  transform-origin: top center;
   transition: transform 0.5s linear;
+  transition-delay: 0.5s;
+  /* transform-style: preserve-3d; */
 }
-#list_menu_one:active ~ .describe_list_menu {
+/* #list_menu_one:active ~ .describe_list_menu {
   transition-delay: 0;
-  /* transform: rotateX(-60deg); */
+  transform: rotate3d(1, 1 0, 60deg);
   transform: matrix3d(1, 0, 0, 0, 1, 0.5, 0, 0.002, 0, 1, 1, 0, 0, 0, 0, 1);
+} */
+
+#list_menu_one:checked ~ .move_animation .describe_list_menu:nth-child(1),
+#list_menu_two:checked ~ .move_animation .describe_list_menu:nth-child(2),
+#list_menu_three:checked ~ .move_animation .describe_list_menu:nth-child(3),
+#list_menu_four:checked ~ .move_animation .describe_list_menu:nth-child(4) {
+  animation: move_animation 1s linear both;
+  transform: rotateX(0);
+}
+
+@keyframes move_animation {
+  0% {
+    transform: perspective(500px) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    transform: perspective(500px) rotateX(-90deg);
+    opacity: 0.3;
+    visibility: visible;
+  }
+  100% {
+    transform: perspective(500px) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .describe_list_menu h2 {
