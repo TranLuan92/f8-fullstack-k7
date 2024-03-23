@@ -64,17 +64,11 @@ body {
   line-height: 1.2;
   width: 100%;
   height: auto;
-  overflow: auto;
+  overflow-x: scroll;
   transform-origin: top center;
   transition: transform 0.5s linear;
   transition-delay: 0.5s;
-  /* transform-style: preserve-3d; */
 }
-/* #list_menu_one:active ~ .describe_list_menu {
-  transition-delay: 0;
-  transform: rotate3d(1, 1 0, 60deg);
-  transform: matrix3d(1, 0, 0, 0, 1, 0.5, 0, 0.002, 0, 1, 1, 0, 0, 0, 0, 1);
-} */
 
 #list_menu_one:checked ~ .move_animation .describe_list_menu:nth-child(1),
 #list_menu_two:checked ~ .move_animation .describe_list_menu:nth-child(2),
