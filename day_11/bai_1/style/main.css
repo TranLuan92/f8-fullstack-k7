@@ -252,8 +252,9 @@
   z-index: 0;
 }
 .form_purchased_product:hover::before {
-  transform: rotate(-7deg) scale(100%, 108%);
+  transform: rotate(-5deg) scale(100%, 105%);
 }
+
 .icon_process {
   position: relative;
   z-index: 1;
