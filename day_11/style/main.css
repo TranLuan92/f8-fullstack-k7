@@ -1,0 +1,420 @@
+/* na--.grow_agricultural====start  */
+.logo_grover img {
+  width: auto;
+  height: 40px;
+}
+.menu_nav_list {
+  /* width: calc(100% / 5 * 3); */
+  /* height: auto; */
+  display: flex;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.menu_nav_list li {
+  margin: 0px 20px;
+}
+.menu_nav_list li:nth-child(1) a {
+  color: red;
+}
+.menu_nav_list li > a:hover {
+  color: red;
+}
+
+.menu_nav_list li a {
+  padding: 5px 0px;
+  color: #4d4d4d;
+}
+
+.form_search {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+.icon_search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #929292;
+}
+.icon_shopping_cart {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  color: #4d4d4d;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.icon_shopping_cart::before {
+  content: "";
+  width: 1px;
+  height: 60%;
+  background: #f3f3f3;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
+
+.icon_shopping_cart::after {
+  position: absolute;
+  content: "2";
+  width: 22px;
+  height: 22px;
+  top: -8px;
+  right: -22px;
+  font-size: 1.2rem;
+  background-color: #f86061;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.form_search input {
+  border: none;
+  outline: none;
+  padding: 10px 55px 10px 40px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* nav -- .grow_agricultural====end  */
+
+/* div -- .grow_agricultural ---- start */
+
+.row_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.column_left_agricultural {
+  flex: 1;
+  height: auto;
+}
+.column_right_agricultural {
+  flex: 1;
+  height: auto;
+}
+.strawberry_brand {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #fde4e4;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.strawberry_brand .strawberry_agricultural img {
+  margin-left: 10px;
+  vertical-align: middle;
+  overflow: clip;
+}
+.title_strawberry {
+  color: #f86061;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/* div -- .grow_agricultural ---- end */
+/* content_inner ---- start */
+.title_agricultural {
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+.title_agricultural_color {
+  color: #f86061;
+  font-weight: 500;
+}
+.describe_article {
+  font-size: 1.7rem;
+  color: #676767;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 15px 100px 0px 0px;
+}
+/* content_inner ---- end */
+/* -----btn____ start */
+.btn_by_agricultural_product {
+  width: 100%;
+  height: auto;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn_by_agricultural a {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 20px 10px;
+  background: #f86061;
+  border-radius: 10px;
+}
+.btn_by_agricultural:hover a {
+  background: #fff;
+  color: #f86061;
+  outline: 1px solid#F86061;
+}
+.img_btn .path_format .icon_btn {
+  vertical-align: middle;
+  padding: 0px 10px;
+}
+.btn_oder_process {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.btn_oder_process span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.describe_image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* -----btn____ end */
+/*  process purchase product -- start */
+
+.wrapper_process {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+.wrapper_process h4 {
+  padding: 10px 0px;
+  font-size: 2rem;
+  color: #f86061;
+  font-weight: 400;
+}
+.wrapper_process h2 {
+  flex-wrap: wrap;
+  font-size: 4.6rem;
+  color: #2e2e2e;
+  font-weight: 700;
+}
+.wrapper_process_product {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.grow_process_product {
+  width: 70%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_purchased_product {
+  /* border: 1px red solid; */
+  background: #ffffff;
+  width: calc(100% / 3);
+  height: auto;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 30px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 3;
+}
+.form_purchased_product::before {
+  content: "";
+  position: absolute;
+  background: #f86061;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s linear;
+  transform-origin: top center;
+  z-index: -1;
+}
+.form_purchased_product::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  z-index: 0;
+}
+.form_purchased_product:hover::before {
+  transform: rotate(-7deg) scale(100%, 108%);
+}
+.icon_process {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.icon_process img {
+  margin: 20px 0px;
+  width: auto;
+  height: 70px;
+}
+.form_purchased_product h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  padding: 20px 0px;
+}
+.form_purchased_product p {
+  font-size: 1.5rem;
+  color: #7f6767;
+  position: relative;
+  z-index: 1;
+}
+/*  process purchase product -- end */
+/* .grow_agricultural_container - page3 ---start */
+.column_left_agricultural_page_three {
+  width: 60%;
+  height: auto;
+}
+.column_left_agricultural_page3 img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.column_right_agricultural_page_three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+}
+.title_agricultural_page_three {
+  color: #03a66b;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.title_page_three {
+  padding: 10px 0px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+/* .grow_agricultural_container - page3 ---end */
+/* .grow_agricultural_container - 4 ---start */
+.column_left_agricultural_page_four,
+.column_right_agricultural_page_four {
+  width: 50%;
+  height: auto;
+}
+.column_right_agricultural_page_four {
+  width: 50%;
+  height: auto;
+}
+
+.column_left_agricultural_page_four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title_agricultural_page_four {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f9ba45;
+}
+/* .grow_agricultural_container - 4 ---end */
+/* .grow_agricultural_container - 5 ---start */
+.column_left_agricultural_page_five {
+  width: 50%;
+  height: auto;
+}
+.column_left_agricultural_page_five img {
+  width: auto;
+
+  display: block;
+}
+
+.title_agricultural_page_five {
+  color: #f86061;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.btn_by_agricultural_page_five {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 20px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+.btn_by_agricultural_page_five:hover {
+  cursor: pointer;
+}
+.column_left_agricultural_page_five .describe_image {
+  display: flex;
+  justify-content: center;
+}
+.btn_by_agricultural_page_five a {
+  color: #2e2e2e;
+}
+
+/* .grow_agricultural_container - 5 ---end */
+/* footer start */
+.column_left_agricultural_footer {
+  width: 40%;
+  height: auto;
+}
+.column_right_agricultural_footer {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.column_menu {
+  padding: 10px 0px;
+  width: 30%;
+  height: auto;
+}
+.column_menu h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  text-transform: capitalize;
+}
+.list_menu {
+  padding-top: 25px;
+  line-height: 2.5;
+  width: 100%;
+  height: auto;
+  text-transform: capitalize;
+}
+.list_menu a {
+  text-decoration: none;
+  color: #676767;
+}
+.describe_text {
+  padding-top: 25px;
+  line-height: 1.5;
+  color: #676767;
+}
+.row_container_footer {
+  border-top: #e2e2e2 1px solid;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #676767;
+  font-size: 1.2rem;
+  padding: 20px 0px;
+}
+
+/* footer and */

@@ -35,7 +35,9 @@ body {
   padding: 10px 30px;
   height: auto;
 }
-
+.nav_list_menu {
+  user-select: inset;
+}
 #list_menu_one:checked ~ .nav_list_menu label:nth-child(1),
 #list_menu_two:checked ~ .nav_list_menu label:nth-child(2),
 #list_menu_three:checked ~ .nav_list_menu label:nth-child(3),
