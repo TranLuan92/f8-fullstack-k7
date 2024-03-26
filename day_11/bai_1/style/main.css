@@ -158,8 +158,9 @@
   padding: 20px 10px;
   background: #f86061;
   border-radius: 10px;
+  transition: background, outline, 0.2s linear;
 }
-.btn_by_agricultural:hover a {
+.btn_by_agricultural:hover a{
   background: #fff;
   color: #f86061;
   outline: 1px solid#F86061;
@@ -231,10 +232,7 @@
   content: "";
   position: absolute;
   background: #f86061;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  inset: 0;
   border-radius: 15px;
   transition: transform 0.3s linear;
   transform-origin: top center;
@@ -244,16 +242,14 @@
   content: "";
   position: absolute;
   background: #fff;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
+  inset: 0;
+  border-radius: 10px;
   z-index: 0;
 }
 .form_purchased_product:hover::before {
   transform: rotate(-5deg) scale(100%, 105%);
 }
+
 
 .icon_process {
   position: relative;
