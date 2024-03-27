@@ -34,7 +34,9 @@
   /* border: 1px solid blue; */
   position: relative;
 }
-
+input:focus::placeholder{
+  visibility: hidden;
+}
 .icon_search {
   position: absolute;
   top: 10px;
@@ -124,9 +126,9 @@
 /* div -- .grow_agricultural ---- end */
 /* content_inner ---- start */
 .title_agricultural {
-  font-size: 6.5rem;
+  font-size: 7rem;
   font-weight: 700;
-  color: #4d4d4d;
+  color: #2E2E2E;
 }
 .title_agricultural_color {
   color: #f86061;
@@ -411,6 +413,9 @@
 .list_menu a {
   text-decoration: none;
   color: #676767;
+}
+.list_menu a:hover{
+  color: #2e2e2e;
 }
 .describe_text {
   padding-top: 25px;
