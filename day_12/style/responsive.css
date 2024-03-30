@@ -1,0 +1,231 @@
+@media screen and (max-width: 1398.98px) {
+  .content_left_inner,
+  .content_right_inner {
+    max-width: 50%;
+  }
+  .main_title {
+    font-size: 5rem;
+    max-width: 100%;
+  }
+  .grover_title_all,
+  .grover_title_page_two {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .grover_title_all,
+  .grover_title_page_two {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+  .btn_order_process > a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+  }
+
+  .describe_main_title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .header_row_grover,
+  .frame_form_menu_and_search,
+  .nav__menu,
+  .nav_list_menu,
+  .row_grover,
+  .column_right_footer,
+  .list_menu,
+  .content_left_inner,
+  .content_right_inner {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn_process_purchased_product a {
+    font-size: 1.8rem;
+    padding: 20px 40px;
+  }
+  .content_left_inner_page_five,
+  .content_right_inner_page_five {
+    width: 100%;
+  }
+  .content_left_inner_page_five,
+  .content_right_inner_page_five {
+    margin: 20px 0px;
+  }
+  .frame_form_search {
+    padding-left: 20px;
+    line-height: 2;
+    gap: 5px;
+  }
+  .header-form-search {
+    width: 100%;
+  }
+  .header_logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon_list_menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav_list_menu {
+    gap: 0px;
+  }
+  .main_title {
+    font-size: 4rem;
+  }
+  .describe_main_title {
+    font-size: 1.4rem;
+  }
+  .purchased_product_title {
+    font-size: 1.5rem;
+  }
+  .describe_icon_process {
+    font-size: 1.2rem;
+  }
+  .grover_title_all,
+  .grover_title_page_two {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .row_grover_page_four {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* }
+@media screen and (max-width: 990.98px) { */
+  .header-form-search {
+    width: 300px !important;
+  }
+  .content_right_inner,
+  .content_left_inner {
+    max-width: 100%;
+  }
+  .nav_menu,
+  .nav_list_menu,
+  .header-form-search,
+  .frame_form_menu_and_search {
+    width: 100%;
+    align-items: center;
+  }
+  .describe_article_article,
+  .row_grover_footer,
+  .column_left_footer,
+  .column_right_footer,
+  .column_menu,
+  .list_menu_footer,
+  .list_menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  /* .column_menu,
+  .list_menu_footer,
+  .list_menu {
+    width: 100%;
+  } */
+  .column_menu {
+    margin-top: 20px;
+  }
+  .grover_title_all,
+  .grover_title_page_two {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 766.98px) {
+  .main_title {
+    font-size: 2.5rem;
+  }
+  .describe_main_title {
+    font-size: 1.4rem;
+  }
+  .grover_title_all,
+  .grover_title_page_two {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+  .content_right_inner_page_five,
+  .grover_grover_title,
+  .content_right_inner,
+  .content_left_inner {
+    max-width: 100%;
+    text-align: center;
+  }
+  .btn_app_container,
+  .btn_process_purchased_product {
+    width: 100%;
+
+    justify-content: center;
+  }
+  .row_grow_page_two {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_purchased_product {
+    width: 80%;
+  }
+  .purchased_product_title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .describe_icon_process {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 574.98px) {
+  .btn_order_process > a {
+    font-size: 1rem;
+    padding: 20px 10px;
+  }
+  .btn > a {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .btn_app_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row_container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }
+  .btn_app {
+    width: fit-content;
+  }
+  .marketing_image_page_five {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 345.98px) {
+  .btn_order_process > a {
+    display: block;
+    font-size: 1rem;
+    padding: 15px 10px;
+  }
+  .btn > a {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .header_logo {
+    flex-direction: column;
+    align-items: start;
+  }
+  .header-form-search,
+  .header-form-search > input {
+    max-width: 100%;
+  }
+  .btn_app a {
+    width: fit-content;
+    padding: 20px 5px;
+  }
+}
