@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Times New Roman", Times, serif;
+}
+.container-menu {
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.wrap-menu {
+  align-items: center;
+  position: relative;
+  font-size: 2rem;
+  margin: 0px auto;
+  width: 80%;
+  height: auto;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.logo {
+  width: 30%;
+  height: auto;
+}
+.list-menu {
+  width: 50%;
+}
+.nav-menu {
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.contact-menu {
+  align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: #75b7eb;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.icon_menu {
+  font-size: 4rem;
+  margin-left: 30px;
+  color: rgb(184, 184, 184);
+  display: none;
+}
+
+/* Menu: #333
+Contact: #75b7eb */
+@media screen and (max-width: 767px) {
+  .icon_menu {
+    display: block;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(63, 63, 63, 0.5);
+    display: none;
+  }
+  #list-menu-icon:checked ~ .overlay {
+    display: block;
+  }
+  #list-menu-icon:checked ~ .wrapper .list-menu {
+    transform: translate(0, 0);
+  }
+  .list-menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    background: #333;
+    height: 100%;
+    transform: translate(-100%, 0);
+    transition: all 0.3s linear;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 30px;
+    padding: 0px 30px;
+  }
+  .nav-menu a {
+    color: #f9f6f6;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 100;
+    padding: 20px 20px;
+    /* display: block; */
+  }
+}
+/* ------------------ */

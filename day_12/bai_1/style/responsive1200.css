@@ -1,0 +1,52 @@
+@media screen and (max-width: 1199.98px) {
+  .container_grover_website {
+    max-width: 100%;
+  }
+  .wrap_grover {
+    max-width: 100%;
+  }
+  .row_grover {
+    max-width: 1080px;
+    margin: 0px auto;
+  }
+  .content_left_inner,
+  .content_right_inner {
+    max-width: 50%;
+  }
+
+  .purchased_product_title {
+    font-size: 2rem;
+  }
+  .describe_icon_process {
+    font-size: 1.4rem;
+  }
+
+  .btn_process_purchased_product a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 1.6rem;
+  }
+
+  /* describe_article */
+  .page_title_content {
+    font-size: 1.8rem;
+  }
+  .grover_title_all {
+    font-size: 3.2rem;
+  }
+  .describe_main_title {
+    font-size: 1.6rem;
+  }
+  /* describe_article end */
+  /* footer_start */
+  .list_menu,
+  .describe_article_article,
+  .describe_text {
+    font-size: 1.4rem;
+  }
+  .marketing_image_page_five {
+    width: 70%;
+    height: auto;
+  }
+  /* footer_end */
+}

@@ -9,28 +9,24 @@ html {
   font-family: "Poppins", sans-serif;
   line-height: 1.2;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
+
 .container_grover_website {
   width: 100%;
+  height: auto;
   padding: 50px 0px;
-  transition: all 0.3 linear;
+  transition: all 0.3s linear;
 }
 .wrap_grover {
-  width: 80%;
-  height: auto;
-  padding: 0px 10px;
-  margin: 0px auto;
+  width: 100%;
 }
 
 .row_grover {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   justify-content: space-around;
-  /* padding: 30px 0; */
+  padding: 0px 10px;
+  margin: 0px auto;
 }
 /* --------------------- */
 /* title h3 */

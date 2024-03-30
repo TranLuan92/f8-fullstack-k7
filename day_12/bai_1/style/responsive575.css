@@ -1,0 +1,38 @@
+@media screen and (max-width: 774.98px) {
+  .container_grover_website {
+    max-width: 100%;
+  }
+  .row_grover {
+    max-width: 540px;
+  }
+  .btn_order_process a {
+    font-size: 1.2rem;
+  }
+  .main_title {
+    font-size: 3rem;
+  }
+  .describe_main_title {
+    font-size: 1.4rem;
+  }
+  /* describe_article */
+  .page_title_content {
+    font-size: 1.8rem;
+  }
+  .grover_title_all {
+    font-size: 3rem;
+  }
+  .describe_main_title {
+    font-size: 1.6rem;
+  }
+  .btn_app_container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .row_container_footer {
+    flex-direction: column;
+    line-height: 1.6;
+    align-items: center;
+  }
+  /* describe_article end */
+}
