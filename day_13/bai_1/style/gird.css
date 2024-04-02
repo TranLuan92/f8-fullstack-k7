@@ -8,7 +8,7 @@
 }
 :root {
   --container-width: 1400px;
-  --column-space: 30px;
+  --column-space: 20px;
 }
 /* Please do not add or subtract to the container */
 .container {
