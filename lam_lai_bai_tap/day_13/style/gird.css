@@ -7,15 +7,14 @@
   box-sizing: border-box;
 }
 :root {
-  --container-width: 1400px;
-  --row-max-width: 70%;
-  --col-max-width: 50%;
+  --container-width: 1200px;
   --column-space: 20px;
 }
 /* Please do not add or subtract to the container */
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0px 10px;
 }
 [class*="col-"] {
   flex-basis: calc(1 / 12 * 100% * var(--column-number));

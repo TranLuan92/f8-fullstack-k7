@@ -1,0 +1,87 @@
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+.home_travel {
+  width: 100vh;
+  height: 100vh;
+}
+.wrap_header {
+  max-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  padding: 2rem 10%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.row_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-link);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.logo span {
+  color: var(--color-content);
+}
+.nav_list_menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.nav_list_menu a {
+  color: var(--color-link);
+  text-decoration: none;
+  text-transform: var(--content-transform-capitalize);
+  font-size: 1.8rem;
+  margin: 0 1rem;
+}
+/* menu end */
+/* icon_link */
+.icon_link {
+  display: flex;
+  font-size: 2.5rem;
+  color: var(--color-link);
+  align-items: baseline;
+}
+.moon_setting > .far {
+  position: absolute;
+  left: 0px;
+}
+.search_close > .fas:nth-child(2) {
+  position: absolute;
+  left: 0px;
+}
+.moon_setting > label:nth-child(2),
+.search_close > label:nth-child(2) {
+  visibility: hidden;
+}
+.moon_setting,
+.search_close,
+.icon {
+  position: relative;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.icon_link label:hover {
+  color: var(--color-effect);
+}
+/* icon_link end */
+#effect_icon:checked ~ .wrap_header .icon_link .moon,
+#effect_icon:checked ~ .wrap_header .icon_link .moon {
+  visibility: hidden;
+}
+#effect_icon:checked ~ .wrap_header .icon_link .setting {
+  visibility: visible;
+}
+/* end header */
+/* ----------------------------------------- */

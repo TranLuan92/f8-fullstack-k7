@@ -1,0 +1,409 @@
+html {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.2;
+}
+
+.wrapper_landing {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: url(../img/landing-background.jpg) 50% 50% / cover;
+}
+/* .viking {
+  width: 64%;
+  height: 140%;
+  border-radius: 50%;
+  background: url(../image/dot-texture.png) 0 0 repeat aliceblue ;
+  position: absolute;
+  top: -20%;
+  right: -30%;
+} */
+.wrap_content {
+  display: flex;
+  margin: 0px -10px;
+}
+.row_logo {
+  max-width: 100%;
+  height: auto;
+}
+/* col-left start */
+.row_content_left_describe {
+  width: 100%;
+  padding-top: 80px;
+}
+.row_content_left {
+  max-width: 100%;
+  height: auto;
+}
+:root {
+  --row-center-content-left: 0px auto;
+  --column-title-left-width: 70%;
+  --size-form-width: 100%;
+  --text-content-left-center: center;
+  --content-left-text-color: #fff;
+}
+.col-logo {
+  margin: var(--row-center-content-left);
+  max-width: 45px;
+  height: 60px;
+  fill: #fff;
+}
+.col-text {
+  text-align: var(--text-content-left-center);
+  margin: var(--row-center-content-left);
+  max-width: var(--column-title-left-width);
+  color: var(--content-left-text-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.col-text h2 {
+  font-weight: 500;
+}
+.col-main-title {
+  max-width: 100%;
+  text-align: var(--text-content-left-center);
+  margin: var(--row-center-content-left);
+  color: var(--content-left-text-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+.col-main-title h1 {
+  font-weight: 900;
+  font-size: 10rem;
+  line-height: 1;
+}
+.col-describe {
+  max-width: var(--column-title-left-width);
+  text-align: var(--text-content-left-center);
+  margin: var(--row-center-content-left);
+  color: var(--content-left-text-color);
+}
+.col-describe p {
+  font-size: 1.8rem;
+  padding-top: 20px;
+  line-height: 1.4;
+}
+.center_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* col-left end */
+/* ---------------------------------------------------- */
+/* content right */
+.col-content-right {
+  position: relative;
+}
+.row_content_right {
+  max-width: var(--size-form-width);
+  height: auto;
+}
+.row_logo_form_right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-30%, -30%);
+}
+.col-form {
+  max-width: var(--size-form-width);
+  position: relative;
+  padding: 0px 30px;
+}
+.col_button_left {
+  max-width: var(--column-title-left-width);
+  color: var(--content-left-text-color);
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  font-weight: 600;
+  display: flex;
+}
+.col_button_left span {
+  margin: 0px auto;
+  padding: 20px 50px;
+  display: block;
+  user-select: none;
+}
+#chose-one:checked
+  ~ .wrap_content
+  .row_content_left
+  .col_button_left
+  label:nth-child(1)
+  span,
+#chose-two:checked
+  ~ .wrap_content
+  .row_content_left
+  .col_button_left
+  label:nth-child(2)
+  span {
+  background-color: #fff;
+  color: #333;
+}
+.form_login {
+  margin: 50px auto;
+  max-width: 100%;
+  padding: 50px 30px;
+  background: #fff;
+  border-radius: 20px;
+  height: auto;
+  transition: all 0.3s linear;
+  /* display: none; */
+}
+.form_create_account {
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 50px 30px;
+  background: #fff;
+  /* border-radius: 20px */
+  height: 100vh;
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+#chose-two:checked
+  ~ .wrap_content
+  .col-content-right
+  .row_content_right
+  .form_login {
+  transform: translateX(50%);
+  /* display: none; */
+  position: absolute;
+  opacity: 0;
+}
+
+#chose-one:checked
+  ~ .wrap_content
+  .col-content-right
+  .row_content_right
+  .form_create_account {
+  transform: translateX(50%);
+  /* display: none; */
+  opacity: 0;
+}
+.describe_create {
+  max-width: 70%;
+  margin: 20px auto;
+}
+.describe_create_account {
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #adafca;
+  font-size: 1.2rem;
+}
+.describe_create_account span {
+  color: #00c7d9;
+  font-weight: 700;
+  cursor: pointer;
+}
+.row_form_right {
+  max-width: 100%;
+  height: auto;
+}
+.col-title-form {
+  max-width: fit-content;
+  margin: 30px auto;
+}
+.col-title-form h2 {
+  font-size: 2.5rem;
+  font-weight: 500px;
+}
+/* form input */
+.col-form-input {
+  position: relative;
+  margin: 0px auto;
+  box-sizing: content-box;
+  max-width: 70%;
+}
+.col-form-input input {
+  position: relative;
+  margin: 10px auto;
+  width: 100%;
+  padding: 15px 25px;
+  font-size: 2rem;
+  border: 1px solid #5853e5;
+  border-radius: 10px;
+  background: transparent;
+  z-index: 1;
+}
+.accept {
+  margin: 30px auto;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* form input end */
+/* placeholder input */
+
+.col-form-input span {
+  color: #adafca;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 700;
+  top: 0;
+  transform: translateY(27px);
+  left: 30px;
+  background: #fff;
+  padding: 0px 5px;
+  transition: all 0.3s linear;
+  background: transparent;
+}
+.col-form-input input:valid + span,
+.col-form-input input:focus + span {
+  transform: translateY(0);
+  z-index: 1;
+  background: #fff;
+}
+/* placeholder input */
+
+/* --------------------------------------------- */
+/* check */
+.frame_check .name_check {
+  padding-left: 25px;
+  user-select: none;
+}
+.frame_check {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.accept a {
+  color: rgb(111, 112, 113);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.accept a:hover {
+  color: #00c7d9;
+}
+.frame_check .check {
+  width: 20px;
+  height: 20px;
+  border: solid 2px rgb(159, 159, 160);
+  border-radius: 3px;
+  top: -1px;
+  position: absolute;
+}
+.frame_check .check::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  rotate: 45deg;
+  background: #fff;
+  top: 7px;
+  left: 1px;
+}
+.frame_check .check::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  rotate: -45deg;
+  background: #fff;
+  top: 7px;
+  left: 1px;
+}
+#check:checked + .check {
+  background: #23d2e2;
+  border-color: #23d2e2;
+}
+
+/* check end */
+/* ---------------------------------------- */
+/* button start */
+.button_login {
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+}
+.button_login a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn_login {
+  width: 70%;
+  overflow: hidden;
+  font-size: 1.4rem;
+  padding: 20px 0px;
+  background: #615dfa;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* button end */
+/* ---------------------------------------------- */
+/* boundary  start */
+.boundary {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 50px auto;
+  max-width: fit-content;
+}
+.boundary::before {
+  content: "";
+  width: 20%;
+  height: 1px;
+  top: 50%;
+  left: -25%;
+
+  position: absolute;
+  background-color: rgb(147, 148, 149);
+}
+.boundary::after {
+  content: "";
+  width: 20%;
+  height: 1px;
+  top: 50%;
+  right: -25%;
+  position: absolute;
+  background-color: rgb(147, 148, 149);
+}
+/* boundary  end */
+/* icon_link */
+.icon_link {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  cursor: pointer;
+  margin: 0px 5px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 5px;
+}
+.icon a {
+  color: #fff;
+}
+.icon i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.face_color {
+  background: #3763d2;
+}
+.message_color {
+  background: #7b5dfa;
+}
+.youtube_color {
+  background: #fd434f;
+}
+.twitch_color {
+  background: #00c7d9;
+}
+/* icon_link end */
+
+/* content right end */

@@ -7,10 +7,12 @@
   box-sizing: border-box;
 }
 :root {
-  --container-width: 1400px;
-  --row-max-width: 70%;
-  --col-max-width: 50%;
+  --container-width: 1200px;
   --column-space: 20px;
+  /* ----- */
+  --color-effect: orange;
+  --color-link: #fff;
+  --content-transform-capitalize: capitalize;
 }
 /* Please do not add or subtract to the container */
 .container {

@@ -20,7 +20,9 @@
     <div class="wrap_viking">
       <div class="container">
         <div class="row_viking">
-          <div class="col-12 col-sm-12 col-xl-6">
+          <input type="radio" id="chose_one" name="one" hidden checked />
+          <input type="radio" id="chose_two" name="one" hidden />
+          <div class="col-12 col-sm-12 col-xl-6 content-container">
             <div class="row_wrap_viking row_left">
               <!-- col- start -->
               <div class="col-12 col-lg-12 col-xxl-6">
@@ -60,15 +62,16 @@
                 </div>
               </div>
               <!-- col- end -->
+
               <!-- col- start -->
               <div class="col-12">
                 <div class="btn_select">
                   <button class="btn_action">
-                    <label for="chose_one">
+                    <label for="chose_one" class="btn-login">
                       <span>Login</span>
                     </label>
                     <!-- ------ -->
-                    <label for="chose_two">
+                    <label for="chose_two" class="btn-register">
                       <span>Register</span>
                     </label>
                   </button>
@@ -78,19 +81,11 @@
             </div>
           </div>
           <!-- .column_viking_right start  -->
-          <div class="col-12 col-sm-12 col-xl-6">
+          <div class="form-container col-12 col-sm-12 col-xl-6">
             <div class="row_wrap_viking">
               <div class="col-12">
                 <div class="row_form">
                   <!-- form user name -->
-                  <input
-                    type="radio"
-                    id="chose_one"
-                    name="one"
-                    hidden
-                    checked
-                  />
-
                   <form class="frame_form_login">
                     <div class="subtitle_form">
                       <h2>account login</h2>
@@ -146,7 +141,6 @@
                   <!-- form user name end -->
                   <!-- form Create your Account! -->
 
-                  <input type="radio" id="chose_two" name="one" hidden />
                   <form class="form_create_account">
                     <div class="subtitle_form">
                       <h2>Create your Account!</h2>
