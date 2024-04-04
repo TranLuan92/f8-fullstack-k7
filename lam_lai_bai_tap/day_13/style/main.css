@@ -10,15 +10,16 @@ html {
   position: fixed;
   background: url(../img/landing-background.jpg) 50% 50% / cover;
 }
-/* .viking {
+.viking {
   width: 64%;
   height: 140%;
   border-radius: 50%;
-  background: url(../image/dot-texture.png) 0 0 repeat aliceblue ;
+  background: url(../image/dot-texture.png) 0 0 repeat rgb(225, 222, 222);
   position: absolute;
   top: -20%;
   right: -30%;
-} */
+  z-index: -1;
+}
 .wrap_content {
   display: flex;
   margin: 0px -10px;
@@ -144,13 +145,13 @@ html {
 }
 .form_login {
   margin: 50px auto;
-  max-width: 100%;
+  width: 100%;
   padding: 50px 30px;
   background: #fff;
   border-radius: 20px;
   height: auto;
   transition: all 0.3s linear;
-  /* display: none; */
+  /* opacity: 1; */
 }
 .form_create_account {
   position: absolute;
@@ -161,8 +162,9 @@ html {
   background: #fff;
   /* border-radius: 20px */
   height: 100vh;
+  transform: translateX(50%);
   transition: all 0.3s linear;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 #chose-two:checked
@@ -174,6 +176,24 @@ html {
   /* display: none; */
   position: absolute;
   opacity: 0;
+}
+#chose-two:checked
+  ~ .wrap_content
+  .col-content-right
+  .row_content_right
+  .form_create_account {
+  transform: translateX(0);
+  position: absolute;
+  opacity: 1;
+}
+#chose-one:checked
+  ~ .wrap_content
+  .col-content-right
+  .row_content_right
+  .form_login {
+  transform: translateX(0);
+  position: absolute;
+  opacity: 1;
 }
 
 #chose-one:checked
