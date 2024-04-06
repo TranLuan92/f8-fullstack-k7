@@ -39,6 +39,7 @@ body {
   display: flex;
   align-items: center;
 }
+/* ______________________________________icon */
 .row_header .icon_menu {
   font-size: 2rem;
   color: #fff;
@@ -251,6 +252,7 @@ body {
 }
 /* btn price book tickets -------------------------------*/
 .fare {
+  flex-wrap: wrap;
   width: 90%;
   position: absolute;
   left: 50%;
@@ -276,21 +278,23 @@ body {
 }
 
 .price_tourism {
-  flex-basis: 50%;
-  max-width: 50%;
+  /* flex-basis: 50%;
+  max-width: 50%; */
+  flex: 1 1 50%;
   color: var(--color-effect);
   text-align: left;
 }
 .book_tickets {
-  flex-basis: 50%;
-  max-width: 50%;
+  /* max-width: 100%; */
+  flex: 1 1 50%;
   color: var(--color-effect);
   text-align: center;
 }
 .book_tickets a {
   display: inline-block;
   font-size: 2rem;
-  padding: 10px 200px;
+  width: 100%;
+  padding: 10px 0;
   border-radius: 99px;
   border: 2px solid var(--color-effect);
   background: var(--color-effect);
@@ -395,11 +399,16 @@ video {
 /* ______________________btn_travel_______________ */
 .btn_travel {
   margin-top: 30px;
+  max-width: 60%;
 }
 .btn_travel a {
+  max-width: 100%;
+  justify-content: center;
   color: #fff;
   background: var(--color-effect);
   font-size: 2.5rem;
+  display: flex;
+  flex: 1 1 50%;
   padding: 5px 20px;
   border: 1px solid var(--color-effect);
   border-radius: 99px;
@@ -855,10 +864,21 @@ textarea {
 }
 
 /* frame_pictures_tourist______________________________________ end */
-body {
-  /* background: url(../img/banner-bg.jpg) 0 0; */
+.wrap_image {
+  width: 100%;
+  height: 40vh;
+  background: url(../img/banner-bg.jpg) center center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.wrap_image::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: rgb(0, 0, 0, 0.5);
 }
 .row {
+  padding: 50px 0 30px;
   width: 100%;
   height: 30vh;
   display: flex;
@@ -867,18 +887,61 @@ body {
   align-items: center;
   line-height: 1.5;
   background: rgba(0, 0, 0, 0);
+  background-attachment: fixed;
 }
 .row .first_one {
+  margin-top: 50px;
+  position: relative;
   font-size: 2rem;
   color: var(--color-effect);
 }
 .row h3 {
+  position: relative;
   color: #fff;
   font-size: 3.5rem;
 }
 .row p {
+  position: relative;
   color: #fff;
   font-size: 1.8rem;
-  font-weight: ;
+  font-weight: 500;
   padding: 10px 0 30px;
+}
+
+/* responsive */
+@media screen and (min-width: 576px), (max-width: 576px) {
+  .icon_menu {
+    display: block !important;
+  }
+  /* .logo {
+    display: none !important;
+  } */
+  .nav_menu {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    animation: all 0.2s linear;
+    transform-origin: top center;
+  }
+  #icon_menu:checked ~ .wrap_header .nav_menu {
+    animation: translate 0.3s linear;
+  }
+
+  .nav_list_menu {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: #555; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon_menu {
+    display: none !important;
+  }
+  .logo {
+    display: block !important;
+  }
 }
