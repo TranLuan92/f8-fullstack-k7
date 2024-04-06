@@ -25,59 +25,796 @@
     </div>
     <div class="homepage_travel">
       <input type="checkbox" id="effect_icon" hidden />
-      <header class="wrap_header">
-        <div class="container">
-          <div class="row_container">
+      <input type="radio" id="icon_list_menu_1" hidden />
+      <input type="checkbox" id="icon_list_menu_2" hidden />
+      <input type="checkbox" id="icon_list_menu_3" hidden />
+      <input type="checkbox" id="icon_list_menu_4" hidden />
+      <input type="checkbox" id="icon_list_menu_5" hidden />
+      <input type="checkbox" id="icon_list_menu_6" hidden />
+      <div for="effect_icon" class="overlay"></div>
+      <header class="wrap_header col-12 col-md-12 col-lg-12">
+        <div class="container_header">
+          <div class="row_header">
+            <!-- <div class="icon_menu">
+              <label class="fa-solid fa-bars"></label>
+            </div> -->
+            <label for="icon_list_menu" class="icon_menu fa-solid fa-bars">
+            </label>
             <div class="logo">
               <a href=""> <span>s</span>travel </a>
             </div>
+            <!-- nav menu start -->
             <nav class="nav_menu">
               <ul class="nav_list_menu">
                 <li>
-                  <label for=""><a href="">trang chủ </a></label>
+                  <label for="icon_list_menu_1">
+                    <a href="">trang chủ </a>
+                  </label>
                 </li>
                 <li>
-                  <label for=""><a href="">đặt lịch</a></label>
+                  <label for="icon_list_menu_2"><a href="">about</a></label>
                 </li>
                 <li>
-                  <label for=""><a href="">ưu đãi</a></label>
+                  <label for="icon_list_menu_3"><a href="">điểm đến</a></label>
                 </li>
                 <li>
-                  <label for=""><a href="">du lịch</a></label>
+                  <label for="icon_list_menu_4"><a href="">dịch vụ</a></label>
                 </li>
                 <li>
-                  <label for=""><a href="">thư viện</a></label>
+                  <label for="icon_list_menu_5"><a href="">ảnh</a></label>
                 </li>
                 <li>
-                  <label for=""><a href="">đánh giá</a></label>
-                </li>
-                <li>
-                  <label for=""><a href="">liên hệ</a></label>
+                  <label for="icon_list_menu_6"><a href="">block</a></label>
                 </li>
               </ul>
             </nav>
+            <!-- nav menu end --------------------------------------->
+            <!-- icon link -->
             <div class="icon_link">
               <div class="moon_setting">
-                <label
-                  for="effect_icon"
-                  class="moon fa-regular fa-moon"
-                ></label>
-                <label
-                  for="effect_icon"
-                  class="setting far btn-toggle fa-sun"
-                ></label>
+                <label for="effect_icon" class="moon fa-regular fa-moon">
+                </label>
+                <label for="effect_icon" class="setting far btn-toggle fa-sun">
+                </label>
               </div>
-              <div class="search_close">
-                <label class="search fas fa-search"></label>
-                <label class="close fa-search fa-times"></label>
+              <div class="btn_order">
+                <a href=""><span>đặt ngay</span></a>
               </div>
-              <div class="icon">
-                <label class="fas fa-user"></label>
+            </div>
+            <!-- icon link end --------------------------------------- -->
+          </div>
+        </div>
+      </header>
+      <!-- header end----------------------------------------------- -->
+      <section class="wrap_container">
+        <div class="container">
+          <div class="row_container">
+            <div class="row_column_container">
+              <div class="column_container">
+                <!-- <img src="./img/des-1.jpg" alt="" /> -->
+                <div class="content_inner">
+                  <h1>mumbai</h1>
+                  <h2>thành phố có tất cả</h2>
+                  <p>
+                    Mumbai Không Chỉ Là Trung Tâm Tài Chính – Kinh Tế, Kinh Đô
+                    Điện Ảnh – Thời Trang Của Ấn Độ, Mà Đây Còn Là Thành Phố
+                    Cảng Vừa Hiện Đại Nhưng Vẫn Mang Nhiều Nét Cổ Kính Với Những
+                    Công Trình Kiến Trúc, Quán Bar, Nhà Hàng, Viện Bảo Tàng Và
+                    Các Cửa Hàng Thời Trang Hấp Dẫn…
+                  </p>
+                  <div class="btn_describe">
+                    <a href=""><span>tìm hiểu thêm</span></a>
+                  </div>
+                  <!-- btn price book tickets ------------------------------- -->
+                </div>
+              </div>
+              <div class="fare">
+                <div class="price_tourism">
+                  <h3>
+                    ưu đãi 30.000.000 cho <br />
+                    5người/3ngày
+                  </h3>
+                </div>
+                <div class="book_tickets">
+                  <a href=""><span>đặt ngay</span></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </section>
+      <!-- video ________tourism_________________________________________ -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <input
+              for="video_one"
+              type="checkbox"
+              name="video_play"
+              checked
+              hidden
+            />
+            <input for="video_two" type="checkbox" name="video_play" hidden />
+            <input for="video_three" type="checkbox" name="video_play" hidden />
+            <div class="left_column col-xl-6">
+              <video
+                class="video_1"
+                autoplay
+                loop
+                src="https://stravelhtml.vercel.app/videos/vid-3.mp4"
+              ></video>
+              <video
+                autoplay
+                loop
+                class="video_2"
+                for="video_two"
+                src="https://stravelhtml.vercel.app/videos/vid-1.mp4"
+              ></video>
+              <video
+                autoplay
+                loop
+                class="video_3"
+                for="vodeo_three"
+                src="https://stravelhtml.vercel.app/videos/vid-2.mp4"
+              ></video>
+              <div class="btn_player_video">
+                <label for="video_one"><span></span></label>
+                <label for="video_two"><span></span></label>
+                <label for="video_three"><span></span></label>
+              </div>
+            </div>
+            <div class="right_column col-xl-6">
+              <h4>tai sao nên chon stravel</h4>
+              <h3 class="white_control">trải nghiệm bậc nhất</h3>
+              <p class="gray_control">
+                Chúng Tôi Hợp Tác Với Những Địa Điểm Nghỉ Dưỡng Có Trải Nghiệm
+                Bậc Nhất Để Đem Lại Một Kỳ Nghỉ Tuyệt Vời Cho Bạn Cùng Người
+                Thân
+              </p>
+              <div class="btn_travel">
+                <a href="">tìm hiểu thêm về travel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- video ________tourism________________end_________________________ -->
+      <!-- tourist attraction_____________start______________________ -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <div class="heading">
+              <p>Những Điểm Đến Ở Mumbai</p>
+              <h3 class="white_control">những điểm du lịch bậc nhất</h3>
+            </div>
+            <!-- image_location_tourist______________________start_____________ -->
+            <article class="location_go_tourist">
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_one"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">ấn độ môn</h3>
+                  <p class="gray_control">
+                    được xây dựng vào năm 1931, còn có tên gọi khác là bia ký
+                    "niện chiến ấn độ"
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_two"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Tòa Nhà Hình Trứng</h3>
+                  <p class="gray_control">
+                    Nghệ Thuật Kiến Trúc Thị Giác Kết Hợp Với Cách Sản Xuất, Sử
+                    Dụng Và Tái Tạo Năng Lượng Thông Minh
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_three"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                  <p class="gray_control">
+                    Bao Gồm Loài Bướm Đêm Atlas – Bướm Đêm Lớn Nhất Thế Giới,
+                    Cây Hoa Karvi 7 Năm Nở Hoa Một Lần
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_four"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Trung Tâm Triễn Lãm Jehanggir</h3>
+                  <p class="gray_control">
+                    Khu Vực Triển Lãm Hàng Đầu Ở Mumbai Dành Cho Nền Mỹ Thuật Ấn
+                    Độ Đương Đại
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_five"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Hang Động Elephanta</h3>
+                  <p class="gray_control">
+                    Lưu Giữ Nhiều Kiến Trúc Chạm Khắc Tinh Xảo Và Chúng Đã Xuất
+                    Hiện Ở Đây Từ Thế Kỷ Thứ 5 Đến Thứ 8
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_six"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Lonavala Và Khandala</h3>
+                  <p class="gray_control">
+                    Khu Nghỉ Dưỡng Rất Nổi Tiếng, Nằm Giữa Đường Cao Tốc Mumbai
+                    – Pune.
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_seven"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Thành Phố Pune</h3>
+                  <p class="gray_control">
+                    Giáo Dục, Nghệ Thuật Và Âm Nhạc Là Trọng Tâm Tại Thành Phố
+                    Có Nền Văn Hóa Phong Phú Lâu Đời Này
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+              <!-- illustration -->
+              <div class="image_location_tourist">
+                <div class="illustration">
+                  <div class="image_animation image_animation_eight"></div>
+                </div>
+                <div class="describe_location_tourist">
+                  <h3 class="white_control">Thành Phố Nashik</h3>
+                  <p class="gray_control">
+                    Là Trung Tâm Hành Hương Lớn Của Người Hindu. Nashik Có Sự
+                    Pha Trộn Của Nét Cổ Xưa Và Hiện Đại
+                  </p>
+                  <div class="part_describe">
+                    <a style="text-decoration: none" href="#!">
+                      <span
+                        style="
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          color: var(--color-effect);
+                        "
+                      >
+                        đọc thêm
+                      </span>
+                    </a>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- illustration end-->
+            </article>
+            <!-- image_location_tourist___________________________end____________ -->
+          </div>
+        </div>
+      </section>
+      <!-- tourist attraction_____________start______________________ -->
+      <!-- experience service______________________________start______________________ -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <div class="heading">
+              <p class="">dịch vụ</p>
+              <h3 class="white_control">nâng cao trải nghiệm dịc vụ</h3>
+            </div>
+            <article class="experience_service">
+              <div class="experience">
+                <i class="fas fa-globe"></i>
+                <h3 class="white_control">rộng khắp thế giới</h3>
+                <p class="gray_control">some text...</p>
+              </div>
+              <div class="experience">
+                <i class="fas fa-hiking"></i>
+                <h3 class="white_control">rộng khắp thế giới</h3>
+                <p class="gray_control">some text...</p>
+              </div>
+              <div class="experience">
+                <i class="fas fa-utensils"></i>
+                <h3 class="white_control">Dịch Vụ Ăn Uống</h3>
+                <p class="gray_control">some text...</p>
+              </div>
+              <div class="experience">
+                <i class="fas fa-hotel"></i>
+                <h3 class="white_control">Nghỉ Dưỡng Cao Cấp</h3>
+                <p class="gray_control">some text...</p>
+              </div>
+              <div class="experience">
+                <i class="fas fa-hotel"></i>
+                <h3 class="white_control">Giá Tốt Nhất</h3>
+                <p class="gray_control">some text...</p>
+              </div>
+              <div class="experience">
+                <i class="fas fa-headset"></i>
+                <h3 class="white_control">Hỗ Trợ 24/7</h3>
+                <p class="gray_control">some text...</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- experience service______________________________end______________________ -->
+      <!-- mumbai pictures___________________________________start -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <div class="heading">
+              <h3 style="color: var(--color-effect); font-size: 3rem">
+                những bức ảnh về mumbai
+              </h3>
+            </div>
+            <article class="mumbai_pictures">
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_one"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_two"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_three"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_four"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_five"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_six"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_seven"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_eight"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_describe">
+                <div class="pictures pictures_nine"></div>
+                <div class="describe_pictures">
+                  <p class="yellow_control">Thành Phố Mumbai</p>
+                  <h3 class="white_control">Vườn Quốc Gia Sanjay Gandhi</h3>
+                </div>
+              </div>
+              <!-- illustrator -->
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- mumbai pictures___________________________________end -->
+      <!-- comment_positive___________________________start -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <div class="row_col_content">
+              <div class="column_left_comment col-12 col-md-12 col-lg-6">
+                <h3>những lời đánh giá tốt nhất</h3>
+                <p class="gray_control">
+                  Tất Cả Những Lời Đánh Giá Chúng Tôi Đều Ghi Nhận Và Tiếp Thu
+                  Để Phát Triển. Đây Là Những Đánh Giá Tốt Nhất Về Chuyến Đi
+                  Mumbai Này.
+                </p>
+              </div>
+              <div class="comment_positive col-12 col-md-12 col-lg-6">
+                <div class="info_comment col-12 col-sm-12 col-md-6">
+                  <p class="gray_control">
+                    Chuyến Đi Rất Vui, Giá Rất Rẻ. Gọi Tư Vấn Rất Nhanh. Tôi Sẽ
+                    Quay Lại Đay Môt Lần Nữa
+                  </p>
+                  <div class="info">
+                    <div class="image image_one"></div>
+                    <div class="inner">
+                      <span class="white_control">cudem</span>
+                      <p class="gray_control">dev</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info_comment col-12 col-sm-12 col-md-6">
+                  <p class="gray_control">
+                    Chuyến Đi Rất Vui, Đáng Để Thử. Đồ Ăn Ở Đây Rất Ngon. Chắc
+                    Chắn Sẽ Quay Lại Vì Đồ Ăn Hihi
+                  </p>
+                  <div class="info">
+                    <div class="image image_two"></div>
+                    <div class="inner">
+                      <span class="white_control">Some People</span>
+                      <!-- <p class="gray_control"></p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="info_comment col-12 col-sm-12 col-md-6">
+                  <p class="gray_control">
+                    Khách Sạn Ở Rất Tuyệt. Thích Hợp Với 1 Chỗ Nghỉ Dưỡng.
+                  </p>
+                  <div class="info">
+                    <div class="image image_three"></div>
+                    <div class="inner">
+                      <span class="white_control">cudem</span>
+                      <p class="gray_control">Some People</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info_comment col-12 col-sm-12 col-md-6">
+                  <p class="gray_control">
+                    Hướng Dẫn Viên Rất Chu Đáo. Mọi Dịch Vụ Đều Có Và Rất Thoải
+                    Mái
+                  </p>
+                  <div class="info">
+                    <div class="image image_four"></div>
+                    <div class="inner">
+                      <span class="white_control">Some People</span>
+                      <p class="gray_control">...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- comment_positive__________________________________-end -->
+      <!-- map________________________________________start -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <div class="row_map col-12">
+              <div class="heading_map">
+                <span class="comment">đ</span>
+                <span class="comment">á</span>
+                <span class="comment">n</span>
+                <span class="comment">h</span>
+                <span class="comment">g</span>
+                <span class="comment">i</span>
+                <span class="comment">á</span>
+              </div>
+              <div class="row_col_container col-sm-12">
+                <div class="column_left col-sm-12 col-lg-6">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.4064000497674!2d105.78126121547308!3d20.976340386026827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd2d89877d7%3A0xe55435164e9b4695!2zMTk3IFRy4bqnbiBQaMO6LCBQLiBWxINuIFF1w6FuLCBIw6AgxJDDtG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1639249145111!5m2!1svi!2s"
+                    width="100%"
+                    ;
+                    height="400vh"
+                  ></iframe>
+                </div>
+                <div class="column_right col-sm-12 col-lg-6">
+                  <div class="wrap">
+                    <form class="frame_form" action="">
+                      <div class="row_form">
+                        <input
+                          class="yellow_border_control"
+                          type="text"
+                          placeholder="Last name"
+                        />
+                        <input
+                          class="yellow_border_control"
+                          type="email"
+                          placeholder="Email address"
+                        />
+                      </div>
+                      <div class="row_form">
+                        <input
+                          class="yellow_border_control"
+                          type="number"
+                          placeholder="Phone number"
+                        />
+                        <input
+                          class="yellow_border_control"
+                          type="text"
+                          placeholder="Theme"
+                        />
+                      </div>
+                      <div class="frame_form_comment">
+                        <textarea
+                          class="yellow_border_control"
+                          name=""
+                          id=""
+                          cols="0"
+                          rows="0"
+                          placeholder="Viết đánh giá về chuyến đi của bạn..."
+                        ></textarea>
+                      </div>
+                      <div class="btn_travel_send">
+                        <a href="#!">gửi tới stravel</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- map________________________________________end -->
+      <!-- frame_pictures_tourist______________________________________ start -->
+      <section class="wrap_container_content">
+        <div class="container">
+          <div class="row_container">
+            <div class="heading">
+              <p>blog & posts</p>
+              <h3 class="white_control">tìm hiểu thêm vềm mumbai</h3>
+            </div>
+            <article class="mumbai_pictures_tourist">
+              <!-- illustrator -->
+              <div class="frame_pictures_tourist">
+                <div class="pictures_tourist">
+                  <div class="effect_pictures pictures_tourist_one"></div>
+                </div>
+                <div class="describe_pictures_tourist">
+                  <h3 class="white_control">Mang Những Gì Khi Đi Mumbai</h3>
+                  <p class="gray_control">
+                    Giấy Tờ Tuỳ Thân, Giấy Xác Minh Tài Chính, Visa, Vé Máy Bay,
+                    Trang Phục, Đồ Dùng Cá Nhân, Balo, Túi Đựng Đồ
+                  </p>
+                  <div class="icon_times_contact">
+                    <div class="times">
+                      <i class="fas fa-clock"></i>
+                      <span class="gray_control">22,11, 2021</span>
+                    </div>
+                    <div class="contact">
+                      <i class="fas fa-user"></i>
+                      <span class="gray_control">by admin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_tourist">
+                <div class="pictures_tourist">
+                  <div class="effect_pictures pictures_tourist_two"></div>
+                </div>
+                <div class="describe_pictures_tourist">
+                  <h3 class="white_control">Xin Visa Đi Mumbai</h3>
+                  <p class="gray_control">
+                    Visa Ai Cập Không Khó Xin, Thủ Tục Đơn Giản Gồm Đơn Tải Từ
+                    Trang Web Chính Thức Của Đại Sứ Quán
+                  </p>
+                  <div class="icon_times_contact">
+                    <div class="times">
+                      <i class="fas fa-clock"></i>
+                      <span class="gray_control">22,11, 2021</span>
+                    </div>
+                    <div class="contact">
+                      <i class="fas fa-user"></i>
+                      <span class="gray_control">by admin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- illustrator -->
+              <!-- illustrator -->
+              <div class="frame_pictures_tourist">
+                <div class="pictures_tourist">
+                  <div class="effect_pictures pictures_tourist_three"></div>
+                </div>
+                <div class="describe_pictures_tourist">
+                  <h3 class="white_control">Phương Tiện Di Chuyển</h3>
+                  <p class="gray_control">
+                    Bạn Có Thể Đi Xe Bus, Tàu Lửa, Tàu Thủy Hoặc Bất Cứ Phương
+                    Tiện Nào Có Thể Di Chuyển Đều Được.
+                  </p>
+                  <div class="icon_times_contact">
+                    <div class="times">
+                      <i class="fas fa-clock"></i>
+                      <span class="gray_control">22,11, 2021</span>
+                    </div>
+                    <div class="contact">
+                      <i class="fas fa-user"></i>
+                      <span class="gray_control"> by admin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- illustrator -->
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- frame_pictures_tourist______________________________________ end -->
+      <section class="wrap_container_content">
+        <div class="wow_image">
+          <div class="container">
+            <div class="row_container">
+              <div class="row">
+                <span class="first_one">cùng stravel</span>
+                <h3>bắt đầu chuyến đi của bạn</h3>
+                <p>
+                  mỗi chuyến đi là một kỷ niệm đẹp. hãy cúng stravel ghi lại
+                  những kỹ niệm này !
+                </p>
+                <div class="btn_order">
+                  <a href=""><span>đặt ngay</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

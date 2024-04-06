@@ -2,26 +2,50 @@ html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
 }
+body {
+  background: #efefef;
+}
 .home_travel {
   width: 100vh;
   height: 100vh;
 }
-.wrap_header {
+.wrap_container {
+  overflow-x: hidden;
   max-width: 100%;
   height: auto;
+  padding: 100px 0px;
+}
+.wrap_container_content {
+  overflow-x: hidden;
+  max-width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+.wrap_header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 999999;
-  padding: 2rem 10%;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  padding: 2rem 8%;
+  background: rgb(33, 33, 33, 0.7);
 }
-.row_container {
+.row_header {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
   align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.row_header .icon_menu {
+  font-size: 2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  display: none;
 }
 .logo a {
   text-transform: uppercase;
@@ -31,7 +55,7 @@ html {
   font-weight: 700;
 }
 .logo span {
-  color: var(--color-content);
+  color: var(--color-effect);
 }
 .nav_list_menu {
   display: flex;
@@ -46,42 +70,815 @@ html {
   margin: 0 1rem;
 }
 /* menu end */
-/* icon_link */
+/* icon_link ---------------------------------------------- */
 .icon_link {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-link);
-  align-items: baseline;
+  align-items: center;
 }
-.moon_setting > .far {
+
+.moon_setting .moon {
   position: absolute;
-  left: 0px;
+  top: 50%;
+  left: 50%;
+  color: var(--color-effect);
+  transform: translate(-50%, -50%);
 }
-.search_close > .fas:nth-child(2) {
+.moon_setting .setting {
   position: absolute;
-  left: 0px;
-}
-.moon_setting > label:nth-child(2),
-.search_close > label:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  color: var(--color-effect);
+  transform: translate(-50%, -50%);
   visibility: hidden;
 }
-.moon_setting,
-.search_close,
-.icon {
+
+.moon_setting {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color-effect);
+  border-radius: 99px;
+  margin-right: 30px;
   position: relative;
-  margin: 0px 10px;
   cursor: pointer;
 }
-.icon_link label:hover {
-  color: var(--color-effect);
-}
-/* icon_link end */
-#effect_icon:checked ~ .wrap_header .icon_link .moon,
+
 #effect_icon:checked ~ .wrap_header .icon_link .moon {
   visibility: hidden;
 }
+
 #effect_icon:checked ~ .wrap_header .icon_link .setting {
   visibility: visible;
 }
+.nav_list_menu a:hover {
+  color: var(--color-effect);
+}
+/* _____________________________________overlay */
+.overlay {
+  content: "";
+  inset: 0;
+  position: fixed;
+  background: #111111;
+  display: none;
+}
+#effect_icon:checked ~ .overlay {
+  display: block;
+  z-index: 0;
+}
+#effect_icon:checked ~ .wrap_container_content .white_control,
+#effect_icon:checked ~ .wrap_container .white_control {
+  color: #fff;
+}
+#effect_icon:checked ~ .wrap_container_content .gray_control,
+#effect_icon:checked ~ .wrap_container .gray_control {
+  color: #b8b8b8;
+}
+
+#effect_icon:checked ~ .wrap_container_content .yellow_control {
+  color: var(--color-effect);
+}
+#effect_icon:checked ~ .wrap_container_content .black_control {
+  color: #333;
+}
+#effect_icon:checked ~ .wrap_container_content .yellow_border_control {
+  border: var(--color-effect) solid 2px;
+  background: #333333;
+  color: #fff;
+}
+#effect_icon:checked ~ .wrap_container_content .wrap {
+  box-shadow: 0px 3px 100px 5px rgb(255, 165, 0, 0.2);
+}
+
+.gray_control {
+  font-weight: 500;
+}
+/* _____________________________________________-overlay end */
+/* icon_link end ---------------------------------------------------*/
+/* btn order */
+.btn_order {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_describe a,
+.btn_order a {
+  display: inline-block;
+  color: #333333;
+  text-transform: capitalize;
+  border: 2px solid var(--color-effect);
+  background: var(--color-effect);
+  font-size: 2rem;
+  padding: 5px 10px;
+  border-radius: 99px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn_describe a::before,
+.btn_order a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(33, 33, 33, 0.7);
+  opacity: 0;
+}
+.btn_describe:hover span,
+.btn_order a:hover span {
+  color: #fff;
+  position: relative;
+}
+.btn_describe a:hover::before,
+.btn_order a:hover::before {
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+}
+/* btn order end ------------------------------------------- */
+
 /* end header */
-/* ----------------------------------------- */
+/* section  */
+.row_column_container {
+  position: relative;
+  max-width: 100%;
+}
+.column_container {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  height: 550px;
+  background: url(../img/des.jpg) center center / cover;
+}
+.column_container::before {
+  content: "";
+  background: rgb(33, 33, 33, 0.7);
+  inset: 0;
+  position: absolute;
+}
+.content_inner {
+  max-width: 70%;
+  height: auto;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+.content_inner h1 {
+  color: var(--color-effect);
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  line-height: 0.5;
+  font-size: 6rem;
+  font-weight: 900;
+}
+.content_inner h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 7rem;
+  color: var(--color-link);
+}
+.content_inner p {
+  margin: 20px auto 30px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  width: 50%;
+  color: var(--color-link);
+  font-weight: 500;
+}
+/* btn price book tickets -------------------------------*/
+.fare {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -40%);
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0px 4px 10px 2px rgb(138, 138, 138);
+}
+#effect_icon:checked ~ .wrap_container_content .frame_form,
+#effect_icon:checked ~ .wrap_container_content .info_comment,
+#effect_icon:checked ~ .wrap_container_content .experience,
+#effect_icon:checked ~ .wrap_container_content .describe_location_tourist,
+#effect_icon:checked ~ .wrap_container .fare {
+  background: rgb(33, 33, 33, 1);
+  box-shadow: none;
+  border: rgb(33, 33, 33, 1);
+}
+
+.price_tourism {
+  flex-basis: 50%;
+  max-width: 50%;
+  color: var(--color-effect);
+  text-align: left;
+}
+.book_tickets {
+  flex-basis: 50%;
+  max-width: 50%;
+  color: var(--color-effect);
+  text-align: center;
+}
+.book_tickets a {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px 200px;
+  border-radius: 99px;
+  border: 2px solid var(--color-effect);
+  background: var(--color-effect);
+  text-decoration: none;
+  color: var(--color-link);
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+.book_tickets a:hover {
+  background: rgb(255, 165, 0, 0.1);
+}
+.book_tickets span {
+  text-transform: capitalize;
+}
+
+.book_tickets a:hover span {
+  color: var(--color-effect);
+  position: relative;
+  z-index: 1;
+}
+.book_tickets a:hover::before {
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+}
+.price_tourism h3 {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+/* btn price book tickets end--------------------------- */
+/* section end */
+/* video__________________tourism_____________________________ */
+.left_column {
+  position: relative;
+  /* max-width: calc(var(--container-width) / 2 -20px); */
+}
+video {
+  width: 100%;
+  border-radius: 10px;
+  overflow: clip;
+}
+
+.video_2,
+.video_3 {
+  display: none;
+}
+
+/* _______________________________player - video ____________________ */
+.btn_player_video {
+  width: 100%;
+  text-align: center;
+}
+.btn_player_video label {
+  display: inline-block;
+  width: 20px;
+  margin: 30px 10px;
+  height: 20px;
+  border: 2px solid var(--color-effect);
+  border-radius: 99px;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+.btn_player_video label:hover {
+  background: var(--color-effect);
+}
+#video_one:checked ~ .video_1,
+#video_two:checked ~ .video_2,
+#video_three:checked ~ .video_3 {
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+/* _______________________________player - video ___________end_________ */
+/* video__________________tourism_________end____________________ */
+/* ________________________travel_______start________________ */
+.right_column {
+  position: relative;
+  padding: 0px 40px;
+  max-width: 50%;
+  text-transform: capitalize;
+  line-height: 1.7;
+  padding-top: 70px;
+}
+.right_column h4 {
+  color: var(--color-effect);
+  font-size: 2rem;
+}
+.right_column h3 {
+  font-size: 4rem;
+  margin-top: 5px;
+}
+.right_column p {
+  margin: 15px 0px;
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 500;
+}
+/* ______________________btn_travel_______________ */
+.btn_travel {
+  margin-top: 30px;
+}
+.btn_travel a {
+  color: #fff;
+  background: var(--color-effect);
+  font-size: 2.5rem;
+  padding: 5px 20px;
+  border: 1px solid var(--color-effect);
+  border-radius: 99px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.btn_travel a:hover {
+  background: rgb(255, 165, 0, 0.1);
+  color: var(--color-effect);
+}
+
+/* ________________________btn_travel_________end______________ */
+
+/* tourist attraction_____________start______________________ */
+.heading {
+  width: 100%;
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+}
+.heading p {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  color: var(--color-effect);
+}
+.heading h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+.location_go_tourist {
+  padding: var(--content-padding);
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  max-width: 100%;
+}
+
+.image_location_tourist {
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 1.5;
+  width: calc(var(--container-width) / 4 - 20px);
+  text-align: center;
+}
+.illustration {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+}
+.image_animation {
+  width: auto;
+  height: 250px;
+  transition: all 0.3s linear;
+}
+.image_animation_one {
+  background: url(../img/des.jpg) 50% 50% / cover;
+}
+.image_animation_two {
+  background: url(../img/des-2.jpg) center center/ cover;
+}
+.image_animation_three {
+  background: url(../img/des-3.jpg) center center/ cover;
+}
+.image_animation_four {
+  background: url(../img/des-4.jpg) center center/ cover;
+}
+.image_animation_five {
+  background: url(../img/des-5.jpg) center center/ cover;
+}
+.image_animation_six {
+  background: url(../img/des-6.jpg) center center/ cover;
+}
+.image_animation_seven {
+  background: url(../img/des-7.jpg) center center/ cover;
+}
+.image_animation_eight {
+  background: url(../img/des-8.jpg) center center/ cover;
+}
+.image_location_tourist:hover .image_animation {
+  transform: scale(120%);
+}
+.describe_location_tourist {
+  background: #fff;
+  padding: 20px;
+}
+#effect_icon:checked ~ .wrap_container_content .describe_pictures_tourist,
+#effect_icon:checked ~ .wrap_container_content .describe_location_tourist {
+  background: rgb(33, 33, 33, 1);
+}
+
+.part_describe {
+  width: 100%;
+  padding: 0px 15px;
+  margin: 20px -5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.part_describe a {
+  transition: all 0.2s linear;
+}
+.part_describe a:hover {
+  translate: -10px;
+  display: inline-block;
+  transition-delay: 0.1s;
+}
+.part_describe .arrow {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid var(--color-effect);
+  border-bottom: 3px solid var(--color-effect);
+  rotate: -45deg;
+  right: 0px;
+  top: 10px;
+}
+.describe_location_tourist p {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+.describe_location_tourist h3 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+/* tourist attraction_____________end______________________ */
+/* _________experience________________ */
+.experience_service {
+  justify-content: center;
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  max-width: 100%;
+  position: relative;
+  gap: 20px;
+}
+.experience {
+  width: calc(var(--container-width) / 3 - 30px);
+  border: 2px solid var(--color-effect);
+  border-radius: 10px;
+  padding: 10px 20px 40px;
+  text-align: center;
+}
+.experience:hover {
+  background: #fff;
+}
+.experience i {
+  line-height: 2;
+  font-size: 4rem;
+  color: var(--color-effect);
+}
+.experience h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 2;
+}
+.experience p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 2;
+  text-transform: capitalize;
+}
+/* _________experience________end________ */
+/* mumbai pictures___________________________________start */
+.mumbai_pictures {
+  margin-top: 30px;
+  padding: var(--content-padding);
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.frame_pictures_describe {
+  width: calc(var(--container-width) / 3 - 30px);
+}
+.pictures {
+  max-width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.pictures_one {
+  background: url(../img/gallery-img.jpg) 50% 50% / cover;
+}
+.pictures_two {
+  background: url(../img/gallery-img-2.jpg) center center / cover;
+}
+.pictures_three {
+  background: url(../img/gallery-img-3.jpg) center center / cover;
+}
+.pictures_four {
+  background: url(../img/gallery-img-4.jpg) center center / cover;
+}
+.pictures_five {
+  background: url(../img/gallery-img-5.jpg) center center / cover;
+}
+.pictures_six {
+  background: url(../img/gallery-img-6.jpg) center center / cover;
+}
+.pictures_seven {
+  background: url(../img/gallery-img-7.jpg) center center / cover;
+}
+.pictures_eight {
+  background: url(../img/gallery-img-8.jpg) center center / cover;
+}
+.pictures_nine {
+  background: url(../img/gallery-img-9.jpg) center center / cover;
+}
+.describe_pictures {
+  max-width: 100%;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.describe_pictures p {
+  color: #555;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.describe_pictures h3 {
+  color: var(--color-effect);
+  font-size: 2rem;
+}
+
+/* mumbai pictures___________________________________end */
+/* comment_positive___________________________start */
+.row_col_content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.column_left_comment {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.column_left_comment h3 {
+  font-size: 3rem;
+  color: var(--color-effect);
+}
+.column_left_comment p {
+  color: #555;
+  font-size: 1.5rem;
+}
+.comment_positive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.info_comment {
+  border: 2px solid var(--color-effect);
+  border-radius: 10px;
+  line-height: 1.5;
+  padding: 15px;
+}
+.info_comment p {
+  font-size: 1.5rem;
+  color: #555;
+}
+.info_comment span {
+  font-size: 1.8rem;
+}
+.info {
+  margin-top: 10px;
+  display: flex;
+}
+.image {
+  margin-right: 10px;
+  border-radius: 99px;
+  width: 50px;
+  height: 50px;
+}
+.image_one {
+  background: url(../img/pic-1.png) center center / cover;
+}
+.image_two {
+  background: url(../img/pic-2.png) center center / cover;
+}
+.image_three {
+  background: url(../img/pic-3.png) center center / cover;
+}
+.image_four {
+  background: url(../img/pic-4.png) center center / cover;
+}
+/* comment_positive___________________________end */
+/*  map________________________________________start  */
+.column_left {
+  display: flex;
+  align-items: center;
+}
+.row_col_container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px -20px 0px;
+}
+.heading_map {
+  text-align: center;
+}
+.comment {
+  font-size: 4rem;
+  color: var(--color-effect);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 700;
+}
+.wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.frame_form {
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 100%;
+  background: #fff;
+}
+.row_form {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.row_form input {
+  border: 2px solid transparent;
+  display: inline-block;
+  background: #efefef;
+  padding: 15px 20px;
+  width: 50%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  background: #efefef;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem !important;
+}
+::placeholder {
+  font-size: 1.5rem;
+}
+.frame_form_comment {
+  margin-top: 20px;
+}
+.btn_travel_send {
+  margin: 20px 0px 0px;
+}
+.btn_travel_send a {
+  display: inline-block;
+  color: #333;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background: rgb(255 165 0);
+  border-radius: 99px;
+  border: 2px solid var(--color-effect);
+  transition: all 0.3s linear;
+}
+.btn_travel_send a:hover {
+  background: rgb(255, 165, 0, 0.2);
+  color: orange;
+}
+
+/*  map________________________________________end  */
+/* frame_pictures_tourist______________________________________ start */
+.mumbai_pictures_tourist {
+  margin-top: 50px;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.frame_pictures_tourist {
+  width: calc(var(--container-width) / 3 - 30px);
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.pictures_tourist {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.effect_pictures {
+  max-width: auto;
+  height: 50vh;
+  transition: all 0.2s linear;
+}
+.describe_pictures_tourist {
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.8;
+}
+.describe_pictures_tourist h3 {
+  font-size: 2rem;
+}
+.describe_pictures_tourist p {
+  font-size: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.icon_times_contact {
+  position: relative;
+  font-size: 1.4rem;
+  padding: 10px 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.icon_times_contact i {
+  color: var(--color-effect);
+}
+.pictures_tourist_one {
+  background: url(../img/blog-1.jpg) center center / cover;
+}
+.pictures_tourist_two {
+  background: url(../img/blog-2.jpg) center center / cover;
+}
+.pictures_tourist_three {
+  background: url(../img/blog-3.jpg) center center / cover;
+}
+.frame_pictures_tourist:hover .effect_pictures {
+  transform: scale(110%);
+}
+.frame_pictures_tourist .icon_times_contact span:hover {
+  color: var(--color-effect);
+  cursor: pointer;
+}
+
+/* frame_pictures_tourist______________________________________ end */
+body {
+  /* background: url(../img/banner-bg.jpg) 0 0; */
+}
+.row {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0);
+}
+.row .first_one {
+  font-size: 2rem;
+  color: var(--color-effect);
+}
+.row h3 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+.row p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: ;
+  padding: 10px 0 30px;
+}

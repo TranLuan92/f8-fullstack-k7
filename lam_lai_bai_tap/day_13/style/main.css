@@ -7,21 +7,25 @@ html {
 .wrapper_landing {
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: static;
   background: url(../img/landing-background.jpg) 50% 50% / cover;
+  overflow-x: hidden;
 }
 .viking {
   width: 64%;
   height: 140%;
   border-radius: 50%;
-  background: url(../image/dot-texture.png) 0 0 repeat rgb(225, 222, 222);
+  background: url(../img/dot-texture.png) 0 0 repeat rgb(255, 255, 255);
   position: absolute;
   top: -20%;
   right: -30%;
   z-index: -1;
+  display: none;
 }
 .wrap_content {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0px -10px;
 }
 .row_logo {
@@ -145,8 +149,9 @@ html {
 }
 .form_login {
   margin: 50px auto;
-  width: 100%;
-  padding: 50px 30px;
+  max-width: 100%;
+  margin: 0 30px;
+  padding: 50px 20px;
   background: #fff;
   border-radius: 20px;
   height: auto;
@@ -233,7 +238,7 @@ html {
   font-size: 2.5rem;
   font-weight: 500px;
 }
-/* form input */
+/* form input ------------------------------------------------- */
 .col-form-input {
   position: relative;
   margin: 0px auto;
@@ -258,7 +263,7 @@ html {
   justify-content: space-between;
 }
 
-/* form input end */
+/* form input end -----------------------------------------------------*/
 /* placeholder input */
 
 .col-form-input span {

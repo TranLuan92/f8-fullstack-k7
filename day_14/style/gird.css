@@ -5,29 +5,40 @@
   border: none;
   list-style: none;
   box-sizing: border-box;
+  user-select: none;
+  text-transform: capitalize;
+  text-decoration: none;
 }
+
 :root {
-  --container-width: 1200px;
+  --container-max-width: 1400px;
+  --container-width: 1300px;
   --column-space: 20px;
+  --content-padding: 0px 10px;
   /* ----- */
   --color-effect: orange;
   --color-link: #fff;
   --content-transform-capitalize: capitalize;
 }
+.container_header {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
 /* Please do not add or subtract to the container */
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0px calc(var(--column-space) / 2);
 }
 [class*="col-"] {
-  flex-basis: calc(1 / 12 * 100% * var(--column-number));
-  max-width: calc(1 / 12 * 100% * var(--column-number));
-  padding: 0 calc(var(--column-space) / 2);
+  flex-basis: calc(1 / 12 * 100% * var(--column-number) - 20px);
+  max-width: calc(1 / 12 * 100% * var(--column-number) -20px);
+  padding: 10px calc(var(--column-space) / 2);
 }
 [class*="offset-"] {
   margin-left: calc(1 / 12 * 100% * var(--column-offset-number));
 }
-.row_viking {
+.row_container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 calc(0px - var(--column-space) / 2);
