@@ -366,13 +366,28 @@ video {
 .btn_player_video label:hover {
   background: var(--color-effect);
 }
-#video_one:checked ~ .video_1,
-#video_two:checked ~ .video_2,
-#video_three:checked ~ .video_3 {
+#video_one:checked ~ .left_column .video_1 {
   display: block;
-  position: relative;
-  z-index: 99;
 }
+#video_one:checked ~ .left_column .video_2,
+#video_one:checked ~ .left_column .video_3 {
+  display: none;
+}
+#video_two:checked ~ .left_column .video_2 {
+  display: block;
+}
+#video_two:checked ~ .left_column .video_1,
+#video_two:checked ~ .left_column .video_3 {
+  display: none;
+}
+#video_three:checked ~ .left_column .video_3 {
+  display: block;
+}
+#video_three:checked ~ .left_column .video_2,
+#video_three:checked ~ .left_column .video_1 {
+  display: none;
+}
+
 /* _______________________________player - video ___________end_________ */
 /* video__________________tourism_________end____________________ */
 /* ________________________travel_______start________________ */

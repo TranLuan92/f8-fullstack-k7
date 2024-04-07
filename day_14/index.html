@@ -127,14 +127,14 @@
         <div class="container">
           <div class="row_container">
             <input
-              for="video_one"
-              type="checkbox"
+              id="video_one"
+              type="radio"
               name="video_play"
               checked
               hidden
             />
-            <input for="video_two" type="checkbox" name="video_play" hidden />
-            <input for="video_three" type="checkbox" name="video_play" hidden />
+            <input id="video_two" type="radio" name="video_play" hidden />
+            <input id="video_three" type="radio" name="video_play" hidden />
             <div class="left_column col-sm-12 col-lg-6">
               <video
                 class="video_1"
@@ -153,7 +153,7 @@
                 autoplay
                 loop
                 class="video_3"
-                for="vodeo_three"
+                for="video_three"
                 src="https://stravelhtml.vercel.app/videos/vid-2.mp4"
               ></video>
               <div class="btn_player_video">
