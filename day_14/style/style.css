@@ -10,13 +10,13 @@ body {
   height: 100vh;
 }
 .wrap_container {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   max-width: 100%;
   height: auto;
   padding: 100px 0px;
 }
 .wrap_container_content {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   max-width: 100%;
   height: auto;
   padding: 50px 0;
@@ -254,12 +254,10 @@ body {
 }
 /* btn price book tickets -------------------------------*/
 .fare {
+  position: relative;
   flex-wrap: wrap;
-  width: 70%;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, -40%);
+  width: 80%;
+  margin: -5% auto;
   z-index: 1;
   background-color: #fff;
   border-radius: 10px;
@@ -1024,7 +1022,7 @@ textarea {
 /* responsive */
 @media screen and (max-width: 576px) {
   * {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .icon_menu {
     display: block !important;
