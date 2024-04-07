@@ -404,12 +404,13 @@ video {
   max-width: 60%;
 }
 .btn_travel a {
-  width: 70%;
-  justify-content: center;
+  display: inline-block;
+
+  max-width: 100%;
+
   color: #fff;
   background: var(--color-effect);
   font-size: 1.8rem;
-  display: flex;
   flex: 1 1 50%;
   padding: 10px 20px;
   border: 1px solid var(--color-effect);
@@ -1006,7 +1007,7 @@ textarea {
 /* footer _______________________end */
 
 /* responsive */
-@media screen and (max-width: 576px), {
+@media screen and (max-width: 576px) {
   * {
     overflow-x: hidden;
   }
