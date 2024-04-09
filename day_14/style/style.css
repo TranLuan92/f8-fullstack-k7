@@ -13,7 +13,7 @@ body {
   /* overflow-x: hidden; */
   max-width: 100%;
   height: auto;
-  padding: 100px 0px;
+  padding: 100px 0px 0;
 }
 .wrap_container_content {
   /* overflow-x: hidden; */
@@ -204,14 +204,14 @@ body {
 /* section  */
 .row_column_container {
   position: relative;
-  max-width: 100%;
+  width: 100%;
 }
 .column_container {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
   width: auto;
-  height: 550px;
+  height: 110vh;
   background: url(../img/des.jpg) center center / cover;
 }
 .column_container::before {
@@ -239,25 +239,26 @@ body {
 .content_inner h2 {
   position: relative;
   z-index: 1;
-  font-size: 7rem;
+  font-size: 7vw;
   color: var(--color-link);
 }
 .content_inner p {
-  margin: 20px auto 30px;
+  margin: 0 auto 10px;
   line-height: 1.5;
   position: relative;
   z-index: 1;
-  font-size: 1.5rem;
-  width: 50%;
+  font-size: 2.5vh;
+  width: 60vw;
   color: var(--color-link);
   font-weight: 500;
 }
 /* btn price book tickets -------------------------------*/
 .fare {
-  position: relative;
+  position: absolute;
   flex-wrap: wrap;
-  width: 80%;
-  margin: -5% auto;
+  width: 85%;
+  top: 110%;
+  margin: 0 auto;
   z-index: 1;
   background-color: #fff;
   border-radius: 10px;
@@ -325,7 +326,7 @@ body {
 .price_tourism h3 {
   font-weight: 600;
   text-transform: capitalize;
-  font-size: 4rem;
+  font-size: 3.5vw;
   line-height: 1.5;
 }
 /* btn price book tickets end--------------------------- */
@@ -354,7 +355,7 @@ video {
 .btn_player_video label {
   display: inline-block;
   width: 20px;
-  margin: 30px 10px;
+  margin: 20px 10px 0;
   height: 20px;
   border: 2px solid var(--color-effect);
   border-radius: 99px;
@@ -690,6 +691,7 @@ video {
 .comment_positive {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .info_comment {
@@ -735,6 +737,7 @@ video {
 }
 .row_col_container {
   position: relative;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin: 30px -20px 0px;
@@ -763,6 +766,7 @@ video {
 .row_form {
   gap: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .row_form input {

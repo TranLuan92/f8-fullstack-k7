@@ -1,0 +1,31 @@
+%spaceFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+$containerWidth: 100%;
+
+$flexBasis: flex-basis;
+$maxWidth: max-width;
+$spacePadding: padding;
+$colNumber:"--column-number";
+$column: ".col-";
+$breakpoint:(
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200,
+    xxl: 1400,
+);
+// #{$flexBasis}: calc( 1/12 * $containerWidth * $value) ;
+
+@each $nameScreen, $sizeScreen in $breakpoint{
+    @media screen and (min-width: $sizeScreen + 0px) {
+        @for $value from 1 through 12 {
+            #{$column}#{$nameScreen}-#{$value}{
+                #{$colNumber}: $value;
+
+                }
+            }
+        }
+    }

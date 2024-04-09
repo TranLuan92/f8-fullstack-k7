@@ -23,7 +23,7 @@
 }
 [class*="offset-"] {
   margin-left: calc(1 / 12 * 100% * var(--column-offset-number));
-  /* loại bỏ những ô còn thừa khi chi với col-5  */
+  /* loại bỏ những ô còn thừa khi chia với col-5  */
 }
 .row {
   display: flex;
