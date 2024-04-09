@@ -23,6 +23,7 @@
 }
 
 .wrap_container {
+  overflow-x: hidden;
   max-width: 100vw;
   padding: 20px 0px;
 }
