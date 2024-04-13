@@ -37,8 +37,8 @@
                     // border: 2px solid red;
                     box-shadow: 1px 1px 10px 2px variables.$grayColor;
                     background: #dddcdc;
-                    width: 29rem;
-                    height:33rem;
+                    max-width: 29rem;
+                    // height:33rem;
                     background: variables.$aboutBackground;
                     position: relative;
                     padding: 3rem;
@@ -87,9 +87,8 @@
                     box-shadow: 1px 1px 10px 2px variables.$grayColor;
                     padding: 6rem 3rem;
                     // border: 2px solid red;
-                    align-self: auto;
                     height: 39rem;
-                    width: 34rem;
+                    max-width: 34rem;
                     background: variables.$aboutBackground;
                     // position: relative;
                     img{
@@ -122,3 +121,20 @@
     
 }
 // sales ___________start
+@media screen and (min-width: 768px), (max-width: 992px) {
+    .wrap_container{
+        .row_container{
+            .about_row{
+                .article_describe{
+
+                }
+                .row_about_container{
+                    .about_col_two{
+                      
+                    }
+                }
+
+            }
+        }
+    }
+}

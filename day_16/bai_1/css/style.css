@@ -340,6 +340,7 @@ table {
 .wrap_container .container .row_container .content_user {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .wrap_container .container .row_container .content_user .column_left {
   width: calc(var(--container-width) / 2 - 2rem);
@@ -594,7 +595,12 @@ header .row_container .menu_mobile_col_max-sm {
     transition: all 0.3s linear;
   }
 }
+.bk {
+  background: #F2FFEC;
+}
+
 .wrap_container .container .row_container .row-footer {
+  padding: 10rem 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -607,12 +613,12 @@ header .row_container .menu_mobile_col_max-sm {
   height: 9rem;
 }
 .wrap_container .container .row_container .row-footer .column-footer p {
-  width: 20rem;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
 .wrap_container .container .row_container .row-footer .column-footer h4 {
+  padding: 2rem 0;
   color: #46B20F;
   font-size: 1.6667rem;
   font-weight: 600;
@@ -626,7 +632,7 @@ header .row_container .menu_mobile_col_max-sm {
   color: #2C2C2C;
 }
 .wrap_container .container .row_container .row-footer .column-footer .col {
-  line-height: 2;
+  width: 20rem;
 }
 .wrap_container .container .row_container .row-footer .column-footer .contact i {
   color: #ff6916;
@@ -641,33 +647,46 @@ header .row_container .menu_mobile_col_max-sm {
   font-weight: 600;
   line-height: 1.5;
 }
-
-.wrap_container .row_hero {
-  width: 100vw;
+.wrap_container .container .icon_footer {
+  padding: 2rem 0;
+  border-top: 2px solid gray;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.wrap_container .row_hero .column_left {
-  padding-left: 15rem;
-  width: 50%;
+.wrap_container .container .icon_link {
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+.wrap_container .container .icon_link i {
+  padding: 1.5rem;
+  background: #DCFFCA;
+  border-radius: 99px;
+}
+
+.wrap_container .container .row_container .column_left {
+  width: calc(var(--container-width) / 2 - 1rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: auto;
 }
-.wrap_container .row_hero .column_left h2 {
+.wrap_container .container .row_container .column_left h2 {
   color: #2C2C2C;
   font-size: 3.7rem;
   font-weight: 800;
   line-height: 2;
 }
-.wrap_container .row_hero .column_left h1 {
+.wrap_container .container .row_container .column_left h1 {
   color: #2C2C2C;
   font-size: 4.4rem;
   font-weight: 800;
   line-height: normal;
 }
-.wrap_container .row_hero .column_left p {
+.wrap_container .container .row_container .column_left p {
   width: 44.9167rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -675,21 +694,23 @@ header .row_container .menu_mobile_col_max-sm {
   line-height: 2rem;
   padding: 2.77rem 0;
 }
-.wrap_container .row_hero .column_right {
-  width: 50%;
+.wrap_container .container .row_container .column_right {
+  width: calc(var(--container-width) / 2 - 1rem);
   height: 70.8rem;
   border-radius: 10px 0rem 0rem 10px;
   background: #DCFFCA;
+  display: flex;
   position: relative;
 }
-.wrap_container .row_hero .column_right .hero_img {
+.wrap_container .container .row_container .column_right img {
+  width: 60rem;
+  height: 60rem;
   display: block;
   position: absolute;
-  top: -2rem;
+  top: 2rem;
   left: -15rem;
-  font-size: 35em;
 }
-.wrap_container .row_hero .column_right .chop {
+.wrap_container .container .row_container .column_right .chop {
   position: absolute;
   max-width: 42.25881rem;
   transform: rotate(90deg);
@@ -698,12 +719,13 @@ header .row_container .menu_mobile_col_max-sm {
   font-weight: 800;
   line-height: 1;
   opacity: 0.15;
-  top: 10rem;
-  left: 38rem;
+  top: 50%;
+  left: 50%;
+  translate: -15% -70%;
 }
 
 .inner {
-  padding: 0;
+  padding: 0 1rem;
   width: 100vw;
   margin: 0px -20px;
 }
@@ -740,8 +762,7 @@ header .row_container .menu_mobile_col_max-sm {
 .wrap_container .container .row_container .row_about_container .about_col_one {
   box-shadow: 1px 1px 10px 2px #B7B7B7;
   background: #dddcdc;
-  width: 29rem;
-  height: 33rem;
+  max-width: 29rem;
   background: white;
   position: relative;
   padding: 3rem;
@@ -782,9 +803,8 @@ header .row_container .menu_mobile_col_max-sm {
 .wrap_container .container .row_container .about_col_two {
   box-shadow: 1px 1px 10px 2px #B7B7B7;
   padding: 6rem 3rem;
-  align-self: auto;
   height: 39rem;
-  width: 34rem;
+  max-width: 34rem;
   background: white;
 }
 .wrap_container .container .row_container .about_col_two img {

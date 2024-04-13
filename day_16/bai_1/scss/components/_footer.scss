@@ -1,12 +1,17 @@
 @use "../partials/variables";
-
+.bk{
+    background:  #F2FFEC;
+}
 .wrap_container{
+  
     .container{
         .row_container{
             .row-footer{
+                padding: 10rem 0;
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                // justify-content: center;
                 .column-footer{
                     width: calc(var(--container-width)/4 - 1rem);
                   
@@ -15,13 +20,13 @@
                         height: 9rem;
                     }
                     p{
-                        width: 20rem;
+                        // width: 20rem;
                         font-size: 1.6rem;
                         font-weight: 400;
-                      
-                        line-height: 1.5;
+                        line-height: 2;
                     }
                     h4{
+                        padding: 2rem 0;
                         color:  #46B20F;
                         font-size: 1.6667rem;
                         font-weight: 600;
@@ -35,7 +40,7 @@
                         color: variables.$textColor;
                     }
                     .col{
-                       line-height: 2;
+                       width: 20rem;
                     }
                     .contact{
                         
@@ -57,5 +62,25 @@
                 }
             }
         }
+        .icon_footer{
+            padding: 2rem 0;
+            border-top: 2px solid gray;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .icon_link{
+            font-size: 2rem;
+            align-items: center;
+            display: flex ;
+            gap: 2rem;
+            i{
+                padding: 1.5rem;
+                background: #DCFFCA;
+                border-radius: 99px;
+            }
+        }
+
     }
 }
