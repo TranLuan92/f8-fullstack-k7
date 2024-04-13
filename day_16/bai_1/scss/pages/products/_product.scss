@@ -1,0 +1,94 @@
+@use "./bets_seller";
+@use "./new_product";
+@use "../../partials/variables";
+@use "../../partials/base";
+.wrap_container{
+    .container{
+        .row_container{
+            .product{
+                margin-top: 10rem;
+                width: 100%;
+                gap: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .frame_product{
+                    // border: 1px solid red;
+                    // box-shadow: 1px 1px 10px 2px variables.$grayColor;
+                    width: calc(var(--container-width)/3 - 20px);
+                    text-align: center;
+                    padding: 50px 10px;
+                    .image_product{
+                       width: 100%;
+                       img{
+                        @extend %image;
+                       }
+                    }
+                    // .product_one{
+                    //     @extend %image;
+                    //     border: 1px red solid;
+                    //     background: url(../../../image/product/product-1.png) center center   / cover ;
+                    // }
+                    // .product_two{
+                    //     @extend %image;
+                    //     background: url(../../../image/product/product-1.png);
+                    // }
+                    // .product_three{
+                    //     @extend %image;
+                    //     background: url(../../../image/product/product-1.png);
+                    // }
+                    // .product_four{
+                    //     @extend %image;
+                    //     background: url(../../../image/product/product-1.png);
+                    // }
+                    // .product_five{
+                    //     @extend %image;
+                    //     background: url(../../../image/product/product-1.png);
+                    // }
+                    // .product_six{
+                    //     @extend %image;
+                    //     background: url(../../../image/product/product-1.png);
+                    // }
+                    h4{
+                        width:100%;
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        line-height: normal;
+                        position: relative;
+                        padding: 1.4rem 0;
+                        &::before{  
+                            position: absolute;
+                            content:''; 
+                            width: 20%;
+                            height: 1px;
+                            background: variables.$grayColor;
+                            bottom: 0;
+                            left:50%;
+                            translate: -50% 0;
+                           
+                        }
+                    }
+                    .describe{
+                        margin-top: 1.5rem;
+                        p{
+                            color: variables.$colorBack ;
+                            font-size: 1.7rem;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            span{
+                                color: variables.$textColor;
+                                font-size: 2.5rem;
+                                font-weight: 600;
+                                // line-height: 2.5;
+                            }
+                        }
+                    }
+                    .btn_purchased{
+                        @extend %purchased;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

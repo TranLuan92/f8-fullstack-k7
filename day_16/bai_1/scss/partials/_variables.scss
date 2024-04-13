@@ -1,0 +1,22 @@
+$textColor: #2C2C2C;
+$colorText:#216000;
+$grayColor:#B7B7B7;
+$listGap: 1.5rem 4.5rem;
+$whiteColor: white; 
+$backgroundHero: #DCFFCA; 
+$aboutBackground: white;  
+$orangeBackground: #fff0e7;
+$colorOverride:#DCFFCA;
+$overrideColor: #FFD5BD;
+$colorBack: #656565;
+:root {
+    --container-max-width: 1400px;
+    --container-width: 1300px;
+    --column-space: 20px;
+    --content-padding: 0px 10px;
+    /* ----- */
+    --color-effect: orange;
+    --color-link: #fff;
+    --content-transform-capitalize: capitalize;
+  }
+  

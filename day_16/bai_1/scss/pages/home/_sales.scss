@@ -1,0 +1,124 @@
+@use "../../partials/variables";
+@use "../../partials/base";
+@use "../../partials/mixin";
+// sales ___________start
+.wrap_container{
+    .container{
+        .row_container{
+            .article_describe{
+                margin-top: 10rem;
+                text-align: center;
+                h2{ 
+                    margin: 0px auto;
+                    width: 60rem;
+                    color: variables.$textColor;
+                    font-size: 3.2rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 4rem;
+                }
+                p{
+                    margin: 1.52rem auto;
+                    width: 64rem;
+                    color: variables.$textColor;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+            }
+            .row_about_container{
+                display: flex;
+                flex-wrap: wrap;
+                align-items : center;
+                justify-content: center;
+                gap: 1.35rem;
+                margin-top: 11rem;
+                .about_col_one{
+                    // border: 2px solid red;
+                    box-shadow: 1px 1px 10px 2px variables.$grayColor;
+                    background: #dddcdc;
+                    width: 29rem;
+                    height:33rem;
+                    background: variables.$aboutBackground;
+                    position: relative;
+                    padding: 3rem;
+                    .override_one{
+                        @extend %overRide;
+                        top:-50%;
+                        left: -50%;
+                        transform: translate(50%, 60%);
+                        background:  variables.$colorOverride;
+                    }
+                    .override_two{
+                        @extend %overRide;
+                        right: -50%;    
+                        bottom: -50%;
+                        transform: translate(-50%, -60%);
+                        background:  variables.$overrideColor;
+                    }
+                  
+                   }
+                 
+                    img{
+                        padding: 3rem;
+                        border-radius: 1rem;
+                        background:  variables.$orangeBackground;
+                        position: relative;
+                      
+                    }
+                
+                    span{
+                        display: block;
+                        margin-top: 3rem;
+                        color: variables.$textColor;
+                        font-size: 4.3333rem;
+                        font-weight: 800;
+                        line-height: normal;    
+                    }
+                    p{
+                        color: variables.$textColor;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        padding-top: 2rem;
+                    }
+                }
+                .about_col_two{
+                    box-shadow: 1px 1px 10px 2px variables.$grayColor;
+                    padding: 6rem 3rem;
+                    // border: 2px solid red;
+                    align-self: auto;
+                    height: 39rem;
+                    width: 34rem;
+                    background: variables.$aboutBackground;
+                    // position: relative;
+                    img{
+                        padding: 3rem;
+                        border-radius: 1rem;
+                        background:  variables.$orangeBackground;
+                        position: relative;
+                      
+                    }
+                    span{
+                        display: block;
+                        margin-top: 3rem;
+                        color: variables.$textColor;
+                        font-size: 4.3333rem;
+                        font-weight: 800;
+                        line-height: normal;    
+                    }
+                    p{
+                        color: variables.$textColor;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        padding-top: 2rem;
+                    }
+                }
+
+            }
+        }
+
+    
+}
+// sales ___________start

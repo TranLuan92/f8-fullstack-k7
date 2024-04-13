@@ -1,0 +1,61 @@
+@use "../partials/variables";
+
+.wrap_container{
+    .container{
+        .row_container{
+            .row-footer{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .column-footer{
+                    width: calc(var(--container-width)/4 - 1rem);
+                  
+                    img{
+                        width: 13rem;
+                        height: 9rem;
+                    }
+                    p{
+                        width: 20rem;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                      
+                        line-height: 1.5;
+                    }
+                    h4{
+                        color:  #46B20F;
+                        font-size: 1.6667rem;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-transform: capitalize;
+                    }
+                    a{
+                        display: inline-block;
+                        font-size: 1.6rem;
+                        line-height: 1.5;
+                        color: variables.$textColor;
+                    }
+                    .col{
+                       line-height: 2;
+                    }
+                    .contact{
+                        
+                        i{
+                            color: #ff6916;
+                                font-size: 1.6rem;
+                                font-weight: 600;
+                                line-height: 1.5;
+                                margin-right: 1rem;
+                        }
+                        span{
+                            color: variables.$textColor;
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            line-height: 1.5;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

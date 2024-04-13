@@ -92,6 +92,7 @@ header{
                }
 
             }
+           
             .nav_menu{
                 font-size: 1.2rem;
 
@@ -118,6 +119,43 @@ header{
             }
         }
     }
+    .menu_mobile{
+        width: 220px;
+        position: fixed;
+        top: 0;
+        left:0;
+        bottom: 0;
+        background: rgba(3,3,3,0.8);
+        padding-left: 30px;
+        padding-top: 30px;
+        text-transform: capitalize;
+        transition: all 0.3s linear;
+        label{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            
+        }
+        .list_menu {
+            li{
+            padding: 10px 0px;}
+            a{
+                color: #fff;
+            }
+            i{
+                color: orange;
+                width: 30px;
+            }
+        }
+        .menu_mobile_title{
+            h2{
+                margin: 40px 0 10px;
+                color: orange;
+            }
+        }
+       
+    }   
 }
 .wrap_container{
     .row_container{
@@ -132,6 +170,7 @@ header{
                 text-transform: capitalize;
                 font-size: 2vw;
                 padding-bottom: 20px;
+        
                 }
             }
             .menu_sidebar{
@@ -144,7 +183,7 @@ header{
                         padding: 10px 0;  
                         
                         i{
-                            width: 20px;
+                            width: 30px;
                             color: rgb(255, 213, 0);
                         }
                         a{
@@ -153,7 +192,7 @@ header{
                             font-weight: 700;
                             
                         }
-                    }
+                            }
                 }
             }
             .comment{
@@ -169,6 +208,7 @@ header{
             }
         }
         .content_right{
+            padding-top: 20px;
             .space_grid{
                 gap:20px;
                 display: flex;
@@ -209,6 +249,7 @@ header{
                 justify-content: space-between;
                 .img_inner_one{
                     height: calc(100% / 2 - 10px);
+                 
                     width: 100%;
                     border-radius: 15px;    
                 }
@@ -229,267 +270,42 @@ header{
         }   
     } 
 }
-// // responsive
+// responsive
+$breakPoints: (
+    sm : 576,
+    md : 768,
+    lg : 992,
+    xl : 1200,
+    xxl: 1400,
+);
 
-@media screen and (max-width: 1200px) {
-    .row_container{
-        .sidebar_left{       
-            .row_sidebar{
-                display: flex;
-                flex-direction: column;  
-                padding-left: 120px;  
-            .sidebar_title h2 {
-                margin-top: 70px;
-                padding: 0 50px;
-                font-size: 2vw;
-              }      
-            .menu_sidebar{
-                width: 100vw;
-                max-width: 100%;
-                padding: 0px 50px;
-           .sidebar_list_menu{
-                    max-width: 940px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    li{
-                        width: 150px;
-                        margin-right: 20px;
-                      a{
-                        
-                        display: block;
-                        font-size: 1.2vw;
-                        padding: 0 10px ;
-                      }
-                    } 
-                }
-             }
-            }
-            .comment{
-                display: none;
-             }
-        }
-        
 
+$nameCol:'.col-';
+$columnNumber:'--column-number';
+@mixin menuMobile{
+    @media screen and (max-width: 768px) {
+        @content;
     }
 }
-@media screen and (max-width: 992px) {
-    .row_header{
-        .icon_menu{
-            display: flex !important;
-            align-items: center;
-            font-size: 1.5rem;
-        }
-        .nav_menu_and_search {
-            margin: 20px auto ;
-            max-width: 100%;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            position: absolute;
-            top: 83px;
+// $length : length($breakPoints);
+// $count : 0;
+// $count : $count + 1 ;
+// $count == $sizeScreen;
+@include menuMobile(){
+   @each $nameScreen, $sizeScreen  in $breakPoints {
+        @media screen and (min-width: $sizeScreen + 0px)  {
+        @if ($sizeScreen <992){
             .nav_menu{
-                .list_menu{
-                    align-items: center;
-                    li{
-                        a{
-                            font-size: 2.5vw;
-                        }
-                    }
-                }
+                display: none;
             }
-        }
-        
-    }
-    .row_container{
-        .sidebar_left{       
             .row_sidebar{
-                display: flex;
-                flex-direction: column;  
-                padding-left: 120px;  
-            .sidebar_title h2 {
-                margin-top: 70px;
-                padding: 0 50px;
-                font-size: 3vw;
-              }      
-            .menu_sidebar{
-                width: 100vw;
-                max-width: 100%;
-                padding: 0px 50px;
-           .sidebar_list_menu{
-                    display: flex;
-                    flex-wrap: wrap;
-                    li{
-                      a{
-                        width: 110px;
-                        font-size: 1.5vw;
-                      }
-                    } 
-                }
-             }
+                display: none;
             }
             .comment{
                 display: none;
-             }
-        }
-        .content_right{
-            .space_grid{
-                .inner{
-                    flex-basis: 100%;
-                }
             }
         }
-
-    }
-}
-@media screen and (max-width: 768px) {
-    .row_header{
-        .icon_menu{
-            display: flex !important;
-            align-items: center;
-            font-size: 1.5rem;
-        }
-        .nav_menu_and_search {
-            display: flex;
-            // flex-direction: column-reverse;
-            .search{
-                width: 20vw;
-                height : 3vh;
-            }
-            .nav_menu{
-                .list_menu{
-                    align-items: center;
-                    li{
-                        a{
-                            font-size: 1.8vw;
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-    .row_container{
-        .sidebar_left{       
-            .row_sidebar{
-                display: flex;
-                flex-direction: column;  
-                padding: 0px 50px;  
-            .sidebar_title h2 {
-                margin-top: 70px;
-                padding: 0 50px;
-                font-size: 3vw;
-              }      
-            .menu_sidebar{
-                width: 100vw;
-                max-width: 100%;
-                padding: 0px 50px;
-           .sidebar_list_menu{
-                    display: flex;
-                    flex-wrap: wrap;
-                    li{
-                      a{
-                        width: 110px;
-                        font-size: 2vw;
-                      }
-                    } 
-                }
-             }
-            }
-            .comment{
-                display: none;
-             }
-        }
-        .content_right{
-            
-            .space_grid{
-                .inner{
-                    flex-basis: 100%;
-                }
-            }
-        }
-
-    }
     
-}
-@media screen and (max-width: 576px) {
-    .row_header{
-        .icon_menu{
-            display: flex !important;
-            align-items: center;
-            font-size: 1.5rem;
         }
-        .nav_menu_and_search {
-            flex-direction: column-reverse;
-            
-            .nav_menu{
-                .list_menu{
-                    align-items: center;
-                    li{
-                        a{
-                            font-size: 3.5vw;
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-    .row_container{
-        .sidebar_left{       
-            .row_sidebar{
-                display: flex;
-                flex-direction: column;  
-                padding-left:120px; 
-            .sidebar_title h2 {
-                margin-top: 70px;
-                padding: 0 50px;
-                font-size: 3vw;
-              }      
-            .menu_sidebar{
-                width: 100vw;
-                max-width: 100%;
-                padding: 0px 50px;
-                .sidebar_list_menu{
-                    max-width: 940px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    li{
-                        width: 150px;
-                        margin-right: 20px;
-                      a{
-                        
-                        display: block;
-                        font-size: 1.2vw;
-                        padding: 0 10px ;
-                      }
-                    } 
-                }
-             }
-            }
-            .comment{
-                display: none;
-             }
-        }
-        .content_right{
-            .row_container{
-                .box_content{
-                    gap: 20px;
-                    flex-direction: column;
-                    .img_inner{
-                        width: auto;
-                        height: 100vh;
-                        
-                    }
-
-                }
-            }
-            .space_grid{
-                .inner{
-                    flex-basis: 100%;
-                }
-            }
-        }
-
-    }
-    
+   }
 }

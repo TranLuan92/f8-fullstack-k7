@@ -1,0 +1,21 @@
+@use "./partials/reset";
+@use "./partials/variables";
+@use "./partials/mixin";
+@use "./partials/base";
+@use "./pages/home/news";
+@use "./pages/products/info-product";
+@use "./pages/products/service-quality";
+@use "./pages/products/consumer-information";
+
+
+//Components
+@use "./components/header";
+@use "./components/footer";
+
+//pages
+
+//1. Home
+@use "./pages/home/home" ;
+
+//2. Product
+@use "./pages/products/product" ;

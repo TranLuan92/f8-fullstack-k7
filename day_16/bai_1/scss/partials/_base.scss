@@ -1,0 +1,30 @@
+@use "./variables";
+%overRide{
+    content:'';
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 99px;
+    z-index: -1;
+    // background: variables.$colorOverride ;
+}
+%image{
+    width: 27rem;
+    height: 36.8rem;
+}
+%purchased{
+        margin: 5rem auto 0;
+    a{
+        padding: 1.3rem 1.2rem;
+        font-size: 1.6rem;
+        color: #fff;    
+        text-transform: capitalize;
+        text-decoration: none;
+        background: #46B20F ;
+        border-radius: 5px;
+    }
+
+}
+.capitalize{
+    text-transform: capitalize;
+}
