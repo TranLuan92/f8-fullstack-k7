@@ -1,5 +1,5 @@
 @use "./variables";
-@mixin tabLets{
+@mixin tablets{
     @media screen {
         @content
     }

@@ -8,19 +8,19 @@
     z-index: -1;
     // background: variables.$colorOverride ;
 }
-%image{
-    width: 27rem;
-    height: 36.8rem;
+%image {
+        max-width: 27rem;
+        height: 36.8rem;    
 }
 %purchased{
-        margin: 5rem auto 0;
+        margin: 3rem auto 0;
     a{
         padding: 1.3rem 1.2rem;
-        font-size: 1.6rem;
+        font-size: 1.6vw;
         color: #fff;    
         text-transform: capitalize;
         text-decoration: none;
-        background: #46B20F ;
+        background: #3f9812 ;
         border-radius: 5px;
     }
 

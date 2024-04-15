@@ -2,6 +2,9 @@
 @use "../../partials/base";
 @use "../../partials/mixin";
 // sales ___________start
+.inner_sale{
+    padding: 0 0 5rem 0;
+}
 .wrap_container{
     .container{
         .row_container{
@@ -10,7 +13,7 @@
                 text-align: center;
                 h2{ 
                     margin: 0px auto;
-                    width: 60rem;
+                    max-width: 60rem;
                     color: variables.$textColor;
                     font-size: 3.2rem;
                     font-style: normal;
@@ -19,7 +22,7 @@
                 }
                 p{
                     margin: 1.52rem auto;
-                    width: 64rem;
+                    max-width: 64rem;
                     color: variables.$textColor;
                     font-size: 1.6rem;
                     font-weight: 400;
@@ -84,6 +87,7 @@
                     }
                 }
                 .about_col_two{
+                    // order: 1;
                     box-shadow: 1px 1px 10px 2px variables.$grayColor;
                     padding: 6rem 3rem;
                     // border: 2px solid red;
@@ -121,7 +125,7 @@
     
 }
 // sales ___________start
-@media screen and (min-width: 768px), (max-width: 992px) {
+@media screen and  (max-width: 992px) {
     .wrap_container{
         .row_container{
             .about_row{
@@ -129,8 +133,109 @@
 
                 }
                 .row_about_container{
+                    padding: 0px 20px;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    .about_col_one{
+                        max-width: 34vw;
+                        .override_one{
+                            display: none;
+                        }
+                        .override_two{
+                            display: none;
+                        }
+                    }
                     .about_col_two{
+                        max-width: 34vw;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media screen and  (max-width: 768px) {
+    .inner_sale{
+        padding: 0 0 2rem 0;
+    }
+    .wrap_container{
+        .row_container{
+            .about_row{
+                    .article_describe{
+                        margin-top: 5rem;
+                        text-align: center;
+                        h2{ 
+                            margin: 0px auto;
+                            max-width: 100%;
+                            color: variables.$textColor;
+                            font-size: 3.2rem;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: 4rem;
+                        }
+                        p{
+                            margin: 1.52rem auto;
+                            max-width: 100%;
+                            color: variables.$textColor;
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            line-height: 1.5;
+                        }
+                    }
+                
+                .row_about_container{
+                    padding: 0px 20px;
+                    flex-wrap: nowrap;
+                    // flex-direction: column;
+                    justify-content: center;
+                    .about_col_one{
+                        max-width: 30vw;
+                        .override_one{
+                            display: none;
+                        }
+                        .override_two{
+                            display: none;
+                        }
+                    }
+                    .about_col_two{
+                        max-width: 30vw;
+                    }
+                    span{
+                       
+                        font-size: variables.$saleSizeSpanMd;
+                         
+                    }
+                    p{
+                       
+                        font-size: variables.$saleSizeParagraphMd;
+                        
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+  
+    .wrap_container{
+        .row_container{
+            .about_row{
+                .article_describe{
+                    padding: 0px 2rem;
+
+                }
+                .row_about_container{
+                    flex-direction: column;
+                    gap: 2rem;
+                    .about_col_one{
+                        max-width: 100%;
+                        flex: 1 1 100%;
                       
+                    }
+                    .about_col_two{
+                        max-width: 100%;
+                        flex: 1 1 100%;
                     }
                 }
 

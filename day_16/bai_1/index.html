@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./scss/style.scss" />
     <link rel="stylesheet" href="./css/gird.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -18,12 +18,14 @@
     <!-- header ___________________ start__________ -->
     <input type="checkbox" id="menu_overlay" hidden />
     <header class="wrap_container">
-      <!-- <label for="menu_overlay" class="overlay"></label> -->
+      <label for="menu_overlay" class="overlay"></label>
       <div class="container">
         <div class="row_container">
           <div class="row_col_container col-12">
             <div class="icon_menu col-2">
-              <label for="menu_overlay" class="fa-solid fa-bars"></label>
+              <label for="menu_overlay">
+                <i class="fa-solid fa-bars"></i>
+              </label>
             </div>
             <div class="logo col-2">
               <a href="#!"><img src="./image/logo.png" alt="" /></a>
@@ -50,7 +52,7 @@
             </div>
           </div>
         </div>
-        <section class="row_container">
+        <!-- <section class="row_container">
           <nav class="menu_mobile_col_max-sm">
             <ul class="nav_list">
               <li><a href="#!">Trang chủ</a></li>
@@ -63,7 +65,7 @@
               <input type="text" placeholder="Search product" />
             </div>
           </nav>
-        </section>
+        </section> -->
       </div>
     </header>
     <!-- header ___________________ end__________ -->
@@ -73,10 +75,7 @@
         <div class="row_container">
           <div class="column_left">
             <h2>GreenChop: Tiện gấp dễ gắp</h2>
-            <h1>
-              AN TOÀN HƠN <br />
-              GIỮA MÙA COVID
-            </h1>
+            <h1>AN TOÀN HƠN GIỮA MÙA COVID</h1>
             <p>
               GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường hiện
               tại. Sản phẩm cho phép người dùng tháo lắp và thay mới đầu đũa
@@ -93,7 +92,7 @@
     </section>
     <!-- hero _________________________________end -->
     <!-- sales ________________________________start -->
-    <section class="wrap_container">
+    <section class="wrap_container inner_sale">
       <div class="container">
         <div class="row_container">
           <div class="about_row colo-12">
@@ -106,8 +105,8 @@
                 ăn...
               </p>
             </div>
-            <article class="row_about_container col-12">
-              <div class="about_col_one col-12">
+            <article class="row_about_container">
+              <div class="about_col_one">
                 <div class="override_one"></div>
                 <div class="sale_con">
                   <img src="./image/sale-1.png" alt="" />
@@ -115,12 +114,12 @@
                 <span>1000+</span>
                 <p>Hộ gia đình tin dùng GreenChop</p>
               </div>
-              <div class="about_col_two col-12">
+              <div class="about_col_two">
                 <img src="./image/sale-1.png" alt="" />
                 <span>600+</span>
                 <p>Nhà hàng đã phục vụ GreenChop cho thực khách</p>
               </div>
-              <div class="about_col_one col-12">
+              <div class="about_col_one">
                 <div class="override_two"></div>
                 <img src="./image/sale-1.png" alt="" />
                 <span>20+</span>
@@ -140,7 +139,7 @@
             <!-- product_one start -->
             <div class="frame_product">
               <div class="image_product product_one">
-                <img src="../bai_1/image/product-1.png" alt="" />
+                <img src="./image/product-1.png" alt="" />
               </div>
               <h4>
                 Combo <br />
@@ -158,7 +157,7 @@
             <!-- product_one start -->
             <div class="frame_product">
               <div class="image_product product_two">
-                <img src="../bai_1/image/product.png" alt="" />
+                <img src="./image/product.png" alt="" />
               </div>
               <h4>
                 Combo <br />
@@ -176,7 +175,7 @@
             <!-- product_one start -->
             <div class="frame_product">
               <div class="image_product product_three">
-                <img src="../bai_1/image/product-2.png" alt="" />
+                <img src="./image/product-2.png" alt="" />
               </div>
               <h4>
                 Combo Quán ăn <br />
@@ -194,7 +193,7 @@
             <!-- product_one start -->
             <div class="frame_product">
               <div class="image_product product_four">
-                <img src="../bai_1/image/product-1.png" alt="" />
+                <img src="./image/product-1.png" alt="" />
               </div>
               <h4>
                 Combo <br />
@@ -212,7 +211,7 @@
             <!-- product_one start -->
             <div class="frame_product">
               <div class="image_product product_five">
-                <img src="../bai_1/image/product.png" alt="" />
+                <img src="./image/product.png" alt="" />
               </div>
               <h4>
                 Combo <br />
@@ -230,7 +229,7 @@
             <!-- product_one start -->
             <div class="frame_product">
               <div class="image_product product_six">
-                <img src="../bai_1/image/product-2.png" alt="" />
+                <img src="./image/product-2.png" alt="" />
               </div>
               <h4>
                 Combo <br />
@@ -265,7 +264,7 @@
             <article class="news">
               <div class="news_article">
                 <div class="news_photos photos_one">
-                  <img src="../bai_1/image/home-1.png" alt="" />
+                  <img src="./image/home-1.png" alt="" />
                 </div>
                 <div class="dates">
                   <span>lorem ipsum</span>
@@ -286,7 +285,7 @@
               </div>
               <div class="news_article">
                 <div class="news_photos photos_one">
-                  <img src="../bai_1/image/home-2.png" alt="" />
+                  <img src="./image/home-2.png" alt="" />
                 </div>
                 <div class="dates">
                   <span>lorem ipsum</span>
@@ -307,7 +306,7 @@
               </div>
               <div class="news_article">
                 <div class="news_photos photos_one">
-                  <img src="../bai_1/image/home-3.png" alt="" />
+                  <img src="./image/home-3.png" alt="" />
                 </div>
                 <div class="dates">
                   <span>lorem ipsum</span>
@@ -336,7 +335,7 @@
     </section>
     <!-- news______________________end -->
     <!-- info_ product______________________start -->
-    <section class="wrap_container">
+    <section class="wrap_container col_back">
       <div class="container">
         <div class="row_container">
           <div class="heading">
@@ -389,7 +388,7 @@
     <!-- service quality ________________start-->
     <section class="wrap_container">
       <div class="container">
-        <div class="row_container row">
+        <div class="row_container row col-12">
           <div class="service_quality">
             <div class="service">
               <img src="./image/img-quality-1.png" alt="" />
@@ -452,7 +451,7 @@
           </div>
           <div class="service_quality">
             <div class="service">
-              <img src="./image/quality-6.png" alt="" />
+              <img src="../bai_1/image/quality-6.png" alt="" />
             </div>
             <div class="quality">
               <h4>Chất liệu an toàn</h4>
@@ -474,7 +473,7 @@
             <div class="column_left">
               <img src="./image/column-left.png" alt="" />
             </div>
-            <div class="column_right">
+            <div class="column_right-info">
               <form class="user_information" action="">
                 <h3>
                   Bạn có bất kì thắc mắc nào. <br />
@@ -505,7 +504,7 @@
         <div class="row_container">
           <div class="row-footer">
             <div class="column-footer">
-              <img src="../bai_1/image/logo.png" alt="error" />
+              <img src="./image/logo.png" alt="error" />
               <p class="col">GreenChop là bạn đồng hành của người tiêu dùng</p>
             </div>
             <div class="column-footer">
@@ -531,11 +530,11 @@
             <div class="column-footer">
               <h4>liên hệ</h4>
               <div class="contact">
-                <i class="fa-regular fa-envelope"> </i>
-                <span>greenchopvn@gmail.com</span>
+                <i class="fa-solid fa-globe"></i><span>Greenchop.vn</span>
               </div>
               <div class="contact">
-                <i class="fa-solid fa-globe"></i><span>Greenchop.vn</span>
+                <i class="fa-regular fa-envelope"> </i>
+                <span>greenchopvn@gmail.com</span>
               </div>
               <div class="contact">
                 <i class="fa-solid fa-location-dot"></i>
@@ -546,7 +545,7 @@
         </div>
         <div class="icon_footer">
           <div class="image-footer">
-            <img src="../bai_1/image/footer_img-1.png" alt="" />
+            <img src="./image/footer_img-1.png" alt="" />
           </div>
           <div class="icon_link">
             <i class="fa-brands fa-youtube"></i>

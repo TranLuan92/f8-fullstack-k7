@@ -86,3 +86,62 @@
         }
     }
 }
+//responsive
+@media screen and (max-width: 992px) {
+    .wrap_container{
+        .container{
+            .row_container{
+                .heading{
+                    h2{
+                        font-size: 3.2vw;
+                        width: 80%;
+                    }
+                    p{
+                        font-size: 1.6vw;
+                        width: 80%;
+                        
+                    }
+                }
+                .info_product{
+                    &::before{
+                        content:'';
+                        inset: 0;
+                        height: 35rem;
+                        position: absolute;
+                        background: #FFF0E7;
+                        top: 25%;
+                        z-index: -1;
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .col_back{
+        background: #FFF0E7;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrap_container{
+        .container{
+            .row_container{
+                .heading{
+                    h2{
+                        font-size: 2rem;
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        width: 90%;
+                        
+                    }
+                }
+               
+            }
+        }
+    }
+    .col_back{
+        background: #FFF0E7;
+    }
+}

@@ -6,28 +6,35 @@
     .container{
         .row_container{
             .product{
-                margin-top: 10rem;
+                margin-top: 5rem;
                 width: 100%;
-                gap: 10px;
+                gap: 5rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 .frame_product{
                     // border: 1px solid red;
                     // box-shadow: 1px 1px 10px 2px variables.$grayColor;
-                    width: calc(var(--container-width)/3 - 20px);
+                    max-width: calc(var(--container-width)/3 - 20px);
                     text-align: center;
                     padding: 50px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     .image_product{
-                       width: 100%;
+                       max-width: 100%;
+                      
                        img{
-                        @extend %image;
+                        max-width: 50%;
+                        height: auto;
+                        
+                        // align-self: center;
                        }
                     }
                     // .product_one{
                     //     @extend %image;
                     //     border: 1px red solid;
-                    //     background: url(../../../image/product/product-1.png) center center   / cover ;
+                    //     background: url(./image/product/product-1.png) center center   / cover ;
                     // }
                     // .product_two{
                     //     @extend %image;
@@ -50,7 +57,7 @@
                     //     background: url(../../../image/product/product-1.png);
                     // }
                     h4{
-                        width:100%;
+                        max-width:100%;
                         font-size: 2.4rem;
                         font-weight: 700;
                         line-height: normal;
@@ -90,5 +97,115 @@
                 }
             }
         }
+    }
+}
+//responsive
+@media screen and (max-width: 1200px) {
+    .product{
+        gap: 0 !important;
+    
+    .frame_product{
+        width: calc(var(--container-width) / 4 - 20px) ;
+        text-align: center;
+        padding: 50px 10px;
+        h4{
+            font-size: 2vw;
+        }
+            p{
+                font-size: 1.2vw;
+                span{
+                    font-size: 2vw;
+                }
+            }
+        }
+            .image_product{
+               max-width: 70%;
+            
+    }
+}
+}
+@media screen and (max-width: 992px) {
+    .product{
+        // gap: 0 !important;
+    
+    .frame_product{
+        width: calc(var(--container-width) / 4 - 20px) ;
+        text-align: center;
+        padding: 50px 10px;
+        h4{
+            font-size: 2vw;
+        }
+            p{
+                font-size: 1.2vw;
+                span{
+                    font-size: 2vw;
+                }
+            }
+        }
+            .image_product{
+               max-width: 70%;
+            
+    }
+}
+}
+@media screen and (max-width: 768px) {
+    .row_container{
+        
+        .product{
+            width: 100%;
+          
+            .frame_product{
+            width: 50%;
+            text-align: center;
+            padding: 50px 10px; 
+            h4{
+                font-size: 2vw;
+            }
+                p{
+                    font-size: 1.7vw;
+                    span{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+                .image_product{
+                   width: 100%;
+                  
+                
+            
+        
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .row_container{
+        
+        .product{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap !important;
+            .frame_product{
+            width: calc(var(--container-width)/2 - 2rem);
+            padding: 50px 10px; 
+            h4{
+                font-size: 2vw;
+            }
+                p{
+                    font-size: 1.7vw;
+                    span{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+                .image_product{
+                   width: 100%;
+                  
+                
+            
+        
+        }
+    }
     }
 }

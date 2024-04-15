@@ -38,3 +38,35 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .wrap_container{
+        .container{
+            .row_container{
+                gap: 1.5rem;
+                .service_quality{
+                    width: calc(var(--container-width)/4 - 50px);
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .wrap_container{
+        .container{
+            .row{
+                gap: 0rem;
+                padding:2rem;
+            }
+            .row_container{
+                gap: 1.5rem;
+                .service_quality{
+                    // flex-direction: column;
+                    width: 100%;
+                   
+                }
+            }
+        }
+    }
+    
+}
