@@ -114,32 +114,6 @@
     
                         }
                         .form_two{
-                            gap: 1rem;
-                            display: flex;
-                            input{
-                                width: 100vw;
-                            }
-                        }
-                        textarea{
-                            width: 100%;
-    
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 380px) {
-    .wrap_container{
-        .row_container{
-            .content_user{
-               
-                .column_right-info{
-                    width: 100vw;
-                    .user_information{
-                        max-width: 100vw;
-                        .form_two{
                             gap: 3rem !important;
                             display: flex;
                             flex-direction: column;

@@ -159,6 +159,7 @@
                     .column-footer{
                         min-width: 100%;
                         text-align: center;
+                      
                         .col{
                             margin: 0 auto;
                             width: 20rem;
@@ -167,6 +168,19 @@
                     
                 }
             }
+            .icon_footer{
+                display: flex;
+                justify-content: center !important;
+                flex-wrap: wrap;
+                gap: 3rem;
+                .img_footer{
+                    width: fit-content;
+                }
+                .icon_link{
+                    width: fit-content;
+                }
+            }
+       
         }
     }
 }
@@ -191,8 +205,13 @@
                 gap: 2rem;
                 max-width: 100%;
                 justify-content: center;
-                img{
-                    
+                img {
+                    width: 100vw;
+                }
+                .icon_link{
+                    width: 100vw;
+                   flex-wrap: wrap;
+                   justify-content: center;
                 }
             }
         }
