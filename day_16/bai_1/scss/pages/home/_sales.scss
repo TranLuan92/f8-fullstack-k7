@@ -102,14 +102,14 @@
                         position: relative;
                       
                     }
-                    span{
-                        display: block;
-                        margin-top: 3rem;
-                        color: variables.$textColor;
-                        font-size: 4.3333rem;
-                        font-weight: 800;
-                        line-height: normal;    
-                    }
+                        span{
+                            display: block;
+                            margin-top: 3rem;
+                            color: variables.$textColor;
+                            font-size: 4.3333rem;
+                            font-weight: 800;
+                            line-height: normal;    
+                        }
                     p{
                         color: variables.$textColor;
                         font-size: 1.8rem;
@@ -221,8 +221,9 @@
         }
     }
 }
+
 @media screen and (max-width: 576px) {
-  
+   
     .wrap_container{
         .row_container{
             .about_row{
@@ -243,11 +244,13 @@
                         flex: 1 1 100%;
                     }
                     span{
-                        font-size: 4.3333rem; 
+                        
+                        font-size: 2rem;    
                     }
                     p{
-                        font-size: 1.8rem;
+                        font-size: variables.$saleSizeParagraphSm;
                     }
+                  
                 }
 
             }

@@ -1142,10 +1142,10 @@ header .row_container .menu_mobile_col_max-sm {
     flex: 1 1 100%;
   }
   .wrap_container .row_container .about_row .row_about_container span {
-    font-size: 4.3333rem;
+    font-size: 2rem;
   }
   .wrap_container .row_container .about_row .row_about_container p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 .wrap_container .container .row_container .product {
