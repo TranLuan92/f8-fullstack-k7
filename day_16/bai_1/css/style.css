@@ -886,6 +886,12 @@ header .row_container .menu_mobile_col_max-sm {
     max-width: 80%;
     text-align: start;
   }
+  .wrap_container .container .row_container .column_left h2 {
+    font-size: 3rem;
+  }
+  .wrap_container .container .row_container .column_left h1 {
+    font-size: 3.5rem;
+  }
   .wrap_container .container .row_container .column_right img {
     width: 60vw;
     height: 60vw;
@@ -1046,6 +1052,12 @@ header .row_container .menu_mobile_col_max-sm {
 }
 
 @media screen and (max-width: 992px) {
+  .wrap_container .row_container .about_row .article_describe h2 {
+    font-size: 2.5rem;
+  }
+  .wrap_container .row_container .about_row .article_describe p {
+    font-size: 1.6rem;
+  }
   .wrap_container .row_container .about_row .row_about_container {
     padding: 0px 20px;
     flex-wrap: nowrap;
@@ -1128,6 +1140,12 @@ header .row_container .menu_mobile_col_max-sm {
   .wrap_container .row_container .about_row .row_about_container .about_col_two {
     max-width: 100%;
     flex: 1 1 100%;
+  }
+  .wrap_container .row_container .about_row .row_about_container span {
+    font-size: 4.3333rem;
+  }
+  .wrap_container .row_container .about_row .row_about_container p {
+    font-size: 1.8rem;
   }
 }
 .wrap_container .container .row_container .product {
