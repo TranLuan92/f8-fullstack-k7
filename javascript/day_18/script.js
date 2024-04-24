@@ -90,35 +90,6 @@ for (var i = 1; i <= n; i++) {
   document.write("<br/>");
 }
 
-// bài 6: ban cờ vua.
-document.write("bài 6 :");
-var box = document.createElement("box");
-for (var i = 1; i <= 8; i++) {
-  document.write(`${i}`);
-  var row = document.createElement("span");
-  for (var j = 1; j <= 7; j++) {
-    document.write(`${j}`);
-    var cell = document.createElement("label");
-    if ((i + j) % 2 === 0) {
-      cell.className = "white";
-    } else {
-      cell.className = "black";
-    }
-    row.appendChild(cell);
-  }
-  box.appendChild(row);
-  document.write(`<br/>`);
-}
-var box = document.createElement(box);
-document.write("ban cờ vua");
-for (var i = 1; i <= 8; i++) {
-  var row = document.createElement("label");
-  document.write(`${i}`);
-  for (var j = 1; j <= 8; j++);
-  var col = document.createElement("span");
-  document.write(`${j}`);
-}
-
 // bài 7 :
 
 document.write(`bài 7 : vẽ bảng cửu chương !`);
