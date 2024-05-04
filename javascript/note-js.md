@@ -91,9 +91,29 @@
     // var b = a >= 10 ? "F8" : "Hoàng An";
     // console.log(b);
 
-        // var a = 10;
-        // var total = 5 + 10 + (a >= 10 ? 10 : 5) + 2;
-        // console.log(total);
+            // var a = 10;
+            // var total = 5 + 10 + (a >= 10 ? 10 : 5) + 2;
+            // console.log(total);
+
+    // Cách dùng :
+
+    > > > Toán tử 3 ngôi thường được sử dụng để thay thế cho câu lệnh điều kiện if/else trong các trường hợp đơn giản, giúp rút gọn cú pháp và làm cho mã nguồn dễ đọc hơn.
+    > > > // ví dụ :
+    > > > // sắp sếp số theo thứ tự tăng dần.
+    > > > // var a = 1 ;
+    > > > // var b = 2 ;
+    > > > // var c = 3 ;
+    > > > //a > b ? (a > c ? a : c) : b > c ? b : c ;
+    > > > dùng if :
+    > > > if(a > b ){
+
+        console.log(a);
+
+    } else if ( a < b ){
+    console.log(b);
+    }else{
+    console.log(c);
+    }
 
 6.  Toán tử nullish (??)
     //Cú pháp: bien ?? giatri

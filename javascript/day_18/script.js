@@ -89,6 +89,35 @@ for (var i = 1; i <= n; i++) {
   }
   document.write("<br/>");
 }
+// bài 6 : vẽ bàn cờ vua.
+var count = 0;
+var box = document.querySelector(".box");
+var white = document.querySelector(".white");
+var black = document.querySelector(".black");
+var displayFlex = document.querySelector(".display-flex");
+var table = `<div>`;
+
+for (var i = 1; i <= 8; i++) {
+  if (i % 2 === 0) {
+    count = 0;
+  } else count = 1;
+  table += `<div class="display-flex">`;
+  for (var j = 1; j <= 8; j++) {
+    count++;
+    if (count % 2 === 0) {
+      table += `<span class = "white"></span>`;
+      // document.write(`<span>0</span>`);
+    } else {
+      table += `<span class = "black"></span>`;
+      // document.write(`<span>1</span>`);
+    }
+  }
+  table += `</div>`;
+  // document.write(`<br/>`);
+}
+table += `</div>`;
+
+//_______________________________________________________________
 
 // bài 7 :
 
