@@ -55,26 +55,23 @@
 var words = "Học lập trình rất rất khó";
 var key = " ";
 var position = 0;
-
 setInterval(function () {
   if (position >= words.length) {
     position = 0;
   }
-
-  var index = words.indexOf(key, position);
-  // console.log(index);
-  var contentOne = words.slice(0, position);
-  // console.log(contentOne);
-  var contentTwo = `<span style="color: red">${
-    words.slice(position, index) + key
-  }</span>`;
-  // console.log(contentTwo);
-  if (index < 0) {
-    index = words.length;
+  var index = words.indexOf(key, position); // lần đầu chạy không "3"
+  var contentOne = words.slice(0, position); // lần đầu chạy là không "0"
+  var contentTwo = "";
+  if (index >= 0) {
+    contentTwo = `<span style="color: red">${
+      words.slice(position, index) + key // nếu tìm thấy key được ấn định sẽ chạy đoạn mã này cho tói khi không còn key.
+    }</span>`;
+  } else {
+    contentTwo = `<span style="color: red">${words.slice(position)}</span>`; //cắt từ được thay dổi màu
+    index = words.length; // độ dài của đoạn văn bản khi không tim thấy khoảng trắng sau khi chạy hết đoạn văn bản
   }
   var contentThree = words.slice(index + key.length);
-  // console.log(contentThree);
-  var result = contentOne + contentTwo + contentThree;
+  var result = contentOne + contentTwo + contentThree; // nối 3 đoạn văn bản lại với nhau
   document.body.innerHTML = result;
   position = index + key.length; // Tăng vị trí bằng độ dài của khóa cộng một
 }, 1000);
