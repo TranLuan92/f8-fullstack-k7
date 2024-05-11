@@ -24,10 +24,9 @@ Cho trước 1 mảng số nguyên, tính trung bình các số nguyên tố tro
 
 var numbersArr = [1, 3, 4, 5];
 var result = "";
-
+var newIsPrimeArr;
 for (var value of numbersArr) {
   var isPrime = true;
-
   if (value <= 1) {
     isPrime = false;
   } else {
@@ -38,18 +37,19 @@ for (var value of numbersArr) {
       }
     }
   }
-
   if (isPrime && value !== 1) {
-    // Điều kiện kiểm tra ngoại trừ số 1
-    result += value;
+    result += value + " ";
+    var resultAr = result.trimEnd();
+    newIsPrimeArr = resultAr.split(" ");
+    console.log(newIsPrimeArr);
   }
 }
 
-document.write("Tổng của các số nguyên tố trong mảng là:", result);
+document.write("Tổng của các số nguyên tố trong mảng là:", result, `<br/>`);
 
 //_____________________________________________________________
-// document.write(`<h3>Bài 03:
-// Cho trước 1 mảng bất kỳ, nếu trong mảng có các phần tử trùng nhau thì chỉ giữa lại 1 (Gọi là lọc trùng). In ra mảng sau khi đã xử lý`);
+document.write(`<h3>Bài 03:
+Cho trước 1 mảng bất kỳ, nếu trong mảng có các phần tử trùng nhau thì chỉ giữa lại 1 (Gọi là lọc trùng). In ra mảng sau khi đã xử lý`);
 
 var numArray = [1, 3, 4, 5, 5];
 var newArNumber = [];
