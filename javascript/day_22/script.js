@@ -2,12 +2,18 @@ document.write(`Bài tập 1: Lấy kết quả giao giữa 2 mảng <br/>`);
 var arrA = [1, 4, 3, 2];
 var arrB = [5, 2, 6, 7, 4, 1];
 var newArr = [];
-arrA.forEach(function (number) {
-  if (arrB.includes(number)) {
-    newArr.push(number);
+for (var value of arrA) {
+  for (var index in arrB) {
+    if (value === arrB[index]) newArr.push(value);
   }
-});
+}
 document.write(`- Phần tử chung của hai mảng là : ${newArr} <br/>`);
+// arrA.forEach(function (number) {
+//   if (arrB.includes(number)) {
+//     newArr.push(number);
+//   }
+// });
+// document.write(`- Phần tử chung của hai mảng là : ${newArr} <br/>`);
 //____________________________________________________________________
 document.write(
   `<br/><br/>Bài tập 2: Làm phẳng array sau (Chuyển về mảng 1 chiều) Không được sử dụng flat() <br/>`
@@ -79,4 +85,4 @@ function typeOfArr(arrC) {
 
 typeOfArr(arrC);
 
-document.write(`<br/><br/>Bài tập 4: <br/>`);
+document.write(`<br/><br/>Bài tập 4:  <br/>`);
