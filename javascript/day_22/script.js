@@ -86,3 +86,73 @@ function typeOfArr(arrC) {
 typeOfArr(arrC);
 
 document.write(`<br/><br/>Bài tập 4:  <br/>`);
+
+var arrTagHtml = [
+  {
+    img: "https://picsum.photos/200/300",
+    title: "Tiêu đề bài viết 1",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, esse ex. Eos repellat veniam ad dolor voluptas ut deserunt, dolores molestiae non eaque rerum, nam, voluptates voluptatem? Repudiandae, ex suscipit?",
+  },
+  {
+    img: "https://picsum.photos/200/300",
+    title: "Tiêu đề bài viết 2",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, esse ex. Eos repellat veniam ad dolor voluptas ut deserunt, dolores molestiae non eaque rerum, nam, voluptates voluptatem? Repudiandae, ex suscipit? 2",
+  },
+  {
+    img: "https://picsum.photos/200/300",
+    title: "Tiêu đề bài viết 3",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, esse ex. Eos repellat veniam ad dolor voluptas ut deserunt, dolores molestiae non eaque rerum, nam, voluptates voluptatem? Repudiandae, ex suscipit? 3",
+  },
+];
+// var container = document.getElementById("container");
+
+document.write("<div class=wrapper'>");
+document.write("<div class = 'wrapper'>");
+for (var value of arrTagHtml) {
+  document.write(
+    " <div class='container'><div class='image'><img src='" +
+      value.img +
+      "'></div><div class='content'>" +
+      "<h3 class ='title'> " +
+      value.title +
+      " </h3> <p class = 'desc'>" +
+      value.desc +
+      "</p></div></div>"
+  );
+}
+document.write("</div>");
+// arrTagHtml.forEach(function (value) {
+//   document.write(`
+//   <div class = "wrapper">
+//     <div class = container>
+//       <div class="image">
+//         <img src="${value.img}" alt = "error">
+//       </div>
+//       <div class="content">
+//         <h3 class ="title">${value.title}</h3>
+//         <p class ="desc">${value.desc}</p>
+//       </div>
+//     </div>
+//     <div class = container inner>
+//       <div class="image">
+//         <img src="${value.img}" alt = "error">
+//       </div>
+//       <div class="content">
+//         <h3 class ="title">${value.title}</h3>
+//         <p class ="desc">${value.desc}</p>
+//       </div>
+//     </div>
+//     <div class = container>
+//       <div class="image">
+//         <img src="${value.img}" alt = "error">
+//       </div>
+//       <div class="content">
+//         <h3 class ="title">${value.title}</h3>
+//         <p class ="desc">${value.desc}</p>
+//       </div>
+//     </div>
+//   </div>
+//   `);
+
+//   document.write.innerHTML += html;
+// });

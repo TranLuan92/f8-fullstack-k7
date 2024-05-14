@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .wrapper {
+        width: 700px;
+        padding: 20px 0;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+      }
+      .container:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+      .image {
+        width: auto;
+        margin-right: 20px;
+      }
+
+      .image img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .content {
+        flex: 1; /* Cột phần nội dung mở rộng để điền vào phần còn lại của hàng */
+      }
+
+      .title {
+        margin-top: 0;
+        color: black;
+        font-size: 1.5rem;
+      }
+    </style>
   </head>
   <body>
     <script src="./script.js"></script>
