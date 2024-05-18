@@ -27,31 +27,8 @@
 // }, 500);
 // // var display = setInterval();
 // // display();
-//______________________karaoke____________________________;
-// var words = "Học lập trình rất rất khó";
-// var key = " ";
-// var position = 0;
 
-// setInterval(function () {
-//   if (position >= words.length) {
-//     position = 0;
-//   }
-
-//   var contentOne = words.indexOf(key, position);
-//   var contentTwo = `<span style="color: red">${
-//     words.slice(0, contentOne) + key
-//   }</span>`;
-
-//   if (contentOne < 0) {
-//     contentOne = words.length;
-//   }
-//   var contentThree = words.slice(contentOne + key.length);
-//   var result = contentTwo + contentThree;
-
-//   document.body.innerHTML = result;
-//   position = contentOne + key.length; // Tăng vị trí bằng độ dài của khóa cộng một
-// }, 1000);
-//______________________karaoke____________________________;
+//______________________line height____________________________;
 var words = "Học lập trình rất rất khó";
 var key = " ";
 var position = 0;
@@ -64,7 +41,8 @@ setInterval(function () {
   var contentTwo = "";
   if (index >= 0) {
     contentTwo = `<span style="color: red">${
-      words.slice(position, index) + key // nếu tìm thấy key được ấn định sẽ chạy đoạn mã này cho tói khi không còn key.
+      words.slice(position, index) + key
+      // nếu tìm thấy key được ấn định sẽ chạy đoạn mã này cho tới khi không còn key.
     }</span>`;
   } else {
     contentTwo = `<span style="color: red">${words.slice(position)}</span>`; //cắt từ được thay dổi màu
@@ -73,5 +51,5 @@ setInterval(function () {
   var contentThree = words.slice(index + key.length);
   var result = contentOne + contentTwo + contentThree; // nối 3 đoạn văn bản lại với nhau
   document.body.innerHTML = result;
-  position = index + key.length; // Tăng vị trí bằng độ dài của khóa cộng một
+  position = index + key.length; // Tăng vị trí bằng độ dài của key
 }, 1000);
