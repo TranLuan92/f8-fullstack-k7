@@ -4,7 +4,7 @@ var arrB = [5, 2, 6, 7, 4, 1];
 var newArr = [];
 for (var value of arrA) {
   for (var index in arrB) {
-    if (value === arrB[index]) newArr.push(value);
+    if (value === arrB[index] && !newArr.includes(value)) newArr.push(value);
   }
 }
 document.write(`- Phần tử chung của hai mảng là : ${newArr} <br/>`);

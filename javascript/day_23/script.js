@@ -1,18 +1,16 @@
 document.write(`bài 1 : Cho một số nguyên n, trả về số nguyên tố đối xứng nhỏ nhất lớn hơn hoặc bằng n.
 <br/>`);
-var n = 3;
+var n = 2;
 function smalLestNumberOfParallels(n) {
-  function isPrime(number) {
-    if (number < 2) return false;
-    for (var i = 2; i <= Math.sqrt(number); i++) {
-      if (number % i === 0) {
-        return false;
-      }
+  function isPrime(n) {
+    if (n < 2) return false;
+    for (var i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) return false;
     }
     return true;
   }
-  function isNumberRev(num) {
-    let numberString = num.toString();
+  function isNumberRev(number) {
+    let numberString = number.toString();
     return numberString === numberString.split("").reverse().join("");
   }
   for (var i = n; ; i++) {
