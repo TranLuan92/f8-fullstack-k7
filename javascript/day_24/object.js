@@ -17,24 +17,47 @@ var errors = {
   },
 };
 
-function getError(field) {
-  var fieldArr = field.split(".");
-  console.log(fieldArr);
+// console.log(Object.keys(errors));
+// Object.keys(errors).forEach(function (key) {
+//   console.log(errors[key]);
+// });
+// function getError(keys) {
+//   var keysArr = keys.split("."); //keysArr =['keysNameInput']
+//   console.log(keysArr);
+//   if (
+//     typeof errors[keysArr[0]] === "object" && // errors[name]
+//     !Array.isArray(errors) &&
+//     errors !== null
+//   ) {
+//     if (1 <= keysArr.length) {
+//       //nếu trong keysArr là 2 phần tử trở lên
+//       return errors[keysArr[0]][keysArr[1]];
+//     }
+//     console.log(`lo`, errors[keysArr[0]]);
+//     return errors[keysArr[0]].required;
+//   } else {
+//     console.log("Lỗi khác");
+//   }
+// }
+// console.log(getError("email.min")); // "Vui lòng nhập họ tên"
+
+function error(field) {
+  var fieldAr = field.split("."); // ["name", "min"]
   if (
-    typeof errors[fieldArr[0]] === "object" &&
+    typeof errors[fieldAr[0]] === "object" &&
     !Array.isArray(errors) &&
     errors !== null
   ) {
-    if (1 < fieldArr.length) {
-      return errors[fieldArr[0]][fieldArr[1]];
+    if (1 < fieldAr.length) {
+      console.log(errors[fieldAr[0]]); // r
+      return errors[fieldAr[0]][fieldAr[1]]; /// name["min"]
     }
-    console.log(`lo`, errors[fieldArr[0]]);
-    return errors[fieldArr[0]].required;
+    return errors[fieldAr[0]].required;
   } else {
     console.log("Lỗi khác");
   }
 }
-console.log(getError("name")); // "Vui lòng nhập họ tên"
+console.log(error("name.min"));
 //_________________________________________________
 //Bài tập 2 :
 
