@@ -140,7 +140,7 @@ var nestedArray = [
 function nedArr(nestedArray, parent = 0) {
   var newArray = [];
   for (var value of nestedArray) {
-    if (parent === value.parent) {
+    if (value.parent === parent) {
       var children = nedArr(nestedArray, value.id);
       var a = { id: value.id, name: value.name };
       if (children.length > 0) {

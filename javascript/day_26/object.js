@@ -1,19 +1,18 @@
 //Bài 1 : Viết 1 hàm tính tổng giá trị biểu thức, tham số truyền vào ở dạng Rest Parameter
 
-// var sum = function (...numbers) {
-//   // console.log(numbers);
-//   for (var value of numbers) {
-//     if (typeof value !== "number") {
-//       return "Lỗi : Giá trị nhập vào phải là số !";
-//     }
-//   }
-//   let result = numbers.reduce(function (prevValue, current) {
-//     return prevValue + current;
-//   }, 0);
-//   return result;
-// };
-// console.log(sum(2, 3, 5));
-
+var sum = function (...numbers) {
+  // console.log(numbers);
+  for (var value of numbers) {
+    if (typeof value !== "number") {
+      return "Lỗi : Giá trị nhập vào phải là số !";
+    }
+  }
+  let result = numbers.reduce(function (prevValue, current) {
+    return prevValue + current;
+  }, 0);
+  return result;
+};
+console.log(sum(2, 3, 5));
 //_______________________________________________________________
 
 // Bài 2 : Viết 1 phương thức Prototype có tên là getCurrency có đối số truyền vào là đơn vị tiền tệ cần hiển thị
@@ -22,7 +21,6 @@ var price = 200000;
 Object.prototype.getCurrency = function (unit) {
   if (!Number.isNaN(Number(this)) && Number(this) >= 0) {
     var numberString = this.toString().split("").reverse();
-    console.log(numberString);
     if (String(this).includes("-")) {
       console.log("Số không hợp lệ !");
       return;
