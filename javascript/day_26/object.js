@@ -50,11 +50,7 @@ Object.prototype.push2 = function (...value) {
 };
 var array = [];
 array.push2(1, 2, 3, 4, 0);
-// console.log(array);
-Array.prototype.push3=function(in){
-  
-}
-array.push3()
+console.log(array);
 //____________________________________________________________
 
 // Bài 4: Viết làm vòng lặp filter trong Array. Đặt tên là filter2()
