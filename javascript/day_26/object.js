@@ -1,98 +1,60 @@
 //Bài 1 : Viết 1 hàm tính tổng giá trị biểu thức, tham số truyền vào ở dạng Rest Parameter
 
-var sum = function (...numbers) {
-  // console.log(numbers);
-  for (var value of numbers) {
-    if (typeof value !== "number") {
-      return "Lỗi : Giá trị nhập vào phải là số !";
-    }
-  }
-  let result = numbers.reduce(function (prevValue, current) {
-    return prevValue + current;
-  }, 0);
-  return result;
-};
-console.log(sum(2, 3, 5));
+// var sum = function (...numbers) {
+//   // console.log(numbers);
+//   for (var value of numbers) {
+//     if (typeof value !== "number") {
+//       return "Lỗi : Giá trị nhập vào phải là số !";
+//     }
+//   }
+//   let result = numbers.reduce(function (prevValue, current) {
+//     return prevValue + current;
+//   }, 0);
+//   return result;
+// };
+// console.log(sum(2, 3, 5));
 
 //_______________________________________________________________
+
 // Bài 2 : Viết 1 phương thức Prototype có tên là getCurrency có đối số truyền vào là đơn vị tiền tệ cần hiển thị
+var price = 200000;
 
-function GetUnit(price, unit) {
-  this.price = price;
-  this.unit = unit;
-}
-// console.log(typeof GetUnit);
-
-Object.prototype.getUnit = function () {
-  function isNumber(price, innerUnit) {
-    // function a(price) {
-    //   var check = price.every(function (price) {
-    //     if (price !== null) {
-    //       price = +price;
-    //       if (!Number.isNaN(price)) return true;
-    //     }
-    //     return false;
-    //   });
-    //   return check;
-    // }
-    // console.log(a(price));
-
-    function a(price) {
-      if (price !== null) {
-        price = +price;
-        if (!Number.isNaN(price)) return price;
-      }
-      return "Số nhập vào không hợp lệ";
+Object.prototype.getCurrency = function (unit) {
+  if (!Number.isNaN(Number(this)) && Number(this) >= 0) {
+    var numberString = this.toString().split("").reverse();
+    console.log(numberString);
+    if (String(this).includes("-")) {
+      console.log("Số không hợp lệ !");
+      return;
     }
-    // console.log(a(price));
-
-    // if (isNaN(price)) return "Giá trị nhập vào không hợp lệ !";
-    // else if (price < 0) {
-    //   return "Số nhập vào phải là số dương !";
-    // }
-    var newArrNumber = [];
-    let count = 0;
-    let numberString = price.toString();
-
-    function numberTwo(numberString) {
-      for (let i = numberString.length - 1; i >= 0; i--) {
-        newArrNumber.unshift(numberString[i]);
-        count++;
-        if (count % 3 === 0 && i !== 0) {
-          newArrNumber.unshift(",");
-        }
+    var result = numberString.map(function (char, index) {
+      if ((index + 1) % 3 === 0 && index < numberString.length - 1) {
+        return "," + char;
       }
-      return newArrNumber.join("");
-    }
-    var numberThree = numberTwo(numberString);
-    return numberThree + " " + innerUnit;
-    //Xử lý chuỗi___end
+      return char;
+    });
+    console.log(result.reverse().join("") + " " + unit);
+  } else {
+    console.log("Số không hợp lệ !");
+    return;
   }
-  return isNumber(this.price, this.unit);
 };
-
-var price = "-200000";
-var getPrice = new GetUnit(price, "đ");
-console.log(getPrice.getUnit());
+price.getCurrency("đ");
 
 // //_________________________________
 //Bài 3 : Viết lại hàm push() trong Array. Đặt tên là push2()
-
-// function newArray() {
-//   this.length = 0;
-// }
-// newArray.prototype.push2 = function (...value) {
-//   for (var element of value) {
-//     this[this.length] = element;
-//     this.length++;
-//   }
-
-//   return Array.from(this.length).values();
-// };
-// var arr = new newArray();
-// arr.push2(1, 2, 3);
-// console.log(arr);
-
+Object.prototype.push2 = function (...value) {
+  for (var element of value) {
+    this[this.length] = element;
+  }
+};
+var array = [];
+array.push2(1, 2, 3, 4, 0);
+// console.log(array);
+Array.prototype.push3=function(in){
+  
+}
+array.push3()
 //____________________________________________________________
 
 // Bài 4: Viết làm vòng lặp filter trong Array. Đặt tên là filter2()
@@ -132,6 +94,7 @@ console.log(evenNumbers); // [2, 4, 6]
 
 //__________________________________________
 // Bài 5 :
+
 // var nestedArray = [
 //   {
 //     id: 1,
@@ -190,34 +153,41 @@ console.log(evenNumbers); // [2, 4, 6]
 //   },
 // ];
 
-// function nedArr(nestedArray, parent = 0) {
-//   var newArray = [];
-//   for (var value of nestedArray) {
-//     if (parent === value.parent) {
-//       var children = nedArr(nestedArray, value.id);
-//       var a = { id: value.id, name: value.name };
-//       if (children.length > 0) {
-//         a.children = children;
-//         console.log(children);
-//       }
-//       newArray.push(a);
-//     }
-//   }
-//   return newArray;
-// }
-// console.log(nedArr(nestedArray));
+// // function nedArr(nestedArray, parent = 0) {
+// //   var newArray = [];
+// //   for (var value of nestedArray) {
+// //     if (parent === value.parent) {
+// //       var children = nedArr(nestedArray, value.id);
+// //       var a = { id: value.id, name: value.name };
+// //       if (children.length > 0) {
+// //         a.children = children;
+// //         console.log(children);
+// //       }
+// //       newArray.push(a);
+// //     }
+// //   }
+// //   return newArray;
+// // }
+// // console.log(nedArr(nestedArray));
 
-{
-  /* <form action="">
-  <label for="" id="select__option">
-    Chuyên Mục
-    <select name="select__option" id="select__option">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </select>
-  </label>
-</form>; */
-}
+// // {
+// /* <form action="">
+//   <label for="" id="select__option">
+//     Chuyên Mục
+//     <select name="select__option" id="select__option">
+//       <option value=""></option>
+//       <option value=""></option>
+//       <option value=""></option>
+//       <option value=""></option>
+//       <option value=""></option>
+//     </select>
+//   </label>
+// </form>; */
+// // }
+
+// for (var value of nestedArray) {
+//   console.log(value);
+//   if (value.id === 3) {
+//     value.parent = 20;
+//   }
+// }

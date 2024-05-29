@@ -57,7 +57,7 @@ function error(field) {
     console.log("Lỗi khác");
   }
 }
-console.log(error("name.min"));
+console.log(error("ma"));
 //_________________________________________________
 //Bài tập 2 :
 
