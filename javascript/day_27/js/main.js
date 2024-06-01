@@ -29,8 +29,7 @@ function showAndCloseForm() {
   rowContainer.classList.replace("open", "close");
   overlay.classList.replace("open", "close");
 }
-closeForm.document.addEventListener("click", showAndCloseForm);
-
+closeForm.addEventListener("click", showAndCloseForm);
 // //_____________show and hidden form_____________________________________
 function showAndHiddenForm() {
   rowContainer.classList.replace("close", "open");
