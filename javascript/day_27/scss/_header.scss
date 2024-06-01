@@ -1,0 +1,133 @@
+
+.wrapper{
+    width: 100vw;
+    .container{
+        width: 1000px;
+        margin: 0 auto;
+        .menu{
+            width: 100%;
+            background: orangered;
+            .nav__list{
+                font-size: 2rem;
+                width: fit-content;
+                margin: 0px auto;
+               
+                .item{
+                    
+                    font-weight: 900;
+                    padding: 10px  20px;
+                    a{
+                        color: white;
+                        &:hover{
+                            color: black
+                        }
+                    }
+                }
+             }
+        }
+        .overlay{
+            content: "";
+            inset: 0;
+            position: fixed;
+            z-index: 0;
+            background: rgba(3,3,3, 0.5);
+            
+        }
+        .close{
+                display: none;
+            }
+        
+        .row_container{
+            position: relative;
+            background: aliceblue;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px 0;
+           .off{
+            color: red;
+            font-size: 3rem;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+           }
+           
+            h1{
+                font-size: 5rem;
+                color: green;
+                font-weight: 900;
+                text-align: center;
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+            .btn{
+                width: 100%;
+                display: flex;
+                
+                button{
+                    margin-top: 10px;
+                    width: calc(100% / 2);
+                    padding: 20px;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: black;
+
+                }
+                .show__color{
+                    background: green;
+                    color: white;
+                }
+                .hidden__color{
+                    color: black;
+                }
+                
+            }
+            .back__Inp{
+                background: green;
+                color: white;
+                font-size: 2rem;
+            }
+            .from_login,.from_create_account{
+                .check_mail,
+                .create_pass,
+                .checkPassword,
+                .checkFullName,
+                .create_email{
+                    color: red;
+                    font-size: 1.2rem;                
+                }
+                padding: 20px 30px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    padding: 15px 10px;
+                    margin: 10px 0px;
+                    border-radius: 5px;
+                }
+                button{
+                    margin-top: 10px;
+                    width:100%;
+                    padding: 15px;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    background: green;
+                    color: white;
+                    
+                }
+
+            }
+                .open{
+                    display: block;
+                }
+                .close{
+                    display: none;
+                }
+          
+           
+
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="container">
+        <nav class="menu">
+          <ul class="nav__list">
+            <li class="item"><a href="#!">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="wrapper">
+      <div class="container">
+        <div class="overlay close"></div>
+        <div class="row_container">
+          <!-- thêm close -->
+          <h1>dân trí</h1>
+          <span class="off">&times;</span>
+          <div class="btn">
+            <button class="login show__color">Login</button>
+            <button class="create hidden__color">Create Account</button>
+          </div>
+          <!-- _____________________ -->
+          <form class="from_login open" action="">
+            <span class="check_mail all_open close">
+              Email nhập vào không hợp lệ. Xin vui lòng nhập lại !
+            </span>
+
+            <!-- onkeyup="event.preventDefault();checkMail()" ; nằm trong thẻ input-->
+            <input
+              id="email"
+              onkeyup="event.preventDefault();checkMail()"
+              type="email"
+              placeholder="Email address"
+            />
+            <span class="checkPassword all_open close"> </span>
+
+            <input
+              id="passWord"
+              onkeyup="event.preventDefault();checkPassword()"
+              type="password"
+              placeholder="Password"
+            />
+            <input
+              class="login__account back__Inp"
+              type="submit"
+              value="Login"
+            />
+          </form>
+          <!-- ______________________________________________________ -->
+          <form class="from_create_account close" action="">
+            <span class="checkFullName all_open close">
+              Vui lòng nhập đầy Họ và tên !
+            </span>
+            <input
+              id="full_name"
+              onkeyup="event.preventDefault();fullName()"
+              type="text"
+              placeholder="Your full name"
+            />
+            <!-- ______________________________________ -->
+
+            <span class="create_email all_open close">
+              Email nhập vào không hợp lệ. Xin vui lòng nhập lại !
+            </span>
+            <input
+              id="email_create"
+              onkeyup="event.preventDefault();userName()"
+              type="email"
+              placeholder="Email address"
+            />
+
+            <!-- ______________________________________ -->
+            <span class="create_pass all_open close">
+              Password tối thiểu là 8 ký tự !
+            </span>
+            <input
+              id="create_password"
+              onkeyup="event.preventDefault();createPassWord()"
+              placeholder="Password"
+            />
+            <input class="create__account back__Inp" type="submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./js/domEvent.js"></script>
+  </body>
+</html>

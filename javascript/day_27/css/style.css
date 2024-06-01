@@ -1,0 +1,188 @@
+.wrapper {
+  width: 100vw;
+}
+.wrapper .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.wrapper .container .menu {
+  width: 100%;
+  background: orangered;
+}
+.wrapper .container .menu .nav__list {
+  font-size: 2rem;
+  width: fit-content;
+  margin: 0px auto;
+}
+.wrapper .container .menu .nav__list .item {
+  font-weight: 900;
+  padding: 10px 20px;
+}
+.wrapper .container .menu .nav__list .item a {
+  color: white;
+}
+.wrapper .container .menu .nav__list .item a:hover {
+  color: black;
+}
+.wrapper .container .overlay {
+  content: "";
+  inset: 0;
+  position: fixed;
+  z-index: 0;
+  background: rgba(3, 3, 3, 0.5);
+}
+.wrapper .container .close {
+  display: none;
+}
+.wrapper .container .row_container {
+  position: relative;
+  background: aliceblue;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.wrapper .container .row_container .off {
+  color: red;
+  font-size: 3rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.wrapper .container .row_container h1 {
+  font-size: 5rem;
+  color: green;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.wrapper .container .row_container .btn {
+  width: 100%;
+  display: flex;
+}
+.wrapper .container .row_container .btn button {
+  margin-top: 10px;
+  width: 50%;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.wrapper .container .row_container .btn .show__color {
+  background: green;
+  color: white;
+}
+.wrapper .container .row_container .btn .hidden__color {
+  color: black;
+}
+.wrapper .container .row_container .back__Inp {
+  background: green;
+  color: white;
+  font-size: 2rem;
+}
+.wrapper .container .row_container .from_login, .wrapper .container .row_container .from_create_account {
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container .row_container .from_login .check_mail,
+.wrapper .container .row_container .from_login .create_pass,
+.wrapper .container .row_container .from_login .checkPassword,
+.wrapper .container .row_container .from_login .checkFullName,
+.wrapper .container .row_container .from_login .create_email, .wrapper .container .row_container .from_create_account .check_mail,
+.wrapper .container .row_container .from_create_account .create_pass,
+.wrapper .container .row_container .from_create_account .checkPassword,
+.wrapper .container .row_container .from_create_account .checkFullName,
+.wrapper .container .row_container .from_create_account .create_email {
+  color: red;
+  font-size: 1.2rem;
+}
+.wrapper .container .row_container .from_login input, .wrapper .container .row_container .from_create_account input {
+  width: 100%;
+  padding: 15px 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+.wrapper .container .row_container .from_login button, .wrapper .container .row_container .from_create_account button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background: green;
+  color: white;
+}
+.wrapper .container .row_container .open {
+  display: block;
+}
+.wrapper .container .row_container .close {
+  display: none;
+}
+
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
