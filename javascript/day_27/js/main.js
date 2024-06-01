@@ -23,6 +23,13 @@ var checkEmail = document.querySelector(".check_email");
 var passWord = document.querySelector("#password");
 var checkPassword = document.querySelector(".check_password");
 var btnProcessInfo = document.querySelector(".process_user_information");
+var closeForm = document.querySelector(".off");
+//_________________________________________________________________________
+function showAndCloseForm() {
+  rowContainer.classList.replace("open", "close");
+  overlay.classList.replace("open", "close");
+}
+closeForm.document.addEventListener("click", showAndCloseForm);
 
 // //_____________show and hidden form_____________________________________
 function showAndHiddenForm() {
