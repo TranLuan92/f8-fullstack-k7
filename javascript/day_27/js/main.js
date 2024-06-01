@@ -30,6 +30,12 @@ function showAndCloseForm() {
   overlay.classList.replace("open", "close");
 }
 closeForm.addEventListener("click", showAndCloseForm);
+//__________________________overlay click__________________
+function overlayClose() {
+  rowContainer.classList.replace("open", "close");
+  overlay.classList.replace("open", "close");
+}
+overlay.addEventListener("click", overlayClose);
 // //_____________show and hidden form_____________________________________
 function showAndHiddenForm() {
   rowContainer.classList.replace("close", "open");
