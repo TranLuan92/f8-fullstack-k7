@@ -12,7 +12,7 @@
                 width: fit-content;
                 margin: 0px auto;
                
-                .item{
+                .login{
                     
                     font-weight: 900;
                     padding: 10px  20px;
@@ -82,17 +82,22 @@
                 }
                 
             }
-            .back__Inp{
+            .process_user_information{
+                padding: 10px 0;
                 background: green;
                 color: white;
                 font-size: 2rem;
+                border-radius: 5px;
+                margin-top: 10px;
+                
             }
-            .from_login,.from_create_account{
-                .check_mail,
-                .create_pass,
-                .checkPassword,
-                .checkFullName,
-                .create_email{
+            .form_process{
+                .full_name,
+                .check_full_name,
+                .password,
+                .check_password,
+                .email,
+                .check_email{
                     color: red;
                     font-size: 1.2rem;                
                 }
@@ -106,25 +111,13 @@
                     margin: 10px 0px;
                     border-radius: 5px;
                 }
-                button{
-                    margin-top: 10px;
-                    width:100%;
-                    padding: 15px;
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    border-radius: 5px;
-                    background: green;
-                    color: white;
-                    
-                }
-
             }
-                .open{
-                    display: block;
-                }
-                .close{
-                    display: none;
-                }
+            .open{
+                display: block;
+            }
+            .close{
+                display: none;
+            }       
           
            
 

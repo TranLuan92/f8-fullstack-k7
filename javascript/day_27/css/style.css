@@ -14,14 +14,14 @@
   width: fit-content;
   margin: 0px auto;
 }
-.wrapper .container .menu .nav__list .item {
+.wrapper .container .menu .nav__list .login {
   font-weight: 900;
   padding: 10px 20px;
 }
-.wrapper .container .menu .nav__list .item a {
+.wrapper .container .menu .nav__list .login a {
   color: white;
 }
-.wrapper .container .menu .nav__list .item a:hover {
+.wrapper .container .menu .nav__list .login a:hover {
   color: black;
 }
 .wrapper .container .overlay {
@@ -76,44 +76,34 @@
 .wrapper .container .row_container .btn .hidden__color {
   color: black;
 }
-.wrapper .container .row_container .back__Inp {
+.wrapper .container .row_container .process_user_information {
+  padding: 10px 0;
   background: green;
   color: white;
   font-size: 2rem;
+  border-radius: 5px;
+  margin-top: 10px;
 }
-.wrapper .container .row_container .from_login, .wrapper .container .row_container .from_create_account {
+.wrapper .container .row_container .form_process {
   padding: 20px 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.wrapper .container .row_container .from_login .check_mail,
-.wrapper .container .row_container .from_login .create_pass,
-.wrapper .container .row_container .from_login .checkPassword,
-.wrapper .container .row_container .from_login .checkFullName,
-.wrapper .container .row_container .from_login .create_email, .wrapper .container .row_container .from_create_account .check_mail,
-.wrapper .container .row_container .from_create_account .create_pass,
-.wrapper .container .row_container .from_create_account .checkPassword,
-.wrapper .container .row_container .from_create_account .checkFullName,
-.wrapper .container .row_container .from_create_account .create_email {
+.wrapper .container .row_container .form_process .full_name,
+.wrapper .container .row_container .form_process .check_full_name,
+.wrapper .container .row_container .form_process .password,
+.wrapper .container .row_container .form_process .check_password,
+.wrapper .container .row_container .form_process .email,
+.wrapper .container .row_container .form_process .check_email {
   color: red;
   font-size: 1.2rem;
 }
-.wrapper .container .row_container .from_login input, .wrapper .container .row_container .from_create_account input {
+.wrapper .container .row_container .form_process input {
   width: 100%;
   padding: 15px 10px;
   margin: 10px 0px;
   border-radius: 5px;
-}
-.wrapper .container .row_container .from_login button, .wrapper .container .row_container .from_create_account button {
-  margin-top: 10px;
-  width: 100%;
-  padding: 15px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-radius: 5px;
-  background: green;
-  color: white;
 }
 .wrapper .container .row_container .open {
   display: block;
