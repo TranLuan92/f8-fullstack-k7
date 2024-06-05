@@ -69,7 +69,6 @@ function elementValue(data) {
     btnEditTaskContent.remove();
     inputEditData.style.background = "white";
     inputEditData.style.color = "black";
-    inputEditData.style.padding = "0 10px";
     boxLink.appendChild(btn);
     btn.innerHTML = "Add Task";
   });
