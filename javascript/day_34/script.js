@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   items.forEach((item) => {
     item.draggable = true;
 
-    // Xử lý sự kiện kéo (drag start)
+    // Xử lý sự kiện kéo
     item.addEventListener("dragstart", function () {
       draggedItem = item;
       setTimeout(function () {
@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 0);
     });
 
-    // Xử lý sự kiện kéo thả vào vị trí mới (drag over)
+    // Xử lý sự kiện kéo thả vào vị trí mới
     item.addEventListener("dragover", function (e) {
       e.preventDefault(); // Ngăn chặn hành động mặc định
     });
 
-    // Xử lý sự kiện thả (drop)
+    // Xử lý sự kiện thả
     item.addEventListener("drop", function () {
       // Thêm item vào vị trí mới
       this.parentNode.insertBefore(draggedItem, this);
     });
 
-    // Xử lý sự kiện kết thúc kéo (drag end)
+    // Xử lý sự kiện kết thúc kéo
     item.addEventListener("dragend", function () {
       setTimeout(function () {
         draggedItem.style.display = "block"; // Hiển thị lại item sau khi kéo
