@@ -38,3 +38,53 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 //-------------------------------------------------------------------------
+// document.addEventListener("DOMContentLoaded", function () {
+//   const items = document.querySelectorAll(".item");
+//   let draggedItem = null;
+//   let startX, startY, startLeft, startTop;
+
+//   items.forEach((item) => {
+//     item.addEventListener("mousedown", function (e) {
+//       draggedItem = this;
+//       // Lấy vị trí ban đầu của chuột và vị trí ban đầu của phần tử
+//       startX = e.clientX;
+//       startY = e.clientY;
+//       startLeft = draggedItem.getBoundingClientRect().left;
+//       startTop = draggedItem.getBoundingClientRect().top;
+
+//       // Thêm class dragging
+//       draggedItem.classList.add("dragging");
+
+//       // Ngăn chặn hành động mặc định của sự kiện mousedown
+//       e.preventDefault();
+//     });
+
+//     document.addEventListener("mousemove", function (e) {
+//       if (draggedItem) {
+//         // Tính toán khoảng cách di chuyển
+//         const deltaX = e.clientX - startX;
+//         const deltaY = e.clientY - startY;
+
+//         // Cập nhật vị trí mới
+//         draggedItem.style.left = startLeft + deltaX + "px";
+//         draggedItem.style.top = startTop + deltaY + "px";
+//       }
+//     });
+
+//     document.addEventListener("mouseup", function () {
+//       if (draggedItem) {
+//         draggedItem.classList.remove("dragging");
+//         draggedItem = null;
+//       }
+//     });
+
+//     item.addEventListener("mouseleave", function () {
+//       if (draggedItem) {
+//         draggedItem.classList.remove("dragging");
+//         draggedItem.style.left = "";
+//         draggedItem.style.top = "";
+//         draggedItem = null;
+//       }
+//     });
+//   });
+// });
