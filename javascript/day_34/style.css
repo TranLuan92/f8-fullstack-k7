@@ -22,7 +22,12 @@ html {
   border: 1px solid white;
   margin: 5px 0;
   background: #8bb3f4;
+  cursor: pointer;
+  user-select: none;
   &.active {
     background: rgb(252, 124, 77);
   }
+}
+.dragging {
+  opacity: 0.5; /* Giảm độ mờ khi đang kéo */
 }
