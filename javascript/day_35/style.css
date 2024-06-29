@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid orange; */
+}
+.container {
+  width: 100%;
+}
+.container h4 {
+  border-bottom: 2px solid #ccc !important;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  font-size: 2.5rem;
+  color: #212529;
+}
+.container .controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.container .controls .main-controls {
+  display: flex;
+  column-gap: 10px;
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+.container .controls .main-controls .btn {
+  background: #0d6efd;
+}
+.container .controls .control-btn-container {
+  display: flex;
+  column-gap: 10px;
+}
+.container .controls .control-btn-container .btn {
+  width: 50px;
+  background: #212529;
+}
+.container .controls .control-btn-container #color-btn {
+  width: 50px;
+  height: 100%;
+}
+.container #filename-input {
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px 0 rgba(180, 180, 180);
+  border-radius: 5px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  width: 120px;
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate3d(0px, 40px, 0px);
+  border: 1px solid #c9c6c6;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  display: none;
+}
+.dropdown-menu button {
+  width: 100%;
+  padding: 7px 10px;
+  text-align: start;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.dropdown-menu button:hover {
+  background: #ccc;
+}
+#content {
+  width: 100%;
+  height: 300px;
+  border: none;
+  box-shadow: 0 0 5px 0 rgb(180, 180, 180);
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: 400;
+}
+.d-flex {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+}
+.d-flex span:nth-child(1) {
+  padding-right: 10px;
+}
+
+.span_bold {
+  font-weight: 700;
+}
+
+.span_underline {
+  text-decoration: underline;
+}
+
+.span_italic {
+  font-style: italic;
+}
+#input_data {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
