@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var count = parseInt(countElement.textContent);
   var startTime;
+  var counting = true;
 
   function countdown(timestamp) {
     if (!startTime) {
@@ -18,20 +19,27 @@ document.addEventListener("DOMContentLoaded", function () {
       remainingSeconds = 0;
       countElement.textContent = remainingSeconds;
       getLinkElement.classList.add("active");
-      getLinkElement.addEventListener("click", function (event) {
-        event.preventDefault();
-        redirectToNextPage();
-      });
+      counting = false;
+      getLinkElement.addEventListener("click", redirectToNextPage);
     } else {
       countElement.textContent = remainingSeconds;
       requestAnimationFrame(countdown);
     }
   }
 
-  function redirectToNextPage() {
-    window.location.href =
-      "https://fullstack-nodejs.fullstack.edu.vn/?id=4278f92b-967f-42a5-aef7-161e2a59b37d";
+  function redirectToNextPage(event) {
+    if (!counting) {
+      window.location.href =
+        "https://fullstack-nodejs.fullstack.edu.vn/?id=4278f92b-967f-42a5-aef7-161e2a59b37d";
+    }
+    event.preventDefault();
   }
 
-  requestAnimationFrame(countdown); // Bắt đầu đếm ngược
+  requestAnimationFrame(countdown);
+
+  getLinkElement.addEventListener("click", function (event) {
+    if (counting) {
+      event.preventDefault();
+    }
+  });
 });
